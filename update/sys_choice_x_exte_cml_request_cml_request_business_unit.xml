@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="business_unit" table="x_exte_cml_request_cml_request" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>business_unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Transportation Automotive (TA)</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request</name>
+            <sequence>0</sequence>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-04 11:10:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>7eb9d95a13186780cb1eb3776144b01d</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-06 15:00:07</sys_updated_on>
+            <value>automotive</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>business_unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Transportation Recycling Centre (TR)</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request</name>
+            <sequence>1</sequence>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-04 11:10:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>beb9d95a13186780cb1eb3776144b01e</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-06 15:00:07</sys_updated_on>
+            <value>recycling centre</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>business_unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Industrial Motive Power (IE)</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request</name>
+            <sequence>2</sequence>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-04 11:10:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>3eb9d95a13186780cb1eb3776144b01f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-06 15:00:07</sys_updated_on>
+            <value>motive power</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>business_unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Industrial Network Power (IS)</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request</name>
+            <sequence>3</sequence>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-04 11:10:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>bab9d95a13186780cb1eb3776144b020</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-06 15:00:07</sys_updated_on>
+            <value>network power</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>business_unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Engineering GPD (RG)</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request</name>
+            <sequence>4</sequence>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-04 11:10:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>3ab9d95a13186780cb1eb3776144b021</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-06 15:01:24</sys_updated_on>
+            <value>gpd</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>business_unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Research &amp; Development (R)</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request</name>
+            <sequence>5</sequence>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-04 11:10:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>b6b9d95a13186780cb1eb3776144b022</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-06 15:00:07</sys_updated_on>
+            <value>r&amp;d</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>business_unit</element>
+            <name>x_exte_cml_request_cml_request</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-04 11:10:13</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>7ab9d95a13186780cb1eb3776144b01e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>business_unit</sys_name>
+            <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
+            <sys_update_name>sys_choice_x_exte_cml_request_cml_request_business_unit</sys_update_name>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-04 11:10:13</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

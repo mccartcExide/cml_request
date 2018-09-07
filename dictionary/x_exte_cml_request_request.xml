@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="change_request" label="Request" max_length="40" name="x_exte_cml_request_request" sizeclass="1" type="collection"/>
+</database>

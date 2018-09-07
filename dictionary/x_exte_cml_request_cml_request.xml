@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="CML Request" max_length="40" name="x_exte_cml_request_cml_request" type="collection">
+        <element choice="1" label="Business unit" max_length="40" name="business_unit" type="choice">
+            <choice>
+                <element label="Transportation Automotive (TA)" sequence="0" value="automotive"/>
+                <element label="Transportation Recycling Centre (TR)" sequence="1" value="recycling centre"/>
+                <element label="Industrial Motive Power (IE)" sequence="2" value="motive power"/>
+                <element label="Industrial Network Power (IS)" sequence="3" value="network power"/>
+                <element label="Engineering GPD (RG)" sequence="4" value="gpd"/>
+                <element label="Research &amp; Development (R)" sequence="5" value="r&amp;d"/>
+            </choice>
+        </element>
+        <element label="CC to" max_length="32" name="cc_to" reference="sys_user" type="reference"/>
+        <element label="Comments" max_length="4000" name="comments" type="journal"/>
+        <element label="Date required" max_length="40" name="date_required" type="glide_date"/>
+        <element label="Description" max_length="65000" name="description" type="string"/>
+        <element label="Deviation #" max_length="40" name="deviation" type="string"/>
+        <element choice="1" label="Disposition after report" max_length="40" name="disposition_after_report" type="choice">
+            <choice>
+                <element label="Scrap" sequence="0" value="1"/>
+                <element label="Return" sequence="1" value="2"/>
+                <element label="Retain" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element label="EWR #" max_length="40" name="ewr" type="string"/>
+        <element label="Location" max_length="40" name="location" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Phone" max_length="40" name="phone" type="string"/>
+        <element choice="1" label="Priority" mandatory="true" max_length="40" name="priority" type="choice">
+            <choice>
+                <element label="Low ( &gt; 30 workdays)" sequence="0" value="low"/>
+                <element label="Normal (14 to 21 work days)" sequence="1" value="normal"/>
+                <element label="High (7 to 10 days)" sequence="2" value="high"/>
+            </choice>
+        </element>
+        <element label="Project number" max_length="40" name="project_number" type="string"/>
+        <element label="Requested by" max_length="150" name="requested_by" type="string"/>
+        <element choice="1" label="Request type" max_length="40" name="request_type" type="choice">
+            <choice>
+                <element label="Competitive Benchmark" value="M"/>
+                <element label="Customer Return" value="C"/>
+                <element label="Internal Quality" value="Q"/>
+                <element label="Product Development" value="P"/>
+                <element label="Product Validation" value="V"/>
+                <element label="R &amp; D" value="R"/>
+            </choice>
+        </element>
+        <element label="Retention date" max_length="40" name="retention_date" type="glide_date"/>
+        <element label="Short description" max_length="160" name="short_description" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Watch list" max_length="4000" name="watch_list" reference="sys_user" type="glide_list"/>
+        <index name="index">
+            <element name="cc_to"/>
+        </index>
+    </element>
+</database>

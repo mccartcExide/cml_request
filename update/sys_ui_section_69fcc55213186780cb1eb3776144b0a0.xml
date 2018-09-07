@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Dates" section_id="69fcc55213186780cb1eb3776144b0a0" sys_domain="global" table="x_exte_cml_request_cml_request" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_created_on</element>
+            <position>0</position>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-04 10:15:26</sys_created_on>
+            <sys_id>d43d4d5213186780cb1eb3776144b0f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Dates" display_value="Dates" name="x_exte_cml_request_cml_request" sys_domain="global" view="Default view">69fcc55213186780cb1eb3776144b0a0</sys_ui_section>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-04 10:15:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>date_required</element>
+            <position>1</position>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-04 10:15:26</sys_created_on>
+            <sys_id>583d4d5213186780cb1eb3776144b0f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Dates" display_value="Dates" name="x_exte_cml_request_cml_request" sys_domain="global" view="Default view">69fcc55213186780cb1eb3776144b0a0</sys_ui_section>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-04 10:15:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-04 10:15:26</sys_created_on>
+            <sys_id>d83d4d5213186780cb1eb3776144b0f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Dates" display_value="Dates" name="x_exte_cml_request_cml_request" sys_domain="global" view="Default view">69fcc55213186780cb1eb3776144b0a0</sys_ui_section>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-04 10:15:26</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_updated_on</element>
+            <position>3</position>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-04 10:15:26</sys_created_on>
+            <sys_id>5c3d4d5213186780cb1eb3776144b0f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Dates" display_value="Dates" name="x_exte_cml_request_cml_request" sys_domain="global" view="Default view">69fcc55213186780cb1eb3776144b0a0</sys_ui_section>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-04 10:15:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_updated_by</element>
+            <position>4</position>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-04 10:15:26</sys_created_on>
+            <sys_id>dc3d4d5213186780cb1eb3776144b0f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Dates" display_value="Dates" name="x_exte_cml_request_cml_request" sys_domain="global" view="Default view">69fcc55213186780cb1eb3776144b0a0</sys_ui_section>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-04 10:15:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Dates</caption>
+            <header>false</header>
+            <name>x_exte_cml_request_cml_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-04 10:14:26</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>69fcc55213186780cb1eb3776144b0a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Dates</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
+            <sys_update_name>sys_ui_section_69fcc55213186780cb1eb3776144b0a0</sys_update_name>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-04 10:14:26</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
