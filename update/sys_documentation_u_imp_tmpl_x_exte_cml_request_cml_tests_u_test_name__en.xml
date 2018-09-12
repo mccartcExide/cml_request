@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_test_name_" label="Test Name:" language="en" table="u_imp_tmpl_x_exte_cml_request_cml_tests">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_test_name_</element>
+            <help/>
+            <hint/>
+            <label>Test Name:</label>
+            <language>en</language>
+            <name>u_imp_tmpl_x_exte_cml_request_cml_tests</name>
+            <plural>Test Name:s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-12 12:29:07</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>e088f27813602700cb1eb3776144b024</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Test Name:</sys_name>
+            <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
+            <sys_update_name>sys_documentation_u_imp_tmpl_x_exte_cml_request_cml_tests_u_test_name__en</sys_update_name>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-12 12:29:07</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

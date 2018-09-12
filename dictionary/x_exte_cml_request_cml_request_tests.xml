@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="CML Request Tests" max_length="40" name="x_exte_cml_request_cml_request_tests" type="collection">
+        <element label="Abbrev" max_length="40" name="abbrev" type="string"/>
+        <element label="Determines" max_length="500" name="determines" type="string"/>
+        <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Request Number" max_length="32" name="request_number" reference="x_exte_cml_request_cml_request" type="reference"/>
+        <element label="Required Sample Size" max_length="100" name="required_sample_size" type="string"/>
+        <element label="Sample Type" max_length="200" name="sample_type" type="string"/>
+        <element label="Test Name" max_length="100" name="test_name" type="string"/>
+        <index name="index">
+            <element name="request_number"/>
+        </index>
+    </element>
+</database>

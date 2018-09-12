@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="CML Tests" max_length="40" name="x_exte_cml_request_cml_tests" type="collection">
+        <element label="Abbrev" max_length="40" name="abbrev" type="string"/>
+        <element label="Determines" max_length="500" name="determines" type="string"/>
+        <element label="Required Sample Size" max_length="100" name="required_sample_size" type="string"/>
+        <element label="Sample Type" max_length="200" name="sample_type" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element display="true" label="Test Name" max_length="100" name="test_name" type="string"/>
+    </element>
+</database>

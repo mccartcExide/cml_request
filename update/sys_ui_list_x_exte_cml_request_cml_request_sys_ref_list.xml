@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_exte_cml_request_cml_request" version="2" view="sys_ref_list">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_exte_cml_request_cml_request" element="NULL" name="x_exte_cml_request_cml_request" parent="NULL" relationship="NULL" sys_domain="global" view="894ed3226f100100ca03674f8e3ee40d">372d966413a4e300cb1eb3776144b038</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-11 15:51:15</sys_created_on>
+            <sys_id>fb2d966413a4e300cb1eb3776144b038</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-11 15:51:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_exte_cml_request_cml_request</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-11 15:51:15</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>372d966413a4e300cb1eb3776144b038</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_exte_cml_request_cml_request</sys_name>
+            <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
+            <sys_update_name>sys_ui_list_x_exte_cml_request_cml_request_sys_ref_list</sys_update_name>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-11 15:51:15</sys_updated_on>
+            <sys_user/>
+            <view display_value="Reference List" name="sys_ref_list">894ed3226f100100ca03674f8e3ee40d</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

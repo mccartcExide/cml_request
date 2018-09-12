@@ -17,28 +17,54 @@
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>1</position>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2018-09-04 14:23:31</sys_created_on>
+            <sys_created_on>2018-09-07 15:19:11</sys_created_on>
             <sys_domain>global</sys_domain>
-            <sys_id>1af5865a13986780cb1eb3776144b062</sys_id>
+            <sys_id>0f7f2dd7db186f0053f17d8bbf96197f</sys_id>
             <sys_mod_count>1</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_exte_cml_request_cml_request" name="x_exte_cml_request_cml_request" sys_domain="global" view="Default view">406145c2135c2780cb1eb3776144b01a</sys_ui_form>
-            <sys_ui_section caption="Notes" display_value="Notes" name="x_exte_cml_request_cml_request" sys_domain="global" view="Default view">52f5465a13986780cb1eb3776144b0f2</sys_ui_section>
+            <sys_ui_section caption="Sample Type" display_value="Sample Type" name="x_exte_cml_request_cml_request" sys_domain="global" view="Default view">877f2dd7db186f0053f17d8bbf96197c</sys_ui_section>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2018-09-04 14:23:31</sys_updated_on>
+            <sys_updated_on>2018-09-07 15:19:12</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>2</position>
             <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-10 13:06:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>96cde418db6cef0053f17d8bbf9619a3</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_exte_cml_request_cml_request" name="x_exte_cml_request_cml_request" sys_domain="global" view="Default view">406145c2135c2780cb1eb3776144b01a</sys_ui_form>
+            <sys_ui_section caption="Tests" display_value="Tests" name="x_exte_cml_request_cml_request" sys_domain="global" view="Default view">decda418db6cef0053f17d8bbf9619d8</sys_ui_section>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-10 13:35:46</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-04 14:23:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>1af5865a13986780cb1eb3776144b062</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_exte_cml_request_cml_request" name="x_exte_cml_request_cml_request" sys_domain="global" view="Default view">406145c2135c2780cb1eb3776144b01a</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_exte_cml_request_cml_request" sys_domain="global" view="Default view">52f5465a13986780cb1eb3776144b0f2</sys_ui_section>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-10 13:35:46</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>mccartc</sys_created_by>
             <sys_created_on>2018-09-04 10:14:26</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_id>21fcc95213186780cb1eb3776144b03c</sys_id>
-            <sys_mod_count>4</sys_mod_count>
+            <sys_mod_count>8</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_exte_cml_request_cml_request" name="x_exte_cml_request_cml_request" sys_domain="global" view="Default view">406145c2135c2780cb1eb3776144b01a</sys_ui_form>
             <sys_ui_section caption="Dates" display_value="Dates" name="x_exte_cml_request_cml_request" sys_domain="global" view="Default view">69fcc55213186780cb1eb3776144b0a0</sys_ui_section>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2018-09-04 14:21:37</sys_updated_on>
+            <sys_updated_on>2018-09-10 13:06:04</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_exte_cml_request_cml_request</name>

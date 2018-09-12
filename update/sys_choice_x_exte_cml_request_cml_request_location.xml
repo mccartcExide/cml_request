@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="location" table="x_exte_cml_request_cml_request" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Auburn Hills</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request</name>
+            <sequence/>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-07 14:07:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>560f1d5bdbd46f0053f17d8bbf961980</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-07 14:08:16</sys_updated_on>
+            <value>AH</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Aurora</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request</name>
+            <sequence/>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-07 14:09:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>b42fdd9bdbd46f0053f17d8bbf96197b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-07 14:09:17</sys_updated_on>
+            <value>AR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Atlanta (Milton)</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request</name>
+            <sequence/>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-07 14:09:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>b17f5597dbd46f0053f17d8bbf9619e5</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-07 14:09:39</sys_updated_on>
+            <value>AT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Castanheira, Spain</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request</name>
+            <sequence/>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-07 14:10:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>178f915fdbd46f0053f17d8bbf96194a</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-07 14:10:22</sys_updated_on>
+            <value>CA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Canon Hollow</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request</name>
+            <sequence/>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-07 14:10:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>debfd91fdbd46f0053f17d8bbf9619eb</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-07 14:10:36</sys_updated_on>
+            <value>CH</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Columbus</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request</name>
+            <sequence/>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-07 14:10:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>21cf915fdbd46f0053f17d8bbf961943</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-07 14:10:52</sys_updated_on>
+            <value>CO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Florence</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request</name>
+            <sequence/>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-07 14:11:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>2ddf155fdbd46f0053f17d8bbf96192b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-07 14:11:05</sys_updated_on>
+            <value>FL</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Frisco</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request</name>
+            <sequence/>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-07 14:11:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>24ef155fdbd46f0053f17d8bbf961942</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-07 14:11:15</sys_updated_on>
+            <value>FR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Fort Smith</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request</name>
+            <sequence/>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-07 14:11:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>dfef1d5bdbd46f0053f17d8bbf961959</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-07 14:11:26</sys_updated_on>
+            <value>FS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Germany (Budingen)</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request</name>
+            <sequence/>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-07 14:11:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>8aff115fdbd46f0053f17d8bbf961942</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-07 14:11:43</sys_updated_on>
+            <value>GE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Kansas City</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request</name>
+            <sequence/>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-07 14:11:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>9a00655fdbd46f0053f17d8bbf9619da</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-07 14:11:55</sys_updated_on>
+            <value>KC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Lampeter, PA</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request</name>
+            <sequence/>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-07 14:12:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>4510a55fdbd46f0053f17d8bbf961965</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-07 14:12:13</sys_updated_on>
+            <value>LA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Lombard</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request</name>
+            <sequence/>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-07 14:12:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>ed20655fdbd46f0053f17d8bbf9619db</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-07 14:12:21</sys_updated_on>
+            <value>LO</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Manchester</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request</name>
+            <sequence/>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-07 14:12:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>2720ed1fdbd46f0053f17d8bbf9619df</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-07 14:12:30</sys_updated_on>
+            <value>MA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Muncie</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request</name>
+            <sequence/>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-07 14:12:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>e130e55fdbd46f0053f17d8bbf9619c9</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-07 14:12:56</sys_updated_on>
+            <value>MU</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>OTHER</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request</name>
+            <sequence/>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-07 14:13:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>9470e55fdbd46f0053f17d8bbf961982</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-07 14:13:38</sys_updated_on>
+            <value>O</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reading, PA</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request</name>
+            <sequence/>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-07 14:13:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>4050a55fdbd46f0053f17d8bbf96198d</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-07 14:13:09</sys_updated_on>
+            <value>RE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Salina</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request</name>
+            <sequence/>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-07 14:13:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>cf50a91fdbd46f0053f17d8bbf96192b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-07 14:13:20</sys_updated_on>
+            <value>SA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Wixom</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request</name>
+            <sequence/>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-07 14:13:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>ad60655fdbd46f0053f17d8bbf961923</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-07 14:13:31</sys_updated_on>
+            <value>WX</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>location</element>
+            <name>x_exte_cml_request_cml_request</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-09-07 14:07:45</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>342f991fdbd46f0053f17d8bbf9619a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>location</sys_name>
+            <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
+            <sys_update_name>sys_choice_x_exte_cml_request_cml_request_location</sys_update_name>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-09-07 14:07:45</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

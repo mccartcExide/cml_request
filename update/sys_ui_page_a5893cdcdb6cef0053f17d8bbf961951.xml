@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[var choices = [];
+var existing = [];
+var count = 0;
+addLoadEvent(function(){
+	var reqnum = document.getElementById("requestNumber").value;
+	var rtest = new GlideRecord('x_exte_cml_request_cml_request_tests');
+	rtest.addQuery('request_number',reqnum);
+	rtest.query();
+	
+	while(rtest.next()){
+		count++;
+		existing.push(rtest.test_name);
+	}
+	 if(count >= 6){
+		 GlideDialogWindow.get().destroy();
+		 g_form.addErrorMessage('You can have only a maximum of 6 tests');
+	 }
+	
+});
+
+function submitTests() {
+	var reqnum = document.getElementById("requestNumber").value;
+	
+	
+	choices.forEach(function(test){
+		
+		var gr = new GlideRecord('x_exte_cml_request_cml_tests');
+		gr.addQuery('test_name',test);
+		gr.query();
+		
+		while(gr.next()){
+			var reqT = new GlideRecord('x_exte_cml_request_cml_request_tests');
+			reqT.test_name = gr.test_name;
+			reqT.request_number = reqnum;
+			reqT.required_sample_size = gr.required_sample_size;
+			reqT.abbrev = gr.abbrev;
+			reqT.sample_type = gr.sample_type;
+			reqT.determines = gr.determines;
+			reqT.insert();
+			
+			GlideDialogWindow.get().destroy();
+			g_form.save();
+		}
+	});
+	
+}
+
+
+
+
+
+
+$j("#submit").click(function() {
+	submitTests();
+	
+});
+$j("#submit1").click(function() {
+	submitTests();
+	
+});
+
+$j("#cancel").click(function(){
+	GlideDialogWindow.get().destroy();
+});
+$j("#cancel1").click(function(){
+	GlideDialogWindow.get().destroy();
+});
+
+
+
+function setSelected(sender){
+	if(sender.checked == true){
+		var found = false;
+		if(choices.length + existing.length >= 6 ){
+			alert('Test cannot be selected. A maximum of 6 is allowed.');
+			document.getElementById(sender.name).checked = false;
+			return;
+		}else{
+			
+			existing.forEach(function(test){
+				if(test == sender.name){
+					found = true;
+				}
+			});
+			
+			if(found){
+				alert(sender.name + ' has already been selected.');
+				document.getElementById(sender.name).checked = false;
+				
+			}else{
+				choices.push(sender.name);
+			}
+			}
+		//var found = choices.find((choice) => choice === sender.name);
+		
+	}else{
+		sender.checked = false;
+		removeA(choices,sender.name);
+	}
+}
+
+
+function removeA(arr) {
+    var what, a = arguments, L = a.length, ax;
+    while (L > 1 && arr.length) {
+        what = a[--L];
+        while ((ax= arr.indexOf(what)) !== -1) {
+            arr.splice(ax, 1);
+        }
+    }
+    return arr;
+}]]></client_script>
+        <description>Provides a list of tests that are available.</description>
+        <direct>false</direct>
+        <endpoint>x_exte_cml_request_requests_test_selection.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<style>
+		table.paleBlueRows {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  border: 1px solid #FFFFFF;
+  width: 100%;
+  height: 200%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.paleBlueRows td, table.paleBlueRows th {
+  border: 0px solid #070707;
+  padding: 5px 3px;
+}
+table.paleBlueRows tbody td {
+  font-size: 13px;
+  color: #333333;
+}
+table.paleBlueRows tr:nth-child(even) {
+  background: #D0E4F5;
+}
+table.paleBlueRows thead {
+  background: #0B6FA4;
+}
+table.paleBlueRows thead th {
+  font-size: 15px;
+  font-weight: normal;
+  color: #FFFFFF;
+  text-align: center;
+}
+table.paleBlueRows tfoot td {
+  font-size: 14px;
+}
+		input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1); /* IE */
+  -moz-transform: scale(1); /* FF */
+  -webkit-transform: scale(1); /* Safari and Chrome */
+  -o-transform: scale(1); /* Opera */
+  padding: 10px;
+}
+
+	</style>
+	
+<hr/>	
+	<div style="text-align:right;">
+	 <button type="button" id="submit" class="action btn btn-default">Submit</button>
+	 <button type="button" id="cancel" class="action btn btn-default">Cancel</button>
+	</div>
+	<g:evaluate var="jvar_gratt" object ="true">
+		var gratt = new GlideRecord("x_exte_cml_request_cml_tests");
+		gratt.query();
+		gratt;
+	</g:evaluate>
+	<g:evaluate var="reqNum">
+		var reqNum = RP.getParameterValue('sysparm_number')
+	</g:evaluate>
+	
+	<input type='hidden' id="requestNumber" value="${reqNum}"/>
+	<div style="width:800px;" >
+<table class="paleBlueRows" >
+	<thead>
+	<tr>
+		<th></th>
+		<th>Test Name</th>
+		<th>Abbrev</th>
+		<th>Determines</th>
+		<th>Sample Type</th>
+		<th>Required Sample Size</th>
+	</tr>
+	</thead>
+<j:while test="${jvar_gratt.next()}">
+<tr>
+	<td><input type="checkbox" id="${gratt.test_name}" name ="${gratt.test_name}" onclick="setSelected(this)"/></td>
+	<td>${gratt.test_name}</td>
+	<td>${gratt.abbrev}</td>
+	<td>${gratt.determines}</td>
+	<td>${gratt.sample_type}</td>
+	<td>${gratt.required_sample_size}</td>
+	</tr>
+</j:while>
+
+	</table>
+		</div>
+	<div style="text-align:right" >
+	 <button type="button" id="submit1" class="action btn btn-default">Submit</button>
+	 <button type="button" id="cancel1" class="action btn btn-default">Cancel</button>
+	</div>
+</j:jelly>]]></html>
+        <name>requests_test_selection</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>mccartc</sys_created_by>
+        <sys_created_on>2018-09-10 13:59:36</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a5893cdcdb6cef0053f17d8bbf961951</sys_id>
+        <sys_mod_count>68</sys_mod_count>
+        <sys_name>requests_test_selection</sys_name>
+        <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
+        <sys_update_name>sys_ui_page_a5893cdcdb6cef0053f17d8bbf961951</sys_update_name>
+        <sys_updated_by>mccartc</sys_updated_by>
+        <sys_updated_on>2018-09-12 17:15:11</sys_updated_on>
+    </sys_ui_page>
+</record_update>

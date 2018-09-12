@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element audit="true" label="CML Request" max_length="40" name="x_exte_cml_request_cml_request" type="collection">
-        <element choice="1" label="Business unit" max_length="40" name="business_unit" type="choice">
+        <element choice="1" label="Business unit" mandatory="true" max_length="40" name="business_unit" type="choice">
             <choice>
                 <element label="Transportation Automotive (TA)" sequence="0" value="automotive"/>
                 <element label="Transportation Recycling Centre (TR)" sequence="1" value="recycling centre"/>
@@ -14,7 +14,7 @@
         <element label="CC to" max_length="32" name="cc_to" reference="sys_user" type="reference"/>
         <element label="Comments" max_length="4000" name="comments" type="journal"/>
         <element label="Date required" max_length="40" name="date_required" type="glide_date"/>
-        <element label="Description" max_length="65000" name="description" type="string"/>
+        <element label="Test Objectives" max_length="65000" name="description" type="string"/>
         <element label="Deviation #" max_length="40" name="deviation" type="string"/>
         <element choice="1" label="Disposition after report" max_length="40" name="disposition_after_report" type="choice">
             <choice>
@@ -24,9 +24,44 @@
             </choice>
         </element>
         <element label="EWR #" max_length="40" name="ewr" type="string"/>
-        <element label="Location" max_length="40" name="location" type="string"/>
+        <element choice="1" label="Location" mandatory="true" max_length="40" name="location" type="choice">
+            <choice>
+                <element label="Atlanta (Milton)" value="AT"/>
+                <element label="Auburn Hills" value="AH"/>
+                <element label="Aurora" value="AR"/>
+                <element label="Canon Hollow" value="CH"/>
+                <element label="Castanheira, Spain" value="CA"/>
+                <element label="Columbus" value="CO"/>
+                <element label="Florence" value="FL"/>
+                <element label="Fort Smith" value="FS"/>
+                <element label="Frisco" value="FR"/>
+                <element label="Germany (Budingen)" value="GE"/>
+                <element label="Kansas City" value="KC"/>
+                <element label="Lampeter, PA" value="LA"/>
+                <element label="Lombard" value="LO"/>
+                <element label="Manchester" value="MA"/>
+                <element label="Muncie" value="MU"/>
+                <element label="OTHER" value="O"/>
+                <element label="Reading, PA" value="RE"/>
+                <element label="Salina" value="SA"/>
+                <element label="Wixom" value="WX"/>
+            </choice>
+        </element>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Number of samples" mandatory="true" max_length="40" name="number_of_samples" type="integer"/>
+        <element choice="1" label="Oxide Type" max_length="40" name="oxide_type" type="choice">
+            <choice>
+                <element label="Leady" value="leady"/>
+                <element label="Red" value="red"/>
+            </choice>
+        </element>
         <element label="Phone" max_length="40" name="phone" type="string"/>
+        <element choice="1" label="Polarity" max_length="40" name="polarity" type="choice">
+            <choice>
+                <element label="Negative" value="neg"/>
+                <element label="Positive" value="pos"/>
+            </choice>
+        </element>
         <element choice="1" label="Priority" mandatory="true" max_length="40" name="priority" type="choice">
             <choice>
                 <element label="Low ( &gt; 30 workdays)" sequence="0" value="low"/>
@@ -36,7 +71,7 @@
         </element>
         <element label="Project number" max_length="40" name="project_number" type="string"/>
         <element label="Requested by" max_length="150" name="requested_by" type="string"/>
-        <element choice="1" label="Request type" max_length="40" name="request_type" type="choice">
+        <element choice="1" label="Request type" mandatory="true" max_length="40" name="request_type" type="choice">
             <choice>
                 <element label="Competitive Benchmark" value="M"/>
                 <element label="Customer Return" value="C"/>
@@ -47,7 +82,36 @@
             </choice>
         </element>
         <element label="Retention date" max_length="40" name="retention_date" type="glide_date"/>
-        <element label="Short description" max_length="160" name="short_description" type="string"/>
+        <element label="Sample IDs" max_length="150" name="sample_ids" type="string"/>
+        <element choice="1" label="Sample Type" mandatory="true" max_length="40" name="sample_type" type="choice">
+            <choice>
+                <element label="Container" value="container"/>
+                <element label="Cover" value="cover"/>
+                <element label="Electrolyte" value="electrolyte"/>
+                <element label="Expander" value="expander"/>
+                <element label="Formed Plate" value="formed_plate"/>
+                <element label="Grids" value="grids"/>
+                <element label="Labels" value="labels"/>
+                <element label="Lead Disk" value="lead_disk"/>
+                <element label="Lugs" value="lugs"/>
+                <element label="Other" value="other"/>
+                <element label="Oxide" value="oxide"/>
+                <element label="Posts" value="posts"/>
+                <element label="Seperator" value="seperator"/>
+                <element label="Straps" value="straps"/>
+                <element label="Unformed Plate" value="nformed_palte"/>
+                <element label="Water" value="water"/>
+                <element label="Welds" value="lds"/>
+            </choice>
+        </element>
+        <element label="Sample type description" max_length="100" name="sample_type_description" type="string"/>
+        <element choice="1" label="Seperator Type" max_length="40" name="seperator_type" type="choice">
+            <choice>
+                <element label="Glass" value="glass"/>
+                <element label="Poly" value="poly"/>
+            </choice>
+        </element>
+        <element label="Short description" mandatory="true" max_length="160" name="short_description" type="string"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <element label="Watch list" max_length="4000" name="watch_list" reference="sys_user" type="glide_list"/>
         <index name="index">
