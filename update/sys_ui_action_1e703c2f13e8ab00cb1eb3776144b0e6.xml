@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>add_tests</action_name>
+        <action_name>request_approval</action_name>
         <active>true</active>
-        <client>true</client>
+        <client>false</client>
         <comments/>
-        <condition>current.location!=''&amp;&amp;current.business_unit!=''&amp;&amp;current.shourt_description!=''&amp;&amp;current.request_type!=''&amp;&amp;current.priority!=''&amp;&amp;current.sample_type!=''&amp;&amp;current.number_of_samples!=''</condition>
+        <condition>current.state == '10'</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
-        <form_context_menu>true</form_context_menu>
+        <form_context_menu>false</form_context_menu>
         <form_link>false</form_link>
-        <form_style>primary</form_style>
+        <form_style/>
         <hint/>
         <list_action>false</list_action>
         <list_banner_button>false</list_banner_button>
@@ -20,39 +20,32 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Add Tests</name>
-        <onclick>addTests()</onclick>
+        <name>Request Approval</name>
+        <onclick/>
         <order>100</order>
-        <script><![CDATA[function addTests(){
-	var number = g_form.getUniqueValue();
-	var priority = g_form.getValue('priority');
-	var dialog = new GlideDialogWindow('x_exte_cml_request_requests_test_selection');
-	dialog.setTitle('Select required tests');
-	dialog.setPreference('sysparm_number',number);
-	dialog.setPreference('sysparm_priority',priority);
-	dialog.render();
-	
-}]]></script>
+        <script><![CDATA[current.state = '20';
+current.update();
+]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-09-10 14:06:36</sys_created_on>
+        <sys_created_on>2018-09-20 15:40:13</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
-        <sys_id>388af410dbacef0053f17d8bbf96196d</sys_id>
-        <sys_mod_count>22</sys_mod_count>
-        <sys_name>Add Tests</sys_name>
+        <sys_id>1e703c2f13e8ab00cb1eb3776144b0e6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Request Approval</sys_name>
         <sys_overrides/>
         <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
-        <sys_update_name>sys_ui_action_388af410dbacef0053f17d8bbf96196d</sys_update_name>
+        <sys_update_name>sys_ui_action_1e703c2f13e8ab00cb1eb3776144b0e6</sys_update_name>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-09-13 15:32:42</sys_updated_on>
+        <sys_updated_on>2018-09-20 15:45:59</sys_updated_on>
         <table>x_exte_cml_request_cml_request</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

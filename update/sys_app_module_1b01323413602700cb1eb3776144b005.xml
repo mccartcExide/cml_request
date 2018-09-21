@@ -15,7 +15,7 @@
         <mobile_title>CML Request Tests</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_exte_cml_request_cml_request_tests</name>
-        <order/>
+        <order>200</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -28,7 +28,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>1b01323413602700cb1eb3776144b005</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>CML Request Tests</sys_name>
         <sys_overrides/>
         <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
@@ -37,7 +37,7 @@
         <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
         <sys_update_name>sys_app_module_1b01323413602700cb1eb3776144b005</sys_update_name>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-09-12 11:56:33</sys_updated_on>
+        <sys_updated_on>2018-09-13 12:56:00</sys_updated_on>
         <timeline_page/>
         <title>CML Request Tests</title>
         <uncancelable>false</uncancelable>

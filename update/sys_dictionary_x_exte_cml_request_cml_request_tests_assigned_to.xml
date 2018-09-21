@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="requested_by" table="x_exte_cml_request_cml_request">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="assigned_to" table="x_exte_cml_request_cml_request_tests">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
         <attributes/>
         <audit>false</audit>
-        <calculation>(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
+        <calculation>(function calculatedFieldValue(current) {&#13;
+&#13;
+	// Add your code here&#13;
+	return '';  // return the calculated value&#13;
+&#13;
 })(current);</calculation>
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Requested by</column_label>
+        <column_label>Assigned to</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -28,24 +28,24 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>requested_by</element>
+        <element>assigned_to</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="String">string</internal_type>
-        <mandatory>false</mandatory>
-        <max_length>150</max_length>
-        <name>x_exte_cml_request_cml_request</name>
+        <internal_type display_value="Reference">reference</internal_type>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <name>x_exte_cml_request_cml_request_tests</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>true</read_only>
+        <read_only>false</read_only>
         <read_roles/>
-        <reference/>
+        <reference display_value="" name="sys_user">sys_user</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
-        <reference_qual/>
+        <reference_qual>javascript:new GetGroupMembers().getMember('0d54d17e13e82b00cb1eb3776144b076')</reference_qual>
         <reference_qual_condition/>
         <reference_type/>
         <sizeclass/>
@@ -53,24 +53,24 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-09-03 15:07:48</sys_created_on>
+        <sys_created_on>2018-09-18 10:27:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>b56ef442135c2780cb1eb3776144b045</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Requested by</sys_name>
+        <sys_id>40065d32132c2b00cb1eb3776144b038</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Assigned to</sys_name>
         <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
-        <sys_update_name>sys_dictionary_x_exte_cml_request_cml_request_requested_by</sys_update_name>
+        <sys_update_name>sys_dictionary_x_exte_cml_request_cml_request_tests_assigned_to</sys_update_name>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-09-13 12:59:38</sys_updated_on>
+        <sys_updated_on>2018-09-18 13:12:38</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <virtual>false</virtual>
         <widget/>
         <write_roles/>

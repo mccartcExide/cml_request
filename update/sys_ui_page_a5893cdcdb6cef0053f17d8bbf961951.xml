@@ -5,8 +5,13 @@
         <client_script><![CDATA[var choices = [];
 var existing = [];
 var count = 0;
+var added = 0;
+var removed = 0;
+var allowedTests = 0;
 addLoadEvent(function(){
 	var reqnum = document.getElementById("requestNumber").value;
+	allowedTests = document.getElementById("priority").value;
+	
 	var rtest = new GlideRecord('x_exte_cml_request_cml_request_tests');
 	rtest.addQuery('request_number',reqnum);
 	rtest.query();
@@ -14,39 +19,83 @@ addLoadEvent(function(){
 	while(rtest.next()){
 		count++;
 		existing.push(rtest.test_name);
+		choices.push(rtest.test_name);
+		document.getElementById(rtest.test_name).checked = true;
 	}
-	 if(count >= 6){
-		 GlideDialogWindow.get().destroy();
-		 g_form.addErrorMessage('You can have only a maximum of 6 tests');
-	 }
+	if(allowedTests != 0 && count > allowedTests){
+		//GlideDialogWindow.get().destroy();
+		alert('You have exceeded the maximum allowed number of tests.');
+	}
 	
 });
 
 function submitTests() {
+	//check we havent got too many tests
+	if(count!= 0){
+	count = (count + added) - removed;
+	if((count > allowedTests) && count != 0){
+		alert('You have too many tests for your selected priority. You are only allowed '+allowedTests+' tests.');
+		return false;
+	}
+	}
+	
 	var reqnum = document.getElementById("requestNumber").value;
 	
-	
+	// add new tests to list
 	choices.forEach(function(test){
+		var allowAdd = true;
+		existing.forEach(function(e){
+			if(e == test){
+				allowAdd = false;
+			}
+		});
 		
-		var gr = new GlideRecord('x_exte_cml_request_cml_tests');
-		gr.addQuery('test_name',test);
-		gr.query();
-		
-		while(gr.next()){
-			var reqT = new GlideRecord('x_exte_cml_request_cml_request_tests');
-			reqT.test_name = gr.test_name;
-			reqT.request_number = reqnum;
-			reqT.required_sample_size = gr.required_sample_size;
-			reqT.abbrev = gr.abbrev;
-			reqT.sample_type = gr.sample_type;
-			reqT.determines = gr.determines;
-			reqT.insert();
+		if(allowAdd){
+			var gr = new GlideRecord('x_exte_cml_request_cml_tests');
+			gr.addQuery('test_name',test);
+			gr.query();
 			
-			GlideDialogWindow.get().destroy();
-			g_form.save();
+			while(gr.next()){
+				var reqT = new GlideRecord('x_exte_cml_request_cml_request_tests');
+				reqT.test_name = gr.test_name;
+				reqT.request_number = reqnum;
+				reqT.required_sample_size = gr.required_sample_size;
+				reqT.abbrev = gr.abbrev;
+				reqT.sample_type = gr.sample_type;
+				reqT.determines = gr.determines;
+				reqT.insert();
+				//added++;
+				
+			}
 		}
 	});
+	//delete any others
+	existing.forEach(function(test){
+		var allowDelete = true;
+		choices.forEach(function(e){
+			if(e == test){
+				allowDelete = false;
+			}
+				
+		});
+		if(allowDelete){
+			var gr = new GlideRecord('x_exte_cml_request_cml_request_tests');
+			gr.addQuery('request_number',reqnum);
+			gr.addQuery('test_name', test);
+			gr.query();
+			
+			while(gr.next()){
+				gr.deleteRecord();
+			}
+			//removed++;
+		}
+		
+	});
 	
+	
+	GlideDialogWindow.get().destroy();
+				g_form.save();
+		 
 }
 
 
@@ -73,10 +122,11 @@ $j("#cancel1").click(function(){
 
 
 function setSelected(sender){
+
 	if(sender.checked == true){
 		var found = false;
-		if(choices.length + existing.length >= 6 ){
-			alert('Test cannot be selected. A maximum of 6 is allowed.');
+		if(allowedTests != 0 && (choices.length  >= allowedTests)  ){
+			alert('Test cannot be selected. You have exceeded the maximum allowed.');
 			document.getElementById(sender.name).checked = false;
 			return;
 		}else{
@@ -93,11 +143,13 @@ function setSelected(sender){
 				
 			}else{
 				choices.push(sender.name);
+				added++;
 			}
-			}
+		}
 		//var found = choices.find((choice) => choice === sender.name);
 		
 	}else{
+		removed++;
 		sender.checked = false;
 		removeA(choices,sender.name);
 	}
@@ -105,14 +157,14 @@ function setSelected(sender){
 
 
 function removeA(arr) {
-    var what, a = arguments, L = a.length, ax;
-    while (L > 1 && arr.length) {
-        what = a[--L];
-        while ((ax= arr.indexOf(what)) !== -1) {
-            arr.splice(ax, 1);
-        }
-    }
-    return arr;
+	var what, a = arguments, L = a.length, ax;
+	while (L > 1 && arr.length) {
+		what = a[--L];
+		while ((ax= arr.indexOf(what)) !== -1) {
+			arr.splice(ax, 1);
+		}
+	}
+	return arr;
 }]]></client_script>
         <description>Provides a list of tests that are available.</description>
         <direct>false</direct>
@@ -154,17 +206,18 @@ table.paleBlueRows tfoot td {
 		input[type=checkbox]
 {
   /* Double-sized Checkboxes */
-  -ms-transform: scale(1); /* IE */
-  -moz-transform: scale(1); /* FF */
-  -webkit-transform: scale(1); /* Safari and Chrome */
-  -o-transform: scale(1); /* Opera */
-  padding: 10px;
+  -ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  -o-transform: scale(1.5); /* Opera */
+  margin-left: 10px;
 }
 
 	</style>
 	
 <hr/>	
-	<div style="text-align:right;">
+	<div style="margin: 25px;">
+	<div style="text-align:right; ">
 	 <button type="button" id="submit" class="action btn btn-default">Submit</button>
 	 <button type="button" id="cancel" class="action btn btn-default">Cancel</button>
 	</div>
@@ -176,9 +229,22 @@ table.paleBlueRows tfoot td {
 	<g:evaluate var="reqNum">
 		var reqNum = RP.getParameterValue('sysparm_number')
 	</g:evaluate>
-	
+		<g:evaluate var="priority">
+			var priority = RP.getParameterValue('sysparm_priority')
+		</g:evaluate>
+	<input type='hidden' id='priority' value="${priority}"/>
 	<input type='hidden' id="requestNumber" value="${reqNum}"/>
 	<div style="width:800px;" >
+	<j:if test="${priority == 0}">
+		<span style="color:red;">More than 6 samples and 6 tests allowed.</span>
+	</j:if>
+		<j:if test="${priority == 6}">
+		<span style="color:red;">Maximum 6 samples and 6 tests allowed.</span>
+	</j:if>
+		<j:if test="${priority == 3}">
+		<span style="color:red;">Maximum of 3 samples and 3 tests allowed.</span>
+	</j:if>
+		
 <table class="paleBlueRows" >
 	<thead>
 	<tr>
@@ -207,6 +273,8 @@ table.paleBlueRows tfoot td {
 	 <button type="button" id="submit1" class="action btn btn-default">Submit</button>
 	 <button type="button" id="cancel1" class="action btn btn-default">Cancel</button>
 	</div>
+		
+	</div>
 </j:jelly>]]></html>
         <name>requests_test_selection</name>
         <processing_script/>
@@ -215,7 +283,7 @@ table.paleBlueRows tfoot td {
         <sys_created_on>2018-09-10 13:59:36</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a5893cdcdb6cef0053f17d8bbf961951</sys_id>
-        <sys_mod_count>68</sys_mod_count>
+        <sys_mod_count>107</sys_mod_count>
         <sys_name>requests_test_selection</sys_name>
         <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
         <sys_policy/>
@@ -223,6 +291,6 @@ table.paleBlueRows tfoot td {
         <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
         <sys_update_name>sys_ui_page_a5893cdcdb6cef0053f17d8bbf961951</sys_update_name>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-09-12 17:15:11</sys_updated_on>
+        <sys_updated_on>2018-09-13 14:34:04</sys_updated_on>
     </sys_ui_page>
 </record_update>

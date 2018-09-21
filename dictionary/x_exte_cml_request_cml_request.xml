@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element audit="true" label="CML Request" max_length="40" name="x_exte_cml_request_cml_request" type="collection">
+        <element dependent="assignment_group" dependent_on_field="assignment_group" label="Assigned to" max_length="32" name="assigned_to" reference="sys_user" type="reference" use_dependent_field="true"/>
+        <element label="Assignment group" max_length="32" name="assignment_group" reference="sys_user_group" type="reference"/>
         <element choice="1" label="Business unit" mandatory="true" max_length="40" name="business_unit" type="choice">
             <choice>
                 <element label="Transportation Automotive (TA)" sequence="0" value="automotive"/>
@@ -64,13 +66,13 @@
         </element>
         <element choice="1" label="Priority" mandatory="true" max_length="40" name="priority" type="choice">
             <choice>
-                <element label="Low ( &gt; 30 workdays)" sequence="0" value="low"/>
-                <element label="Normal (14 to 21 work days)" sequence="1" value="normal"/>
-                <element label="High (7 to 10 days)" sequence="2" value="high"/>
+                <element label="Low ( &gt; 30 work days )" sequence="0" value="0"/>
+                <element label="Normal ( 14 to 21 work days)" sequence="1" value="6"/>
+                <element label="High (7 to 10 work days )" sequence="2" value="3"/>
             </choice>
         </element>
         <element label="Project number" max_length="40" name="project_number" type="string"/>
-        <element label="Requested by" max_length="150" name="requested_by" type="string"/>
+        <element label="Requested by" max_length="150" name="requested_by" read_only="true" type="string"/>
         <element choice="1" label="Request type" mandatory="true" max_length="40" name="request_type" type="choice">
             <choice>
                 <element label="Competitive Benchmark" value="M"/>
@@ -112,10 +114,27 @@
             </choice>
         </element>
         <element label="Short description" mandatory="true" max_length="160" name="short_description" type="string"/>
+        <element choice="1" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element label="Open" sequence="0" value="10"/>
+                <element label="Awaiting Approval" sequence="1" value="20"/>
+                <element label="Preperation" sequence="2" value="30"/>
+                <element label="Testing" sequence="3" value="40"/>
+                <element label="Complete" sequence="4" value="60"/>
+                <element label="Cancelled" sequence="5" value="50"/>
+                <element label="Rejected" sequence="6" value="70"/>
+            </choice>
+        </element>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <element label="Watch list" max_length="4000" name="watch_list" reference="sys_user" type="glide_list"/>
         <index name="index">
+            <element name="assignment_group"/>
+        </index>
+        <index name="index2">
             <element name="cc_to"/>
+        </index>
+        <index name="index3">
+            <element name="assigned_to"/>
         </index>
     </element>
 </database>

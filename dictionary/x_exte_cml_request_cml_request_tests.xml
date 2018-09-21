@@ -2,14 +2,26 @@
 <database>
     <element label="CML Request Tests" max_length="40" name="x_exte_cml_request_cml_request_tests" type="collection">
         <element label="Abbrev" max_length="40" name="abbrev" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Assigned to" mandatory="true" max_length="32" name="assigned_to" reference="sys_user" reference_qual="javascript:new GetGroupMembers().getMember('0d54d17e13e82b00cb1eb3776144b076')" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Comments" max_length="5000" name="comments" type="string"/>
         <element label="Determines" max_length="500" name="determines" type="string"/>
         <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Request Number" max_length="32" name="request_number" reference="x_exte_cml_request_cml_request" type="reference"/>
         <element label="Required Sample Size" max_length="100" name="required_sample_size" type="string"/>
         <element label="Sample Type" max_length="200" name="sample_type" type="string"/>
+        <element choice="1" label="State" mandatory="true" max_length="40" name="state" type="choice">
+            <choice>
+                <element label="Open" sequence="0" value="1"/>
+                <element label="Started" sequence="1" value="2"/>
+                <element label="Complete" sequence="2" value="3"/>
+            </choice>
+        </element>
         <element label="Test Name" max_length="100" name="test_name" type="string"/>
         <index name="index">
             <element name="request_number"/>
+        </index>
+        <index name="index2">
+            <element name="assigned_to"/>
         </index>
     </element>
 </database>
