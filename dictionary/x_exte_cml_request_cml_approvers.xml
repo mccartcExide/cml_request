@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="CML Approvers" max_length="40" name="x_exte_cml_request_cml_approvers" type="collection">
+        <element label="Division" max_length="150" name="division" type="string"/>
+        <element label="Person" max_length="32" name="person" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="person"/>
+        </index>
+    </element>
+</database>

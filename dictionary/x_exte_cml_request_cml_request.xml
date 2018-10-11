@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element audit="true" label="CML Request" max_length="40" name="x_exte_cml_request_cml_request" type="collection">
+        <element label="Approval" max_length="40" name="approval" type="string"/>
+        <element label="Approval history" max_length="4000" name="approval_history" type="journal"/>
+        <element label="Approval required" max_length="40" name="approval_required" type="boolean"/>
         <element dependent="assignment_group" dependent_on_field="assignment_group" label="Assigned to" max_length="32" name="assigned_to" reference="sys_user" type="reference" use_dependent_field="true"/>
-        <element label="Assignment group" max_length="32" name="assignment_group" reference="sys_user_group" type="reference"/>
+        <element label="Assignment group" max_length="32" name="assignment_group" read_only="true" reference="sys_user_group" type="reference"/>
         <element choice="1" label="Business unit" mandatory="true" max_length="40" name="business_unit" type="choice">
             <choice>
-                <element label="Transportation Automotive (TA)" sequence="0" value="automotive"/>
+                <element label="Trancportation Automotive (TA)" sequence="0" value="automotive"/>
                 <element label="Transportation Recycling Centre (TR)" sequence="1" value="recycling centre"/>
-                <element label="Industrial Motive Power (IE)" sequence="2" value="motive power"/>
+                <element label="Industrial Motive Power" sequence="2" value="motive power"/>
                 <element label="Industrial Network Power (IS)" sequence="3" value="network power"/>
                 <element label="Engineering GPD (RG)" sequence="4" value="gpd"/>
                 <element label="Research &amp; Development (R)" sequence="5" value="r&amp;d"/>
@@ -18,7 +21,7 @@
         <element label="Date required" max_length="40" name="date_required" type="glide_date"/>
         <element label="Test Objectives" max_length="65000" name="description" type="string"/>
         <element label="Deviation #" max_length="40" name="deviation" type="string"/>
-        <element choice="1" label="Disposition after report" max_length="40" name="disposition_after_report" type="choice">
+        <element choice="1" label="Disposition after report" mandatory="true" max_length="40" name="disposition_after_report" type="choice">
             <choice>
                 <element label="Scrap" sequence="0" value="1"/>
                 <element label="Return" sequence="1" value="2"/>
@@ -49,7 +52,7 @@
                 <element label="Wixom" value="WX"/>
             </choice>
         </element>
-        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
         <element label="Number of samples" mandatory="true" max_length="40" name="number_of_samples" type="integer"/>
         <element choice="1" label="Oxide Type" max_length="40" name="oxide_type" type="choice">
             <choice>
@@ -66,9 +69,9 @@
         </element>
         <element choice="1" label="Priority" mandatory="true" max_length="40" name="priority" type="choice">
             <choice>
-                <element label="Low ( &gt; 30 work days )" sequence="0" value="0"/>
-                <element label="Normal ( 14 to 21 work days)" sequence="1" value="6"/>
-                <element label="High (7 to 10 work days )" sequence="2" value="3"/>
+                <element label="High(7 to 10 work days)" value="3"/>
+                <element label="Low(&gt; 30 work days)" value="0"/>
+                <element label="Normal(14 to 21 work days)" value="6"/>
             </choice>
         </element>
         <element label="Project number" max_length="40" name="project_number" type="string"/>
@@ -91,19 +94,19 @@
                 <element label="Cover" value="cover"/>
                 <element label="Electrolyte" value="electrolyte"/>
                 <element label="Expander" value="expander"/>
-                <element label="Formed Plate" value="formed_plate"/>
+                <element label="Formed Plate" value="formed plate"/>
                 <element label="Grids" value="grids"/>
                 <element label="Labels" value="labels"/>
-                <element label="Lead Disk" value="lead_disk"/>
+                <element label="Lead Disk" value="lead disk"/>
                 <element label="Lugs" value="lugs"/>
                 <element label="Other" value="other"/>
                 <element label="Oxide" value="oxide"/>
                 <element label="Posts" value="posts"/>
-                <element label="Seperator" value="seperator"/>
+                <element label="Seperator" value="perator"/>
                 <element label="Straps" value="straps"/>
-                <element label="Unformed Plate" value="nformed_palte"/>
+                <element label="Unformed Plate" value="unformed plate"/>
                 <element label="Water" value="water"/>
-                <element label="Welds" value="lds"/>
+                <element label="Welds" value="welds"/>
             </choice>
         </element>
         <element label="Sample type description" max_length="100" name="sample_type_description" type="string"/>
@@ -114,7 +117,7 @@
             </choice>
         </element>
         <element label="Short description" mandatory="true" max_length="160" name="short_description" type="string"/>
-        <element choice="1" label="State" max_length="40" name="state" type="choice">
+        <element choice="1" label="State" max_length="40" name="state" read_only="true" type="choice">
             <choice>
                 <element label="Open" sequence="0" value="10"/>
                 <element label="Awaiting Approval" sequence="1" value="20"/>
@@ -126,7 +129,11 @@
             </choice>
         </element>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Tests finished" max_length="40" name="tests_finished" read_only="true" type="glide_date_time"/>
+        <element label="Tests started" max_length="40" name="tests_started" read_only="true" type="glide_date_time"/>
+        <element label="Test approval" max_length="40" name="test_approval" type="boolean"/>
         <element label="Watch list" max_length="4000" name="watch_list" reference="sys_user" type="glide_list"/>
+        <element label="Workflow" max_length="80" name="workflow" type="workflow"/>
         <index name="index">
             <element name="assignment_group"/>
         </index>

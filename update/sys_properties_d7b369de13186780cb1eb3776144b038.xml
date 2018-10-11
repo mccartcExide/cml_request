@@ -13,7 +13,7 @@
         <sys_created_on>2018-09-04 11:53:56</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d7b369de13186780cb1eb3776144b038</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>glide.ui.x_exte_cml_request_cml_request_activity.fields</sys_name>
         <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
         <sys_policy/>
@@ -21,9 +21,9 @@
         <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
         <sys_update_name>sys_properties_d7b369de13186780cb1eb3776144b038</sys_update_name>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-09-04 11:54:54</sys_updated_on>
+        <sys_updated_on>2018-09-28 12:48:07</sys_updated_on>
         <type>string</type>
-        <value>number,priority,comments,disposition_after_report,request_type,*Email*,*Attachments*,sys_updated_on</value>
+        <value>number,priority,comments,disposition_after_report,request_type,*Email*,*Attachments*,sys_updated_on,approval_history</value>
         <write_roles/>
     </sys_properties>
     <sys_translated_text action="delete_multiple" query="documentkey=d7b369de13186780cb1eb3776144b038"/>

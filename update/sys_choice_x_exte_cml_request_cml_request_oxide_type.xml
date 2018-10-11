@@ -11,12 +11,12 @@
             <name>x_exte_cml_request_cml_request</name>
             <sequence/>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2018-09-07 14:50:05</sys_created_on>
+            <sys_created_on>2018-10-11 10:19:34</sys_created_on>
             <sys_domain>global</sys_domain>
-            <sys_id>b5c821d3db186f0053f17d8bbf96199d</sys_id>
+            <sys_id>5ee0bf4edb416b0053f17d8bbf961903</sys_id>
             <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2018-09-07 14:50:13</sys_updated_on>
+            <sys_updated_on>2018-10-11 10:19:37</sys_updated_on>
             <value>leady</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -29,12 +29,12 @@
             <name>x_exte_cml_request_cml_request</name>
             <sequence/>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2018-09-07 14:50:21</sys_created_on>
+            <sys_created_on>2018-10-11 10:19:41</sys_created_on>
             <sys_domain>global</sys_domain>
-            <sys_id>7cd8e153db186f0053f17d8bbf9619b7</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_id>39f0b38edb416b0053f17d8bbf9619ac</sys_id>
+            <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2018-09-07 14:50:26</sys_updated_on>
+            <sys_updated_on>2018-10-11 10:19:50</sys_updated_on>
             <value>red</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
@@ -42,9 +42,9 @@
             <name>x_exte_cml_request_cml_request</name>
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2018-09-07 14:50:05</sys_created_on>
+            <sys_created_on>2018-10-11 10:19:34</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>b0d8e1d3db186f0053f17d8bbf961968</sys_id>
+            <sys_id>71f0b78edb416b0053f17d8bbf961981</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>oxide_type</sys_name>
             <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
@@ -53,7 +53,7 @@
             <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
             <sys_update_name>sys_choice_x_exte_cml_request_cml_request_oxide_type</sys_update_name>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2018-09-07 14:50:05</sys_updated_on>
+            <sys_updated_on>2018-10-11 10:19:34</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>

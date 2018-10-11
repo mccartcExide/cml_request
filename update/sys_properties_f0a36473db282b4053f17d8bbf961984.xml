@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>CML Request Tests activity formatter fields</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>glide.ui.x_exte_cml_request_cml_request_tests_activity.fields</name>
+        <read_roles/>
+        <suffix/>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>mccartc</sys_created_by>
+        <sys_created_on>2018-09-21 09:20:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f0a36473db282b4053f17d8bbf961984</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>glide.ui.x_exte_cml_request_cml_request_tests_activity.fields</sys_name>
+        <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
+        <sys_update_name>sys_properties_f0a36473db282b4053f17d8bbf961984</sys_update_name>
+        <sys_updated_by>mccartc</sys_updated_by>
+        <sys_updated_on>2018-10-08 14:07:03</sys_updated_on>
+        <type>string</type>
+        <value>request_number,required_sample_size,sample_type,test_name,notes,assigned_to,sys_updated_by,*Attachments*,*Email*,*Relations*,test_finished,test_started,closed,closed_by,closed_notes,state,sys_created_by,sys_created_on</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=f0a36473db282b4053f17d8bbf961984"/>
+</record_update>

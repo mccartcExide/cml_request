@@ -1,22 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element label="CML Request Tests" max_length="40" name="x_exte_cml_request_cml_request_tests" type="collection">
+    <element audit="true" label="CML Request Tests" max_length="40" name="x_exte_cml_request_cml_request_tests" type="collection">
         <element label="Abbrev" max_length="40" name="abbrev" type="string"/>
+        <element label="Approved" max_length="40" name="approved" type="boolean"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Assigned to" mandatory="true" max_length="32" name="assigned_to" reference="sys_user" reference_qual="javascript:new GetGroupMembers().getMember('0d54d17e13e82b00cb1eb3776144b076')" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Closed" max_length="40" name="closed" type="glide_date_time"/>
+        <element label="Closed by" max_length="150" name="closed_by" type="string"/>
+        <element label="Closed notes" max_length="4000" name="closed_notes" type="string"/>
         <element label="Comments" max_length="5000" name="comments" type="string"/>
         <element label="Determines" max_length="500" name="determines" type="string"/>
-        <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element label="Request Number" max_length="32" name="request_number" reference="x_exte_cml_request_cml_request" type="reference"/>
+        <element label="Notes" max_length="4000" name="notes" type="journal_input"/>
+        <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Request Number" max_length="32" name="request_number" read_only="true" reference="x_exte_cml_request_cml_request" type="reference"/>
         <element label="Required Sample Size" max_length="100" name="required_sample_size" type="string"/>
         <element label="Sample Type" max_length="200" name="sample_type" type="string"/>
-        <element choice="1" label="State" mandatory="true" max_length="40" name="state" type="choice">
+        <element choice="1" label="State" max_length="40" name="state" read_only="true" type="choice">
             <choice>
                 <element label="Open" sequence="0" value="1"/>
                 <element label="Started" sequence="1" value="2"/>
                 <element label="Complete" sequence="2" value="3"/>
+                <element label="Closed" sequence="3" value="4"/>
             </choice>
         </element>
+        <element label="Test finished" max_length="40" name="test_finished" read_only="true" type="glide_date_time"/>
         <element label="Test Name" max_length="100" name="test_name" type="string"/>
+        <element label="Test started" max_length="40" name="test_started" read_only="true" type="glide_date_time"/>
+        <element choice="3" label="Workflow" max_length="80" name="workflow" type="workflow">
+            <choice/>
+        </element>
         <index name="index">
             <element name="request_number"/>
         </index>

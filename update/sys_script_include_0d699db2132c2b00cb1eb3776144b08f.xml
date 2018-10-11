@@ -26,6 +26,9 @@ GetGroupMembers.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		
 		
 		
+	},
+	isAdmin:function(){
+		return gs.getUser().isMemberOf('CML Admins');
 	}
 });]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
@@ -33,7 +36,7 @@ GetGroupMembers.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_on>2018-09-18 10:45:13</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>0d699db2132c2b00cb1eb3776144b08f</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>GetGroupMembers</sys_name>
         <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
         <sys_policy/>
@@ -41,6 +44,6 @@ GetGroupMembers.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
         <sys_update_name>sys_script_include_0d699db2132c2b00cb1eb3776144b08f</sys_update_name>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-09-18 13:12:45</sys_updated_on>
+        <sys_updated_on>2018-10-08 15:16:43</sys_updated_on>
     </sys_script_include>
 </record_update>

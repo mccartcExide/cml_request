@@ -21,8 +21,10 @@
 	
 	if((parseInt(priority) < parseInt(nbrSamples)) && parseInt(priority) != 0  )
 		{
-			g_form.addErrorMessage('Number of samples exceeds permitted amount for priority');
-			g_form.setValue('number_of_samples','');
+			//g_form.addInfoMessage('This amount of samples will require director approval');
+			g_form.setValue('approval_required',true);
+		}else{
+			g_form.setValue('approval_required',false);
 		}
    
 }]]></script>
@@ -32,7 +34,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>80ada05913206700cb1eb3776144b0e9</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>Check Sample Amount</sys_name>
         <sys_overrides/>
         <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
@@ -41,7 +43,7 @@
         <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
         <sys_update_name>sys_script_client_80ada05913206700cb1eb3776144b0e9</sys_update_name>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-09-13 16:04:25</sys_updated_on>
+        <sys_updated_on>2018-10-05 10:43:58</sys_updated_on>
         <table>x_exte_cml_request_cml_request</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

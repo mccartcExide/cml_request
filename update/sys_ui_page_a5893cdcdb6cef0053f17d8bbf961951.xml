@@ -8,6 +8,7 @@ var count = 0;
 var added = 0;
 var removed = 0;
 var allowedTests = 0;
+var approvalRequired = false;
 addLoadEvent(function(){
 	var reqnum = document.getElementById("requestNumber").value;
 	allowedTests = document.getElementById("priority").value;
@@ -22,150 +23,159 @@ addLoadEvent(function(){
 		choices.push(rtest.test_name);
 		document.getElementById(rtest.test_name).checked = true;
 	}
-	if(allowedTests != 0 && count > allowedTests){
+	//if(allowedTests != 0 && count > allowedTests){
 		//GlideDialogWindow.get().destroy();
-		alert('You have exceeded the maximum allowed number of tests.');
-	}
-	
-});
-
-function submitTests() {
-	//check we havent got too many tests
-	if(count!= 0){
-	count = (count + added) - removed;
-	if((count > allowedTests) && count != 0){
-		alert('You have too many tests for your selected priority. You are only allowed '+allowedTests+' tests.');
-		return false;
-	}
-	}
-	
-	var reqnum = document.getElementById("requestNumber").value;
-	
-	// add new tests to list
-	choices.forEach(function(test){
-		var allowAdd = true;
-		existing.forEach(function(e){
-			if(e == test){
-				allowAdd = false;
-			}
-		});
-		
-		if(allowAdd){
-			var gr = new GlideRecord('x_exte_cml_request_cml_tests');
-			gr.addQuery('test_name',test);
-			gr.query();
-			
-			while(gr.next()){
-				var reqT = new GlideRecord('x_exte_cml_request_cml_request_tests');
-				reqT.test_name = gr.test_name;
-				reqT.request_number = reqnum;
-				reqT.required_sample_size = gr.required_sample_size;
-				reqT.abbrev = gr.abbrev;
-				reqT.sample_type = gr.sample_type;
-				reqT.determines = gr.determines;
-				reqT.insert();
-				//added++;
-				
-			}
-		}
-	});
-	//delete any others
-	existing.forEach(function(test){
-		var allowDelete = true;
-		choices.forEach(function(e){
-			if(e == test){
-				allowDelete = false;
-			}
-				
-		});
-		if(allowDelete){
-			var gr = new GlideRecord('x_exte_cml_request_cml_request_tests');
-			gr.addQuery('request_number',reqnum);
-			gr.addQuery('test_name', test);
-			gr.query();
-			
-			while(gr.next()){
-				gr.deleteRecord();
-			}
-			//removed++;
-		}
-		
+		//alert( ' You have exceeded the maximum allowed number of tests.');
+		//}
+		//approvalRequired = 'Yes';
 	});
 	
-	
-	GlideDialogWindow.get().destroy();
-				g_form.save();
-		 
-}
-
-
-
-
-
-
-$j("#submit").click(function() {
-	submitTests();
-	
-});
-$j("#submit1").click(function() {
-	submitTests();
-	
-});
-
-$j("#cancel").click(function(){
-	GlideDialogWindow.get().destroy();
-});
-$j("#cancel1").click(function(){
-	GlideDialogWindow.get().destroy();
-});
-
-
-
-function setSelected(sender){
-
-	if(sender.checked == true){
-		var found = false;
-		if(allowedTests != 0 && (choices.length  >= allowedTests)  ){
-			alert('Test cannot be selected. You have exceeded the maximum allowed.');
-			document.getElementById(sender.name).checked = false;
-			return;
-		}else{
-			
-			existing.forEach(function(test){
-				if(test == sender.name){
-					found = true;
+	function submitTests() {
+		//check we havent got too many tests
+		//alert(count);
+		if(count!= 0 || added > 0){
+			count = (count + added) - removed;
+			//alert(count+' - '+added+' - '+removed);
+			if((count > allowedTests) && count != 0 && allowedTests !=0 ) {
+				alert('You will require director level approval for this request.');
+				approvalRequired = true;
+			}
+		}
+		
+		var reqnum = document.getElementById("requestNumber").value;
+		//if(approvalRequired == true){
+		
+			var req = new GlideRecord('x_exte_cml_request_cml_request');
+			req.get(reqnum);
+			req.query();
+			req.test_approval = approvalRequired;
+			req.update();
+		
+		// add new tests to list
+		choices.forEach(function(test){
+			var allowAdd = true;
+			existing.forEach(function(e){
+				if(e == test){
+					allowAdd = false;
 				}
 			});
 			
-			if(found){
-				alert(sender.name + ' has already been selected.');
-				document.getElementById(sender.name).checked = false;
+			if(allowAdd){
+				var gr = new GlideRecord('x_exte_cml_request_cml_tests');
+				gr.addQuery('test_name',test);
+				gr.query();
 				
-			}else{
-				choices.push(sender.name);
-				added++;
+				while(gr.next()){
+					var reqT = new GlideRecord('x_exte_cml_request_cml_request_tests');
+					reqT.test_name = gr.test_name;
+					reqT.request_number = reqnum;
+					reqT.required_sample_size = gr.required_sample_size;
+					reqT.abbrev = gr.abbrev;
+					reqT.sample_type = gr.sample_type;
+					reqT.determines = gr.determines;
+					reqT.insert();
+					//added++;
+					
+				}
 			}
-		}
-		//var found = choices.find((choice) => choice === sender.name);
+		});
+		//delete any others
+		existing.forEach(function(test){
+			var allowDelete = true;
+			choices.forEach(function(e){
+				if(e == test){
+					allowDelete = false;
+				}
+				
+			});
+			if(allowDelete){
+				var gr = new GlideRecord('x_exte_cml_request_cml_request_tests');
+				gr.addQuery('request_number',reqnum);
+				gr.addQuery('test_name', test);
+				gr.query();
+				
+				while(gr.next()){
+					gr.deleteRecord();
+				}
+				//removed++;
+			}
+			
+		});
 		
-	}else{
-		removed++;
-		sender.checked = false;
-		removeA(choices,sender.name);
+		
+		GlideDialogWindow.get().destroy();
+		g_form.save();
+		
 	}
-}
-
-
-function removeA(arr) {
-	var what, a = arguments, L = a.length, ax;
-	while (L > 1 && arr.length) {
-		what = a[--L];
-		while ((ax= arr.indexOf(what)) !== -1) {
-			arr.splice(ax, 1);
-		}
-	}
-	return arr;
-}]]></client_script>
+	
+	
+	
+	
+	
+	
+	$j("#submit").click(function() {
+		submitTests();
+		
+	});
+	$j("#submit1").click(function() {
+		submitTests();
+		
+	});
+	
+	$j("#cancel").click(function(){
+		GlideDialogWindow.get().destroy();
+	});
+	$j("#cancel1").click(function(){
+		GlideDialogWindow.get().destroy();
+	});
+	
+	
+	
+	function setSelected(sender){
+		
+		if(sender.checked == true){
+			var found = false;
+			//if(allowedTests != 0 && (choices.length  >= allowedTests)  ){
+				//	alert('Test cannot be selected. You have exceeded the maximum allowed.');
+				//	document.getElementById(sender.name).checked = false;
+				//	return;
+				//}else{
+					
+					existing.forEach(function(test){
+						if(test == sender.name){
+							found = true;
+						}
+					});
+					
+					if(found){
+						alert(sender.name + ' has already been selected.');
+						document.getElementById(sender.name).checked = false;
+						
+					}else{
+						choices.push(sender.name);
+						added++;
+					}
+					//}
+					//var found = choices.find((choice) => choice === sender.name);
+					
+				}else{
+					removed++;
+					sender.checked = false;
+					removeA(choices,sender.name);
+				}
+			}
+			
+			
+			function removeA(arr) {
+				var what, a = arguments, L = a.length, ax;
+				while (L > 1 && arr.length) {
+					what = a[--L];
+					while ((ax= arr.indexOf(what)) !== -1) {
+						arr.splice(ax, 1);
+					}
+				}
+				return arr;
+			}]]></client_script>
         <description>Provides a list of tests that are available.</description>
         <direct>false</direct>
         <endpoint>x_exte_cml_request_requests_test_selection.do</endpoint>
@@ -239,10 +249,10 @@ table.paleBlueRows tfoot td {
 		<span style="color:red;">More than 6 samples and 6 tests allowed.</span>
 	</j:if>
 		<j:if test="${priority == 6}">
-		<span style="color:red;">Maximum 6 samples and 6 tests allowed.</span>
+		<span style="color:red;">Maximum 6 samples and 6 tests allowed without approval.</span>
 	</j:if>
 		<j:if test="${priority == 3}">
-		<span style="color:red;">Maximum of 3 samples and 3 tests allowed.</span>
+		<span style="color:red;">Maximum of 3 samples and 3 tests allowed  without approval</span>
 	</j:if>
 		
 <table class="paleBlueRows" >
@@ -283,7 +293,7 @@ table.paleBlueRows tfoot td {
         <sys_created_on>2018-09-10 13:59:36</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a5893cdcdb6cef0053f17d8bbf961951</sys_id>
-        <sys_mod_count>107</sys_mod_count>
+        <sys_mod_count>124</sys_mod_count>
         <sys_name>requests_test_selection</sys_name>
         <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
         <sys_policy/>
@@ -291,6 +301,6 @@ table.paleBlueRows tfoot td {
         <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
         <sys_update_name>sys_ui_page_a5893cdcdb6cef0053f17d8bbf961951</sys_update_name>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-09-13 14:34:04</sys_updated_on>
+        <sys_updated_on>2018-10-10 08:29:44</sys_updated_on>
     </sys_ui_page>
 </record_update>

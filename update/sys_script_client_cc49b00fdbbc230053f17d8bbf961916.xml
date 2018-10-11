@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>state</field>
+        <global>true</global>
+        <messages/>
+        <name>Check tests are complete</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading || newValue === '') {
+		return;
+	}
+	
+	//Type appropriate comment here, and begin script below
+		if(newValue == 60){
+		var ga = new GlideAjax('CMLTestResults');
+		ga.addParam('sysparm_name','getClosureCount');
+		ga.addParam('sysparm_parent',g_form.getUniqueValue());
+		
+		ga.getXML(getVals);
+		
+		function getVals(response){
+			var answer = response.responseXML.documentElement.getAttribute("answer");
+			
+			if(answer != 1 ){
+				alert('You cannot complete ticket without first closing all tests.');
+				g_form.addErrorMessage('You cannot complete ticket without first closing all tests.');
+				g_form.setValue('state',oldValue);
+			}
+			
+			//alert('Close ticket - '+answer);
+			
+		}
+		}
+	
+	
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>mccartc</sys_created_by>
+        <sys_created_on>2018-10-01 13:17:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>cc49b00fdbbc230053f17d8bbf961916</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Check tests are complete</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
+        <sys_update_name>sys_script_client_cc49b00fdbbc230053f17d8bbf961916</sys_update_name>
+        <sys_updated_by>mccartc</sys_updated_by>
+        <sys_updated_on>2018-10-03 08:48:53</sys_updated_on>
+        <table>x_exte_cml_request_cml_request</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

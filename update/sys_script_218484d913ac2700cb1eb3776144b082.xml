@@ -42,7 +42,8 @@
 	if(gr.get('user_name',current.sys_created_by)){
 		current.requested_by  = gr.name;
 	}
-	current.setValue('state','Open');
+	current.setValue('state',10);
+	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>mccartc</sys_created_by>
@@ -50,7 +51,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>218484d913ac2700cb1eb3776144b082</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Set defaults</sys_name>
         <sys_overrides/>
         <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
@@ -59,7 +60,7 @@
         <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
         <sys_update_name>sys_script_218484d913ac2700cb1eb3776144b082</sys_update_name>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-09-20 15:13:26</sys_updated_on>
+        <sys_updated_on>2018-09-28 13:52:08</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

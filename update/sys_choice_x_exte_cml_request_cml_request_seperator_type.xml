@@ -11,12 +11,12 @@
             <name>x_exte_cml_request_cml_request</name>
             <sequence/>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2018-09-07 14:51:58</sys_created_on>
+            <sys_created_on>2018-10-11 10:31:21</sys_created_on>
             <sys_domain>global</sys_domain>
-            <sys_id>7e39a1d3db186f0053f17d8bbf961948</sys_id>
+            <sys_id>1a93f7cedb416b0053f17d8bbf9619b9</sys_id>
             <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2018-09-07 14:52:04</sys_updated_on>
+            <sys_updated_on>2018-10-11 10:31:24</sys_updated_on>
             <value>glass</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -29,12 +29,12 @@
             <name>x_exte_cml_request_cml_request</name>
             <sequence/>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2018-09-07 14:52:09</sys_created_on>
+            <sys_created_on>2018-10-11 10:31:28</sys_created_on>
             <sys_domain>global</sys_domain>
-            <sys_id>a84961d3db186f0053f17d8bbf9619df</sys_id>
+            <sys_id>9ea3b302db816b0053f17d8bbf961974</sys_id>
             <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2018-09-07 14:52:13</sys_updated_on>
+            <sys_updated_on>2018-10-11 10:31:33</sys_updated_on>
             <value>poly</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
@@ -42,9 +42,9 @@
             <name>x_exte_cml_request_cml_request</name>
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2018-09-07 14:51:58</sys_created_on>
+            <sys_created_on>2018-10-11 10:31:21</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>1849e5d3db186f0053f17d8bbf9619f3</sys_id>
+            <sys_id>52a33702db816b0053f17d8bbf961987</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>seperator_type</sys_name>
             <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
@@ -53,7 +53,7 @@
             <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
             <sys_update_name>sys_choice_x_exte_cml_request_cml_request_seperator_type</sys_update_name>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2018-09-07 14:51:58</sys_updated_on>
+            <sys_updated_on>2018-10-11 10:31:21</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>

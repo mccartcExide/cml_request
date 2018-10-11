@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="x_exte_cml_request_cml_request_tests">state=4^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="4"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+	g_form.setReadOnly('assigned_to',true);
+	g_form.setReadOnly('test_name',true);
+	g_form.setReadOnly('abbrev',true);
+	g_form.setReadOnly('determines',true);
+	g_form.setReadOnly('sample_type',true);
+	g_form.setReadOnly('required_sample_size',true);
+	g_form.setReadOnly('comments',true);
+	g_form.setReadOnly('closed_notes',true);
+	g_form.setReadOnly('closed_by',true);
+	g_form.setReadOnly('closed',true);
+	g_form.setReadOnly('comments',true);
+	g_form.setReadOnly('notes',true);
+	
+	
+	
+	
+}]]></script_true>
+        <set_values/>
+        <short_description>Test Make readonly when closed</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>mccartc</sys_created_by>
+        <sys_created_on>2018-10-10 09:59:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>37b2e2b5db052b0053f17d8bbf961907</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Test Make readonly when closed</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
+        <sys_update_name>sys_ui_policy_37b2e2b5db052b0053f17d8bbf961907</sys_update_name>
+        <sys_updated_by>mccartc</sys_updated_by>
+        <sys_updated_on>2018-10-10 10:12:13</sys_updated_on>
+        <table>x_exte_cml_request_cml_request_tests</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>

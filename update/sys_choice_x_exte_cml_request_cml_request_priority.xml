@@ -6,17 +6,17 @@
             <element>priority</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Low ( &gt; 30 work days )</label>
+            <label>Low(&gt; 30 work days)</label>
             <language>en</language>
             <name>x_exte_cml_request_cml_request</name>
-            <sequence>0</sequence>
+            <sequence/>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2018-09-13 08:28:24</sys_created_on>
+            <sys_created_on>2018-10-11 10:23:06</sys_created_on>
             <sys_domain>global</sys_domain>
-            <sys_id>480b8f05132c2700cb1eb3776144b03c</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_id>db313b8edb416b0053f17d8bbf9619ed</sys_id>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2018-09-13 08:28:24</sys_updated_on>
+            <sys_updated_on>2018-10-11 10:23:08</sys_updated_on>
             <value>0</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -24,45 +24,45 @@
             <element>priority</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Normal ( 14 to 21 work days)</label>
+            <label>High(7 to 10 work days)</label>
             <language>en</language>
             <name>x_exte_cml_request_cml_request</name>
-            <sequence>1</sequence>
+            <sequence/>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2018-09-13 08:28:24</sys_created_on>
+            <sys_created_on>2018-10-11 10:24:00</sys_created_on>
             <sys_domain>global</sys_domain>
-            <sys_id>880b8f05132c2700cb1eb3776144b03d</sys_id>
+            <sys_id>f4e1b38edb416b0053f17d8bbf9619b0</sys_id>
             <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2018-09-13 09:32:40</sys_updated_on>
-            <value>6</value>
+            <sys_updated_on>2018-10-11 10:24:06</sys_updated_on>
+            <value>3</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>priority</element>
             <hint/>
             <inactive>false</inactive>
-            <label>High (7 to 10 work days )</label>
+            <label>Normal(14 to 21 work days)</label>
             <language>en</language>
             <name>x_exte_cml_request_cml_request</name>
-            <sequence>2</sequence>
+            <sequence/>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2018-09-13 08:28:24</sys_created_on>
+            <sys_created_on>2018-10-11 10:23:36</sys_created_on>
             <sys_domain>global</sys_domain>
-            <sys_id>080b8f05132c2700cb1eb3776144b03e</sys_id>
+            <sys_id>29c13b8edb416b0053f17d8bbf9619bc</sys_id>
             <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2018-09-13 09:32:49</sys_updated_on>
-            <value>3</value>
+            <sys_updated_on>2018-10-11 10:23:40</sys_updated_on>
+            <value>6</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>priority</element>
             <name>x_exte_cml_request_cml_request</name>
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2018-09-13 08:28:24</sys_created_on>
+            <sys_created_on>2018-10-11 10:23:06</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>440b8f05132c2700cb1eb3776144b03d</sys_id>
+            <sys_id>21c1f38edb416b0053f17d8bbf96195b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>priority</sys_name>
             <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
@@ -71,7 +71,7 @@
             <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
             <sys_update_name>sys_choice_x_exte_cml_request_cml_request_priority</sys_update_name>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2018-09-13 08:28:24</sys_updated_on>
+            <sys_updated_on>2018-10-11 10:23:06</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>

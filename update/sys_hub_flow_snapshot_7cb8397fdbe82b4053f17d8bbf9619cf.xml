@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_hub_flow_snapshot">
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <label_cache>[{"name":"Updated_1.current.priority","label":"Trigger➛CML Request Record➛Priority","reference":"","reference_display":"Priority","type":"choice","base_type":"choice","parent_table_name":"x_exte_cml_request_cml_request","column_name":"priority","choices":[{"label":"-- None --","used":false,"reference":false,"selected":false,"image":"","missing":false,"rawLabel":"-- None --","value":""},{"used":false,"reference":false,"selected":false,"label":"Low ( \u003e 30 work days )","image":"","missing":false,"rawLabel":"Low ( \u003e 30 work days )","value":"0"},{"used":false,"reference":false,"selected":false,"label":"Normal ( 14 to 21 work days)","image":"","missing":false,"rawLabel":"Normal ( 14 to 21 work days)","value":"6"},{"used":false,"reference":false,"selected":false,"label":"High (7 to 10 work days )","image":"","missing":false,"rawLabel":"High (7 to 10 work days )","value":"3"}]},{"name":"Updated_1.current.business_unit","label":"Trigger➛CML Request Record➛Business unit","reference":"","reference_display":"Business unit","type":"choice","base_type":"choice","parent_table_name":"x_exte_cml_request_cml_request","column_name":"business_unit","choices":[{"label":"-- None --","used":false,"reference":false,"selected":false,"image":"","missing":false,"rawLabel":"-- None --","value":""},{"used":false,"reference":false,"selected":false,"label":"Transportation Automotive (TA)","image":"","missing":false,"rawLabel":"Transportation Automotive (TA)","value":"automotive"},{"used":false,"reference":false,"selected":false,"label":"Transportation Recycling Centre (TR)","image":"","missing":false,"rawLabel":"Transportation Recycling Centre (TR)","value":"recycling centre"},{"used":false,"reference":false,"selected":false,"label":"Industrial Motive Power (IE)","image":"","missing":false,"rawLabel":"Industrial Motive Power (IE)","value":"motive power"},{"used":false,"reference":false,"selected":false,"label":"Industrial Network Power (IS)","image":"","missing":false,"rawLabel":"Industrial Network Power (IS)","value":"network power"},{"used":false,"reference":false,"selected":false,"label":"Engineering GPD (RG)","image":"","missing":false,"rawLabel":"Engineering GPD (RG)","value":"gpd"},{"used":false,"reference":false,"selected":false,"label":"Research \u0026 Development (R)","image":"","missing":false,"rawLabel":"Research \u0026 Development (R)","value":"r\u0026d"}]},{"name":"34049b3e-ac3f-413f-8b29-6b95196c0d0f.Record.person","label":"2.1➛CML Approvers Record➛Person","reference":"sys_user","reference_display":"Person","type":"reference","base_type":"reference","parent_table_name":"x_exte_cml_request_cml_approvers","column_name":"person"},{"name":"Updated_1.current","label":"Trigger➛CML Request Record","reference":"x_exte_cml_request_cml_request","reference_display":"CML Request","type":"reference","base_type":"reference"},{"name":"1fa554de-6cbc-4edb-8e01-0a67f188f016.record","label":"1➛CML Request Record","reference":"x_exte_cml_request_cml_request","reference_display":"CML Request","type":"reference","base_type":"reference"},{"name":"1fa554de-6cbc-4edb-8e01-0a67f188f016.table_name","label":"1➛CML Request Table","reference":"x_exte_cml_request_cml_request","reference_display":"CML Request Table"},{"name":"34049b3e-ac3f-413f-8b29-6b95196c0d0f.Record","label":"2.1➛CML Approvers Record","reference":"x_exte_cml_request_cml_approvers","reference_display":"CML Approvers Record"},{"name":"34049b3e-ac3f-413f-8b29-6b95196c0d0f.Table","label":"2.1➛CML Approvers Table","reference":"x_exte_cml_request_cml_approvers","reference_display":"CML Approvers Table"},{"name":"10789bd3-b1ab-435d-a132-52b18e5445c6.Record.person","label":"2.2➛CML Approvers Record➛Person","reference":"sys_user","reference_display":"Person","type":"reference","base_type":"reference","parent_table_name":"x_exte_cml_request_cml_approvers","column_name":"person"}]</label_cache>
+        <name>CML Approval</name>
+        <parent_flow/>
+        <remote_trigger_id>320a65f3dbe82b4053f17d8bbf96194c</remote_trigger_id>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>mccartc</sys_created_by>
+        <sys_created_on>2018-09-21 15:32:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7cb8397fdbe82b4053f17d8bbf9619cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CML Approval</sys_name>
+        <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
+        <sys_update_name>sys_hub_flow_snapshot_7cb8397fdbe82b4053f17d8bbf9619cf</sys_update_name>
+        <sys_updated_by>mccartc</sys_updated_by>
+        <sys_updated_on>2018-09-21 15:32:06</sys_updated_on>
+    </sys_hub_flow_snapshot>
+</record_update>
