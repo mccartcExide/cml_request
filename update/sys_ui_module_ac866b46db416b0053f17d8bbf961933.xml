@@ -8,7 +8,7 @@
         <order/>
         <path/>
         <path_relative_to_root>false</path_relative_to_root>
-        <roles>x_exte_cml_request.cml_request_user</roles>
+        <roles/>
         <sys_class_name>sys_ui_module</sys_class_name>
         <sys_created_by>mccartc</sys_created_by>
         <sys_created_on>2018-10-11 09:33:53</sys_created_on>

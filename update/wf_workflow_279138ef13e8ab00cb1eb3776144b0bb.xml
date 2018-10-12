@@ -34,12 +34,12 @@
         <sys_created_by>mccartc</sys_created_by>
         <sys_created_on>2018-10-10 07:54:37</sys_created_on>
         <sys_id>a43682f1dbc12b0053f17d8bbf961980</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 10:09:09</sys_updated_on>
+        <sys_updated_on>2018-10-11 10:54:43</sys_updated_on>
         <table>x_exte_cml_request_cml_request</table>
         <timezone/>
-        <validated>false</validated>
+        <validated>true</validated>
         <workflow display_value="Approve CML request">279138ef13e8ab00cb1eb3776144b0bb</workflow>
     </wf_workflow_version>
     <wf_workflow action="INSERT_OR_UPDATE">

@@ -5,7 +5,7 @@
         <hint/>
         <name>CML Request</name>
         <order/>
-        <roles>x_exte_cml_request.cml_request_user</roles>
+        <roles/>
         <sys_class_name>sys_ui_application</sys_class_name>
         <sys_created_by>mccartc</sys_created_by>
         <sys_created_on>2018-09-03 11:08:12</sys_created_on>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="ATest" max_length="40" name="x_exte_cml_request_atest" type="collection">
+        <element label="atest" max_length="32" name="atest" reference="x_exte_cml_request_cml_tests" type="reference"/>
+        <element label="test" max_length="32" name="test" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="test"/>
+        </index>
+        <index name="index2">
+            <element name="atest"/>
+        </index>
+    </element>
+</database>

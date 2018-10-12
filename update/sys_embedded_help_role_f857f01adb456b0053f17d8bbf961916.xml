@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_exte_cml_request.atest_user" name="x_exte_cml_request.atest_user">f457f01adb456b0053f17d8bbf961914</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>mccartc</sys_created_by>
+        <sys_created_on>2018-10-11 15:26:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f857f01adb456b0053f17d8bbf961916</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>f457f01adb456b0053f17d8bbf961914</sys_name>
+        <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
+        <sys_update_name>sys_embedded_help_role_f857f01adb456b0053f17d8bbf961916</sys_update_name>
+        <sys_updated_by>mccartc</sys_updated_by>
+        <sys_updated_on>2018-10-11 15:26:59</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

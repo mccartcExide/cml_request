@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element audit="true" label="CML Request" max_length="40" name="x_exte_cml_request_cml_request" type="collection">
+        <element label="aaaaaaaaaaaaaaaa" max_length="32" name="aaaaaaaaaaaaaaaa" reference="sys_user" type="reference"/>
         <element label="Approval" max_length="40" name="approval" type="string"/>
         <element label="Approval history" max_length="4000" name="approval_history" type="journal"/>
         <element label="Approval required" max_length="40" name="approval_required" type="boolean"/>
-        <element dependent="assignment_group" dependent_on_field="assignment_group" label="Assigned to" max_length="32" name="assigned_to" reference="sys_user" type="reference" use_dependent_field="true"/>
+        <element label="Assigned to" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
         <element label="Assignment group" max_length="32" name="assignment_group" read_only="true" reference="sys_user_group" type="reference"/>
         <element choice="1" label="Business unit" mandatory="true" max_length="40" name="business_unit" type="choice">
             <choice>
-                <element label="Trancportation Automotive (TA)" sequence="0" value="automotive"/>
+                <element label="Transportation Automotive (TA)" sequence="0" value="automotive"/>
                 <element label="Transportation Recycling Centre (TR)" sequence="1" value="recycling centre"/>
                 <element label="Industrial Motive Power" sequence="2" value="motive power"/>
                 <element label="Industrial Network Power (IS)" sequence="3" value="network power"/>
@@ -138,9 +139,12 @@
             <element name="assignment_group"/>
         </index>
         <index name="index2">
-            <element name="cc_to"/>
+            <element name="aaaaaaaaaaaaaaaa"/>
         </index>
         <index name="index3">
+            <element name="cc_to"/>
+        </index>
+        <index name="index4">
             <element name="assigned_to"/>
         </index>
     </element>

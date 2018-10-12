@@ -6,7 +6,7 @@
             <element>business_unit</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Trancportation Automotive (TA)</label>
+            <label>Transportation Automotive (TA)</label>
             <language>en</language>
             <name>x_exte_cml_request_cml_request</name>
             <sequence>0</sequence>
@@ -14,9 +14,9 @@
             <sys_created_on>2018-10-11 09:51:41</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_id>d7a9ab4adb416b0053f17d8bbf96192b</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2018-10-11 09:51:57</sys_updated_on>
+            <sys_updated_on>2018-10-11 10:53:07</sys_updated_on>
             <value>automotive</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">

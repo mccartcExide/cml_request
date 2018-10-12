@@ -2,7 +2,7 @@
 <record_update table="sys_embedded_help_role">
     <sys_embedded_help_role action="INSERT_OR_UPDATE">
         <order>1000</order>
-        <role display_value="x_exte_cml_request.cml_approvers_user" name="x_exte_cml_request.cml_approvers_user">40d6abc6db416b0053f17d8bbf9619b2</role>
+        <role/>
         <sys_class_name>sys_embedded_help_role</sys_class_name>
         <sys_created_by>mccartc</sys_created_by>
         <sys_created_on>2018-10-11 09:35:13</sys_created_on>
