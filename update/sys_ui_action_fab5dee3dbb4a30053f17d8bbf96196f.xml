@@ -23,7 +23,7 @@
         <name>Start test</name>
         <onclick>startTest()</onclick>
         <order>1</order>
-        <script><![CDATA[current.state = 2;
+        <script><![CDATA[current.state = '2';
 current.update();
 var now = new GlideDateTime().getDisplayValue();
 current.test_started = 	now;
@@ -47,7 +47,7 @@ if( gr.tests_started == ''){
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>fab5dee3dbb4a30053f17d8bbf96196f</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>Start test</sys_name>
         <sys_overrides/>
         <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
@@ -56,7 +56,7 @@ if( gr.tests_started == ''){
         <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
         <sys_update_name>sys_ui_action_fab5dee3dbb4a30053f17d8bbf96196f</sys_update_name>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-08 13:21:33</sys_updated_on>
+        <sys_updated_on>2018-10-23 15:37:44</sys_updated_on>
         <table>x_exte_cml_request_cml_request_tests</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

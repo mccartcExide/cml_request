@@ -20,6 +20,7 @@
                 <element label="Started" sequence="1" value="2"/>
                 <element label="Complete" sequence="2" value="3"/>
                 <element label="Closed" sequence="3" value="4"/>
+                <element label="Cancelled" sequence="4" value="5"/>
             </choice>
         </element>
         <element label="Test finished" max_length="40" name="test_finished" read_only="true" type="glide_date_time"/>

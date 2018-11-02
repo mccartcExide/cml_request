@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <description/>
+        <event_name>x_exte_cml_request.restart</event_name>
+        <fired_by>CML Workflow restarted</fired_by>
+        <queue/>
+        <suffix>restart</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>mccartc</sys_created_by>
+        <sys_created_on>2018-10-23 13:00:22</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2354024613d1e340cb1eb3776144b0d5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_exte_cml_request.restart</sys_name>
+        <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
+        <sys_update_name>sysevent_register_2354024613d1e340cb1eb3776144b0d5</sys_update_name>
+        <sys_updated_by>mccartc</sys_updated_by>
+        <sys_updated_on>2018-10-23 13:05:47</sys_updated_on>
+        <table>x_exte_cml_request_cml_request</table>
+    </sysevent_register>
+</record_update>

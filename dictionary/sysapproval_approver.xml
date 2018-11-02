@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="hasLabels=true" audit="true" label="Approvazione" max_length="40" name="sysapproval_approver" sizeclass="5009" type="collection">
+        <element label="IsCML" max_length="40" name="x_exte_cml_request_iscml" type="boolean"/>
+    </element>
+</database>

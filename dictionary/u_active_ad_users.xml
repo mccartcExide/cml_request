@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Active Users from AD" max_length="40" name="u_active_ad_users" sizeclass="7355" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="employeeID" max_length="40" name="u_employeeid" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_push_feedback">
+    <sys_push_feedback action="INSERT_OR_UPDATE">
+        <failure_updated_on>2018-10-22 19:00:27</failure_updated_on>
+        <sys_class_name>sys_push_feedback</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2018-10-22 19:00:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>cfa1d2b5db11e34053f17d8bbf96195c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>0DC20340097C48CA95FD56EB694C7BED4CBE9AECF134989BF89B13FD7BF97BDE</sys_name>
+        <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
+        <sys_policy/>
+        <sys_push_application_id display_value="ServiceNow Mobile Application">ab704041ff1102009738ffffffffff33</sys_push_application_id>
+        <sys_push_platform_id display_value="Apple">20e71f30ff0002009738ffffffffff6b</sys_push_platform_id>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
+        <sys_update_name>sys_push_feedback_cfa1d2b5db11e34053f17d8bbf96195c</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-10-22 19:00:27</sys_updated_on>
+        <token>0DC20340097C48CA95FD56EB694C7BED4CBE9AECF134989BF89B13FD7BF97BDE</token>
+        <when_failed>2018-10-21 20:00:28</when_failed>
+    </sys_push_feedback>
+</record_update>

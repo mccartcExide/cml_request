@@ -20,7 +20,7 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Add Tests</name>
+        <name>Add \ Remove Tests</name>
         <onclick>addTests()</onclick>
         <order>100</order>
         <script><![CDATA[function addTests(){
@@ -43,8 +43,8 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>388af410dbacef0053f17d8bbf96196d</sys_id>
-        <sys_mod_count>24</sys_mod_count>
-        <sys_name>Add Tests</sys_name>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_name>Add \ Remove Tests</sys_name>
         <sys_overrides/>
         <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
         <sys_policy/>
@@ -52,7 +52,7 @@
         <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
         <sys_update_name>sys_ui_action_388af410dbacef0053f17d8bbf96196d</sys_update_name>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-05 14:28:06</sys_updated_on>
+        <sys_updated_on>2018-10-19 11:34:12</sys_updated_on>
         <table>x_exte_cml_request_cml_request</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

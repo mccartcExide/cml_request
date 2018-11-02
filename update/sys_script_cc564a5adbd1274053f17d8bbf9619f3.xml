@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_label/>
+        <action_name/>
+        <action_query>false</action_query>
+        <action_run_at>server</action_run_at>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <application/>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_exte_cml_request_cml_request</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Send notifications</name>
+        <onclick/>
+        <order>-1</order>
+        <priority>100</priority>
+        <read_access_action>false</read_access_action>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	//New request created
+
+	if(current.operation() == 'insert'){
+		gs.eventQueue('x_exte_cml_request.Created',current,gs.getUserID(),null);
+	}
+	if(current.operation() == 'updated' && current.restart_count != previous.restart_count){ //Restarted
+		gs.eventQueue('x_exte_cml_request.restart',current,gs.getUserID(),null);
+	}
+	
+	if(current.state.changesTo(50) ){ //Cancelled
+		gs.eventQueue('x_exte_cml_request.cancel.notice',current,gs.getUserID(),null);
+		
+	}
+	if(current.state.changesTo(60)){ //Complete
+		
+		gs.eventQueue('x_exte_cml_request.Complete',current,gs.getUserID(),null);
+	}
+	if(current.state.changesTo(70)){ //Rejected
+		gs.eventQueue('x_exte_cml_request.rejected',current,gs.getUserID(),null);
+	}
+	
+	if(current.state.changesTo(30)){ //approved
+		gs.eventQueue('x_exte_cml_request.Approved',current, gs.getUserID(),null);
+	}
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>mccartc</sys_created_by>
+        <sys_created_on>2018-10-24 07:46:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>cc564a5adbd1274053f17d8bbf9619f3</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name>Send notifications</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
+        <sys_update_name>sys_script_cc564a5adbd1274053f17d8bbf9619f3</sys_update_name>
+        <sys_updated_by>mccartc</sys_updated_by>
+        <sys_updated_on>2018-10-24 14:23:26</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+</record_update>

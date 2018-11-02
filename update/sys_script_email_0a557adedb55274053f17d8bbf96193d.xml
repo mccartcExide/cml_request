@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>cml_rejection</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+
+          // Add your code here
+ var app = new GlideRecord('sysapproval_approver'); 
+
+
+   var regex = /20.*\(Comments\)\n/g; //strip out 'commments' line from each entry     
+
+
+   // find all rejected approval records for the current Change ID, sorted by most recently created
+
+
+   app.addQuery('document_id', current.sys_id); 
+
+
+   app.addQuery('state', 'rejected');
+
+
+   app.orderByDesc('sys_created_on');
+
+
+   app.query(); 
+
+
+   if (app.next()) {
+
+
+   // find all records within the current set that are from the most recent approval group
+
+
+ /*  var gr = new GlideRecord('sysapproval_approver');
+
+
+   gr.addQuery('group', app.group);
+
+
+   gr.addQuery('state', 'rejected');
+
+
+   gr.query();
+
+*/
+   //for each result, return the approver's name and comments
+
+
+//   while (gr.next()) {
+
+
+   template.print('<table><tr><td style="font-family: Arial, Helvetica, sans-serif;"><b>Approver:</b> ' + app.approver.getDisplayValue() + '</td></tr>');       
+
+
+   template.print('<tr><td style="font-family: Arial, Helvetica, sans-serif;"><b>Comments:</b> ' + app.comments.getJournalEntry(1).replace(regex,"") + '</td></tr></table>');
+
+
+  // }
+
+
+   }
+
+
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>mccartc</sys_created_by>
+        <sys_created_on>2018-10-24 10:54:31</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0a557adedb55274053f17d8bbf96193d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>cml_rejection</sys_name>
+        <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
+        <sys_update_name>sys_script_email_0a557adedb55274053f17d8bbf96193d</sys_update_name>
+        <sys_updated_by>mccartc</sys_updated_by>
+        <sys_updated_on>2018-10-24 12:24:29</sys_updated_on>
+    </sys_script_email>
+</record_update>

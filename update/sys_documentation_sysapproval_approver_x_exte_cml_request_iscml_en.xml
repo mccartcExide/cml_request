@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="x_exte_cml_request_iscml" label="IsCML" language="en" table="sysapproval_approver">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>x_exte_cml_request_iscml</element>
+            <help/>
+            <hint/>
+            <label>IsCML</label>
+            <language>en</language>
+            <name>sysapproval_approver</name>
+            <plural>IsCMLs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-10-18 08:21:40</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>7e1957d413d5af00cb1eb3776144b0d5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>IsCML</sys_name>
+            <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
+            <sys_update_name>sys_documentation_sysapproval_approver_x_exte_cml_request_iscml_en</sys_update_name>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-10-18 08:21:40</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

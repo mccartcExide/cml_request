@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element audit="true" label="CML Request" max_length="40" name="x_exte_cml_request_cml_request" type="collection">
-        <element label="aaaaaaaaaaaaaaaa" max_length="32" name="aaaaaaaaaaaaaaaa" reference="sys_user" type="reference"/>
         <element label="Approval" max_length="40" name="approval" type="string"/>
         <element label="Approval history" max_length="4000" name="approval_history" type="journal"/>
         <element label="Approval required" max_length="40" name="approval_required" type="boolean"/>
@@ -18,10 +17,11 @@
             </choice>
         </element>
         <element label="CC to" max_length="32" name="cc_to" reference="sys_user" type="reference"/>
+        <element label="CML Number" max_length="40" name="cml_number" type="string"/>
         <element label="Comments" max_length="4000" name="comments" type="journal"/>
         <element label="Date required" max_length="40" name="date_required" type="glide_date"/>
-        <element label="Test Objectives" max_length="65000" name="description" type="string"/>
-        <element label="Deviation #" max_length="40" name="deviation" type="string"/>
+        <element label="Test Objectives" mandatory="true" max_length="65000" name="description" type="string"/>
+        <element label="Deviation #" mandatory="true" max_length="40" name="deviation" type="string"/>
         <element choice="1" label="Disposition after report" mandatory="true" max_length="40" name="disposition_after_report" type="choice">
             <choice>
                 <element label="Scrap" sequence="0" value="1"/>
@@ -29,7 +29,7 @@
                 <element label="Retain" sequence="2" value="3"/>
             </choice>
         </element>
-        <element label="EWR #" max_length="40" name="ewr" type="string"/>
+        <element label="EWR #" mandatory="true" max_length="40" name="ewr" type="string"/>
         <element choice="1" label="Location" mandatory="true" max_length="40" name="location" type="choice">
             <choice>
                 <element label="Atlanta (Milton)" value="AT"/>
@@ -55,13 +55,14 @@
         </element>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
         <element label="Number of samples" mandatory="true" max_length="40" name="number_of_samples" type="integer"/>
+        <element label="Owner" max_length="32" name="owner" reference="sys_user" type="reference"/>
         <element choice="1" label="Oxide Type" max_length="40" name="oxide_type" type="choice">
             <choice>
                 <element label="Leady" value="leady"/>
                 <element label="Red" value="red"/>
             </choice>
         </element>
-        <element label="Phone" max_length="40" name="phone" type="string"/>
+        <element label="Phone" mandatory="true" max_length="40" name="phone" type="string"/>
         <element choice="1" label="Polarity" max_length="40" name="polarity" type="choice">
             <choice>
                 <element label="Negative" value="neg"/>
@@ -70,12 +71,12 @@
         </element>
         <element choice="1" label="Priority" mandatory="true" max_length="40" name="priority" type="choice">
             <choice>
-                <element label="High(7 to 10 work days)" value="3"/>
-                <element label="Low(&gt; 30 work days)" value="0"/>
-                <element label="Normal(14 to 21 work days)" value="6"/>
+                <element label="Low(&gt; 30 work days)" sequence="0" value="0"/>
+                <element label="Normal(14 to 21 work days)" sequence="1" value="6"/>
+                <element label="High(7 to 10 work days)" sequence="2" value="3"/>
             </choice>
         </element>
-        <element label="Project number" max_length="40" name="project_number" type="string"/>
+        <element label="Project number" mandatory="true" max_length="40" name="project_number" type="string"/>
         <element label="Requested by" max_length="150" name="requested_by" read_only="true" type="string"/>
         <element choice="1" label="Request type" mandatory="true" max_length="40" name="request_type" type="choice">
             <choice>
@@ -87,8 +88,10 @@
                 <element label="R &amp; D" value="R"/>
             </choice>
         </element>
+        <element label="Reset workflow" max_length="40" name="reset_workflow" type="boolean"/>
+        <element label="Restart count" max_length="40" name="restart_count" type="integer"/>
         <element label="Retention date" max_length="40" name="retention_date" type="glide_date"/>
-        <element label="Sample IDs" max_length="150" name="sample_ids" type="string"/>
+        <element label="Sample IDs" mandatory="true" max_length="150" name="sample_ids" type="string"/>
         <element choice="1" label="Sample Type" mandatory="true" max_length="40" name="sample_type" type="choice">
             <choice>
                 <element label="Container" value="container"/>
@@ -136,10 +139,10 @@
         <element label="Watch list" max_length="4000" name="watch_list" reference="sys_user" type="glide_list"/>
         <element label="Workflow" max_length="80" name="workflow" type="workflow"/>
         <index name="index">
-            <element name="assignment_group"/>
+            <element name="owner"/>
         </index>
         <index name="index2">
-            <element name="aaaaaaaaaaaaaaaa"/>
+            <element name="assignment_group"/>
         </index>
         <index name="index3">
             <element name="cc_to"/>

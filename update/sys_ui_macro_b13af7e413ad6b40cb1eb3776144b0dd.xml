@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>layout</category>
+        <description>Standard layout for CML Testers Hompage</description>
+        <media_type/>
+        <name>layout_cml_tester</name>
+        <scoped_name>x_exte_cml_request_layout_cml_tester</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>mccartc</sys_created_by>
+        <sys_created_on>2018-10-31 15:49:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b13af7e413ad6b40cb1eb3776144b0dd</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>layout_cml_tester</sys_name>
+        <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
+        <sys_update_name>sys_ui_macro_b13af7e413ad6b40cb1eb3776144b0dd</sys_update_name>
+        <sys_updated_by>mccartc</sys_updated_by>
+        <sys_updated_on>2018-10-31 16:11:19</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	 
+	<table border="0" cellspacing="6" id="${jvar_name}" width="100%">
+		<tr>
+			<td id="dropzone1" dropzone="true" valign="top" width="50%" />
+			<td id="dropzone2" dropzone="true" valign="top" width="50%" />
+
+		</tr>
+		<tr>
+			<td id="dropzone1" dropzone="true" valign="top"  colspan="2" />
+		</tr>
+	</table>
+
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

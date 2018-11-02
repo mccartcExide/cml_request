@@ -4,7 +4,7 @@
         <active>true</active>
         <category>reporting</category>
         <content><![CDATA[ <h1 class="title topictitle1">Chart Colors list</h1>  <div class="body conbody">  <p class="p"><span class="ph">Report administrators can change the look of charts by specifying      colors used to represent specific report data categories.</span>  </p>  <p class="p"><span class="ph">Click the column headers to search, sort, filter, and    edit data. </span></p>  <div class="p">The <span class="ph uicontrol">Chart Colors</span> list has the following columns:<ul class="ul" id="sys_report_chart_color_list-normal__ul_pf4_dvj_dz"><li class="li">Name Table used for the report. <div class="note note"><span class="notetitle">Note:</span> The list shows only tables and database views that are            in the same scope as the chart colors record.</div></li><li class="li">Color – Hexadecimal value used to specify a color that is not already defined in the Color          Definition module.</li><li class="li">Color name – Color name, as defined in the <span class="ph uicontrol">Color Definition</span> module.          When a report is generated, this color is used to represent the specified value. </li><li class="li">Display – A bar in the color defined by hexadecimal value indicated in the            <span class="ph uicontrol">Color</span> or <span class="ph uicontrol">Color name</span> field.</li><li class="li">Element – Column name specific to the selected table. </li><li class="li">Value – Value for which the specified color should be displayed.</li><li class="li">Updated – The date and time the color was last modified.</li></ul></div> </div>  <div class="related-links"><div class="relinfo"><div class="reltitle">Related information<br /><div><a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:Application-Scope&amp;version&#61;kingston" target="_blank">Application scope</a></div></div></div></div>]]></content>
-        <last_sync>2018-10-04 13:17:05</last_sync>
+        <last_sync>2018-10-19 13:18:04</last_sync>
         <modifier>normal</modifier>
         <name>sys_report_chart_color_list-normal</name>
         <page>sys_report_chart_color_list</page>
@@ -20,7 +20,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1566c38b13a86b00cb1eb3776144b03e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>sys_report_chart_color_list-normal</sys_name>
         <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
         <sys_policy/>
@@ -28,7 +28,7 @@
         <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
         <sys_update_name>sys_embedded_help_content_1566c38b13a86b00cb1eb3776144b03e</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-10-04 13:17:05</sys_updated_on>
+        <sys_updated_on>2018-10-19 13:18:04</sys_updated_on>
         <version>k</version>
     </sys_embedded_help_content>
 </record_update>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="reset_workflow" label="Reset workflow" language="en" table="x_exte_cml_request_cml_request">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>reset_workflow</element>
+            <help/>
+            <hint/>
+            <label>Reset workflow</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request</name>
+            <plural>Reset workflows</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-10-18 13:05:32</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>051a54e81399af00cb1eb3776144b080</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Reset workflow</sys_name>
+            <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
+            <sys_update_name>sys_documentation_x_exte_cml_request_cml_request_reset_workflow_en</sys_update_name>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-10-18 13:05:32</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -2,18 +2,20 @@
 <record_update table="wf_workflow_version">
     <wf_workflow_version action="INSERT_OR_UPDATE">
         <active>true</active>
-        <activity_stages>{"activities":{"62fddeb1db052b0053f17d8bbf96193f":"6afddeb1db052b0053f17d8bbf96193b","e6fddeb1db052b0053f17d8bbf96193d":"6efddeb1db052b0053f17d8bbf96193b","6efddeb1db052b0053f17d8bbf961940":"eafddeb1db052b0053f17d8bbf96193b"},"subflows":[],"stages":{"6efddeb1db052b0053f17d8bbf96193b":{"duration":"","order":3,"stageId":"6efddeb1db052b0053f17d8bbf96193b","name":"Testing (In progress)","value":"Started"},"eafddeb1db052b0053f17d8bbf96193b":{"duration":"","order":1,"stageId":"eafddeb1db052b0053f17d8bbf96193b","name":"Assigned","value":"Open"},"6afddeb1db052b0053f17d8bbf96193b":{"duration":"","order":2,"stageId":"6afddeb1db052b0053f17d8bbf96193b","name":"Awaiting Testing","value":"Awaiting test"}},"ends":["62fddeb1db052b0053f17d8bbf961940"]}</activity_stages>
+        <activity_stages>{"ends":["f8d0d98e1311e340cb1eb3776144b049"],"subflows":[],"stages":{"74d0d98e1311e340cb1eb3776144b046":{"order":2,"duration":"","stageId":"74d0d98e1311e340cb1eb3776144b046","name":"Awaiting Testing","value":"Awaiting test"},"f8d0d98e1311e340cb1eb3776144b046":{"order":1,"duration":"","stageId":"f8d0d98e1311e340cb1eb3776144b046","name":"Assigned","value":"Open"},"f4d0d98e1311e340cb1eb3776144b046":{"order":3,"duration":"","stageId":"f4d0d98e1311e340cb1eb3776144b046","name":"Testing (In progress)","value":"Started"}},"activities":{"b0d0d98e1311e340cb1eb3776144b047":"f8d0d98e1311e340cb1eb3776144b046","b8d0d98e1311e340cb1eb3776144b048":"f4d0d98e1311e340cb1eb3776144b046","f0d0d98e1311e340cb1eb3776144b04b":"74d0d98e1311e340cb1eb3776144b046"}}</activity_stages>
         <after_business_rules>false</after_business_rules>
         <checked_out/>
         <checked_out_by/>
         <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
-        <condition/>
+        <condition table="x_exte_cml_request_cml_request_tests">state=1^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="1"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
         <condition_type>run_match</condition_type>
         <description/>
-        <expected_sequences>e2fddeb1db052b0053f17d8bbf96193c,6efddeb1db052b0053f17d8bbf961940,62fddeb1db052b0053f17d8bbf96193f,e6fddeb1db052b0053f17d8bbf96193d,95026a75db052b0053f17d8bbf9619f2,2472ae75db052b0053f17d8bbf96199c,62fddeb1db052b0053f17d8bbf961940</expected_sequences>
+        <expected_sequences>b4d0d98e1311e340cb1eb3776144b04d,b0d0d98e1311e340cb1eb3776144b047,f0d0d98e1311e340cb1eb3776144b04b,b8d0d98e1311e340cb1eb3776144b048,74d0d98e1311e340cb1eb3776144b04c,34d0d98e1311e340cb1eb3776144b04a,f8d0d98e1311e340cb1eb3776144b049</expected_sequences>
         <expected_time>1970-01-01 14:00:00</expected_time>
         <expected_time_type/>
-        <full_sequences>e2fddeb1db052b0053f17d8bbf96193c,6efddeb1db052b0053f17d8bbf961940,62fddeb1db052b0053f17d8bbf96193f,e6fddeb1db052b0053f17d8bbf96193d,95026a75db052b0053f17d8bbf9619f2,2472ae75db052b0053f17d8bbf96199c,62fddeb1db052b0053f17d8bbf961940</full_sequences>
+        <full_sequences>b4d0d98e1311e340cb1eb3776144b04d,b0d0d98e1311e340cb1eb3776144b047,f0d0d98e1311e340cb1eb3776144b04b,f8d0d98e1311e340cb1eb3776144b049,b8d0d98e1311e340cb1eb3776144b048,74d0d98e1311e340cb1eb3776144b04c,34d0d98e1311e340cb1eb3776144b04a</full_sequences>
         <journal/>
         <max_activity_count>100</max_activity_count>
         <name>CML Tests</name>
@@ -24,17 +26,17 @@
         <published>true</published>
         <relative_duration display_value="2 business days by 4pm">3bf802c20a0a0b52008e2859cd8abcf2</relative_duration>
         <requires_ert>true</requires_ert>
-        <run_multiple>false</run_multiple>
+        <run_multiple>true</run_multiple>
         <schedule/>
         <stage_field>workflow</stage_field>
         <stage_order>computed</stage_order>
-        <start display_value="Begin">e2fddeb1db052b0053f17d8bbf96193c</start>
+        <start display_value="Begin">b4d0d98e1311e340cb1eb3776144b04d</start>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>22fd9ab1db052b0053f17d8bbf9619e7</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>74d0d98e1311e340cb1eb3776144b045</sys_id>
+        <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-11 10:55:00</sys_updated_on>
+        <sys_updated_on>2018-10-23 09:28:22</sys_updated_on>
         <table>x_exte_cml_request_cml_request_tests</table>
         <timezone/>
         <validated>true</validated>
@@ -70,52 +72,52 @@
         <ola>1970-01-01 00:00:00</ola>
         <order>2</order>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>6afddeb1db052b0053f17d8bbf96193b</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>74d0d98e1311e340cb1eb3776144b046</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <value>Awaiting test</value>
-        <workflow_version display_value="CML Tests">22fd9ab1db052b0053f17d8bbf9619e7</workflow_version>
+        <workflow_version display_value="CML Tests">74d0d98e1311e340cb1eb3776144b045</workflow_version>
     </wf_stage>
     <wf_stage action="INSERT_OR_UPDATE">
         <name>Completed</name>
         <ola>1970-01-01 00:00:00</ola>
         <order>4</order>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>e6fddeb1db052b0053f17d8bbf96193b</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>78d0d98e1311e340cb1eb3776144b046</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <value>Complete</value>
-        <workflow_version display_value="CML Tests">22fd9ab1db052b0053f17d8bbf9619e7</workflow_version>
+        <workflow_version display_value="CML Tests">74d0d98e1311e340cb1eb3776144b045</workflow_version>
     </wf_stage>
     <wf_stage action="INSERT_OR_UPDATE">
         <name>Assigned</name>
         <ola>1970-01-01 00:00:00</ola>
         <order>1</order>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>eafddeb1db052b0053f17d8bbf96193b</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>f8d0d98e1311e340cb1eb3776144b046</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <value>Open</value>
-        <workflow_version display_value="CML Tests">22fd9ab1db052b0053f17d8bbf9619e7</workflow_version>
+        <workflow_version display_value="CML Tests">74d0d98e1311e340cb1eb3776144b045</workflow_version>
     </wf_stage>
     <wf_stage action="INSERT_OR_UPDATE">
         <name>Testing (In progress)</name>
         <ola>1970-01-01 00:00:00</ola>
         <order>3</order>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>6efddeb1db052b0053f17d8bbf96193b</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>f4d0d98e1311e340cb1eb3776144b046</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <value>Started</value>
-        <workflow_version display_value="CML Tests">22fd9ab1db052b0053f17d8bbf9619e7</workflow_version>
+        <workflow_version display_value="CML Tests">74d0d98e1311e340cb1eb3776144b045</workflow_version>
     </wf_stage>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
@@ -133,21 +135,21 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>e2fddeb1db052b0053f17d8bbf96193c</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>b4d0d98e1311e340cb1eb3776144b04d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width>80</width>
-        <workflow_version display_value="CML Tests">22fd9ab1db052b0053f17d8bbf9619e7</workflow_version>
+        <workflow_version display_value="CML Tests">74d0d98e1311e340cb1eb3776144b045</workflow_version>
         <x>20</x>
         <y>20</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=e2fddeb1db052b0053f17d8bbf96193c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b4d0d98e1311e340cb1eb3776144b04d"/>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Begin">e2fddeb1db052b0053f17d8bbf96193c</activity>
+        <activity display_value="Begin">b4d0d98e1311e340cb1eb3776144b04d</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -161,11 +163,11 @@
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>6efddeb1db052b0053f17d8bbf96193c</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>f8d0d98e1311e340cb1eb3776144b04d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
@@ -183,49 +185,49 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:58:30</sys_created_on>
-        <sys_id>2472ae75db052b0053f17d8bbf96199c</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>34d0d98e1311e340cb1eb3776144b04a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:58:32</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="CML Tests">22fd9ab1db052b0053f17d8bbf9619e7</workflow_version>
+        <workflow_version display_value="CML Tests">74d0d98e1311e340cb1eb3776144b045</workflow_version>
         <x>701</x>
         <y>588</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=2472ae75db052b0053f17d8bbf96199c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=34d0d98e1311e340cb1eb3776144b04a"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>2472ae75db052b0053f17d8bbf96199c</document_key>
+        <document_key>34d0d98e1311e340cb1eb3776144b04a</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:58:30</sys_created_on>
-        <sys_id>9f822e75db052b0053f17d8bbf961994</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>b4d0d98e1311e340cb1eb3776144b04a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:58:30</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <value>state=4^EQ</value>
         <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>2472ae75db052b0053f17d8bbf96199c</document_key>
+        <document_key>34d0d98e1311e340cb1eb3776144b04a</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:58:30</sys_created_on>
-        <sys_id>9f822e75db052b0053f17d8bbf961994</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>b4d0d98e1311e340cb1eb3776144b04a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:58:30</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <value>state=4^EQ</value>
         <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Close test">2472ae75db052b0053f17d8bbf96199c</activity>
+        <activity display_value="Close test">34d0d98e1311e340cb1eb3776144b04a</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -239,11 +241,11 @@
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:58:30</sys_created_on>
-        <sys_id>57822e75db052b0053f17d8bbf961995</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>3cd0d98e1311e340cb1eb3776144b04a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:58:30</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
@@ -261,19 +263,19 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>62fddeb1db052b0053f17d8bbf961940</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>f8d0d98e1311e340cb1eb3776144b049</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:55:49</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width>80</width>
-        <workflow_version display_value="CML Tests">22fd9ab1db052b0053f17d8bbf9619e7</workflow_version>
+        <workflow_version display_value="CML Tests">74d0d98e1311e340cb1eb3776144b045</workflow_version>
         <x>820</x>
         <y>356</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=62fddeb1db052b0053f17d8bbf961940"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f8d0d98e1311e340cb1eb3776144b049"/>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
         <activity_definition_updated>false</activity_definition_updated>
@@ -290,44 +292,44 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:56:52</sys_created_on>
-        <sys_id>95026a75db052b0053f17d8bbf9619f2</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>74d0d98e1311e340cb1eb3776144b04c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:57:46</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="CML Tests">22fd9ab1db052b0053f17d8bbf9619e7</workflow_version>
+        <workflow_version display_value="CML Tests">74d0d98e1311e340cb1eb3776144b045</workflow_version>
         <x>457</x>
         <y>453</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=95026a75db052b0053f17d8bbf9619f2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=74d0d98e1311e340cb1eb3776144b04c"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>95026a75db052b0053f17d8bbf9619f2</document_key>
+        <document_key>74d0d98e1311e340cb1eb3776144b04c</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:56:52</sys_created_on>
-        <sys_id>13226675db052b0053f17d8bbf961972</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>b8d0d98e1311e340cb1eb3776144b04c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:56:52</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <value>closed_notesISNOTEMPTY^EQ</value>
         <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>95026a75db052b0053f17d8bbf9619f2</document_key>
+        <document_key>74d0d98e1311e340cb1eb3776144b04c</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:56:52</sys_created_on>
-        <sys_id>5f226675db052b0053f17d8bbf961971</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>f4d0d98e1311e340cb1eb3776144b04c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:56:52</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
@@ -335,36 +337,36 @@ answer = true;&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>95026a75db052b0053f17d8bbf9619f2</document_key>
+        <document_key>74d0d98e1311e340cb1eb3776144b04c</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:56:52</sys_created_on>
-        <sys_id>13226675db052b0053f17d8bbf961972</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>b8d0d98e1311e340cb1eb3776144b04c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:56:52</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <value>closed_notesISNOTEMPTY^EQ</value>
         <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>95026a75db052b0053f17d8bbf9619f2</document_key>
+        <document_key>74d0d98e1311e340cb1eb3776144b04c</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:56:52</sys_created_on>
-        <sys_id>5f226675db052b0053f17d8bbf961971</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>f4d0d98e1311e340cb1eb3776144b04c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:56:52</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
         <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Ensure closed notes entered.">95026a75db052b0053f17d8bbf9619f2</activity>
+        <activity display_value="Ensure closed notes entered.">74d0d98e1311e340cb1eb3776144b04c</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -378,11 +380,11 @@ answer = true;&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:56:52</sys_created_on>
-        <sys_id>1b226675db052b0053f17d8bbf961972</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>30d0d98e1311e340cb1eb3776144b04d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:56:52</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
@@ -398,46 +400,46 @@ answer = true;&#13;
         <parent/>
         <pinned>false</pinned>
         <pinned_version/>
-        <stage display_value="Awaiting Testing">6afddeb1db052b0053f17d8bbf96193b</stage>
+        <stage display_value="Awaiting Testing">74d0d98e1311e340cb1eb3776144b046</stage>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>62fddeb1db052b0053f17d8bbf96193f</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>f0d0d98e1311e340cb1eb3776144b04b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="CML Tests">22fd9ab1db052b0053f17d8bbf9619e7</workflow_version>
+        <workflow_version display_value="CML Tests">74d0d98e1311e340cb1eb3776144b045</workflow_version>
         <x>102</x>
         <y>296</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=62fddeb1db052b0053f17d8bbf96193f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f0d0d98e1311e340cb1eb3776144b04b"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>62fddeb1db052b0053f17d8bbf96193f</document_key>
+        <document_key>f0d0d98e1311e340cb1eb3776144b04b</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>a6fddeb1db052b0053f17d8bbf96193f</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>38d0d98e1311e340cb1eb3776144b04b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <value>state=2^assigned_toISNOTEMPTY^EQ</value>
         <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>62fddeb1db052b0053f17d8bbf96193f</document_key>
+        <document_key>f0d0d98e1311e340cb1eb3776144b04b</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>e2fddeb1db052b0053f17d8bbf96193f</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>74d0d98e1311e340cb1eb3776144b04b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
@@ -445,36 +447,36 @@ answer = true;&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>62fddeb1db052b0053f17d8bbf96193f</document_key>
+        <document_key>f0d0d98e1311e340cb1eb3776144b04b</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>a6fddeb1db052b0053f17d8bbf96193f</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>38d0d98e1311e340cb1eb3776144b04b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <value>state=2^assigned_toISNOTEMPTY^EQ</value>
         <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>62fddeb1db052b0053f17d8bbf96193f</document_key>
+        <document_key>f0d0d98e1311e340cb1eb3776144b04b</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>e2fddeb1db052b0053f17d8bbf96193f</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>74d0d98e1311e340cb1eb3776144b04b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
         <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Pending start">62fddeb1db052b0053f17d8bbf96193f</activity>
+        <activity display_value="Pending start">f0d0d98e1311e340cb1eb3776144b04b</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -488,11 +490,11 @@ answer = true;&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>eafddeb1db052b0053f17d8bbf96193f</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>bcd0d98e1311e340cb1eb3776144b04b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
@@ -508,46 +510,46 @@ answer = true;&#13;
         <parent/>
         <pinned>false</pinned>
         <pinned_version/>
-        <stage display_value="Assigned">eafddeb1db052b0053f17d8bbf96193b</stage>
+        <stage display_value="Assigned">f8d0d98e1311e340cb1eb3776144b046</stage>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>6efddeb1db052b0053f17d8bbf961940</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>b0d0d98e1311e340cb1eb3776144b047</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="CML Tests">22fd9ab1db052b0053f17d8bbf9619e7</workflow_version>
-        <x>257</x>
-        <y>112</y>
+        <workflow_version display_value="CML Tests">74d0d98e1311e340cb1eb3776144b045</workflow_version>
+        <x>165</x>
+        <y>50</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=6efddeb1db052b0053f17d8bbf961940"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b0d0d98e1311e340cb1eb3776144b047"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>6efddeb1db052b0053f17d8bbf961940</document_key>
+        <document_key>b0d0d98e1311e340cb1eb3776144b047</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>a2fddeb1db052b0053f17d8bbf961941</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>78d0d98e1311e340cb1eb3776144b047</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <value>assigned_toISNOTEMPTY^EQ</value>
         <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>6efddeb1db052b0053f17d8bbf961940</document_key>
+        <document_key>b0d0d98e1311e340cb1eb3776144b047</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>eefddeb1db052b0053f17d8bbf961940</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>b4d0d98e1311e340cb1eb3776144b047</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
@@ -555,36 +557,36 @@ answer = true;&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>6efddeb1db052b0053f17d8bbf961940</document_key>
+        <document_key>b0d0d98e1311e340cb1eb3776144b047</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>a2fddeb1db052b0053f17d8bbf961941</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>78d0d98e1311e340cb1eb3776144b047</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <value>assigned_toISNOTEMPTY^EQ</value>
         <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>6efddeb1db052b0053f17d8bbf961940</document_key>
+        <document_key>b0d0d98e1311e340cb1eb3776144b047</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>eefddeb1db052b0053f17d8bbf961940</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>b4d0d98e1311e340cb1eb3776144b047</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
         <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Require assignment">6efddeb1db052b0053f17d8bbf961940</activity>
+        <activity display_value="Require assignment">b0d0d98e1311e340cb1eb3776144b047</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -598,11 +600,11 @@ answer = true;&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>e6fddeb1db052b0053f17d8bbf961941</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>fcd0d98e1311e340cb1eb3776144b047</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
@@ -618,46 +620,32 @@ answer = true;&#13;
         <parent/>
         <pinned>false</pinned>
         <pinned_version/>
-        <stage display_value="Testing (In progress)">6efddeb1db052b0053f17d8bbf96193b</stage>
+        <stage display_value="Testing (In progress)">f4d0d98e1311e340cb1eb3776144b046</stage>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>e6fddeb1db052b0053f17d8bbf96193d</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>b8d0d98e1311e340cb1eb3776144b048</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:55:54</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="CML Tests">22fd9ab1db052b0053f17d8bbf9619e7</workflow_version>
+        <workflow_version display_value="CML Tests">74d0d98e1311e340cb1eb3776144b045</workflow_version>
         <x>177</x>
         <y>457</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=e6fddeb1db052b0053f17d8bbf96193d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b8d0d98e1311e340cb1eb3776144b048"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e6fddeb1db052b0053f17d8bbf96193d</document_key>
-        <order>1</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>e2fddeb1db052b0053f17d8bbf96193e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
-        <value>state=3^EQ</value>
-        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>e6fddeb1db052b0053f17d8bbf96193d</document_key>
+        <document_key>b8d0d98e1311e340cb1eb3776144b048</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>eafddeb1db052b0053f17d8bbf96193d</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>3cd0d98e1311e340cb1eb3776144b048</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
@@ -665,36 +653,50 @@ answer = true;&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e6fddeb1db052b0053f17d8bbf96193d</document_key>
+        <document_key>b8d0d98e1311e340cb1eb3776144b048</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>e2fddeb1db052b0053f17d8bbf96193e</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>fcd0d98e1311e340cb1eb3776144b048</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <value>state=3^EQ</value>
         <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e6fddeb1db052b0053f17d8bbf96193d</document_key>
+        <document_key>b8d0d98e1311e340cb1eb3776144b048</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>mccartc</sys_created_by>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>fcd0d98e1311e340cb1eb3776144b048</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mccartc</sys_updated_by>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
+        <value>state=3^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b8d0d98e1311e340cb1eb3776144b048</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>eafddeb1db052b0053f17d8bbf96193d</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>3cd0d98e1311e340cb1eb3776144b048</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
         <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Started testing">e6fddeb1db052b0053f17d8bbf96193d</activity>
+        <activity display_value="Started testing">b8d0d98e1311e340cb1eb3776144b048</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -708,91 +710,91 @@ answer = true;&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>aafddeb1db052b0053f17d8bbf96193e</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>74d0d98e1311e340cb1eb3776144b049</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
     </wf_condition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">57822e75db052b0053f17d8bbf961995</condition>
-        <from display_value="Close test">2472ae75db052b0053f17d8bbf96199c</from>
+        <condition display_value="Always">74d0d98e1311e340cb1eb3776144b049</condition>
+        <from display_value="Started testing">b8d0d98e1311e340cb1eb3776144b048</from>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:58:41</sys_created_on>
-        <sys_id>3d92e675db052b0053f17d8bbf96192f</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>30d09d8e1311e340cb1eb3776144b06c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:58:41</sys_updated_on>
-        <to display_value="End">62fddeb1db052b0053f17d8bbf961940</to>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
+        <to display_value="Ensure closed notes entered.">74d0d98e1311e340cb1eb3776144b04c</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">eafddeb1db052b0053f17d8bbf96193f</condition>
-        <from display_value="Pending start">62fddeb1db052b0053f17d8bbf96193f</from>
+        <condition display_value="Always">30d0d98e1311e340cb1eb3776144b04d</condition>
+        <from display_value="Ensure closed notes entered.">74d0d98e1311e340cb1eb3776144b04c</from>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>aafddeb1db052b0053f17d8bbf961942</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>34d09d8e1311e340cb1eb3776144b06b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
-        <to display_value="Started testing">e6fddeb1db052b0053f17d8bbf96193d</to>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
+        <to display_value="Close test">34d0d98e1311e340cb1eb3776144b04a</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">6efddeb1db052b0053f17d8bbf96193c</condition>
-        <from display_value="Begin">e2fddeb1db052b0053f17d8bbf96193c</from>
+        <condition display_value="Always">f8d0d98e1311e340cb1eb3776144b04d</condition>
+        <from display_value="Begin">b4d0d98e1311e340cb1eb3776144b04d</from>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>aefddeb1db052b0053f17d8bbf961942</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>34d09d8e1311e340cb1eb3776144b06c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
-        <to display_value="Require assignment">6efddeb1db052b0053f17d8bbf961940</to>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
+        <to display_value="Require assignment">b0d0d98e1311e340cb1eb3776144b047</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">aafddeb1db052b0053f17d8bbf96193e</condition>
-        <from display_value="Started testing">e6fddeb1db052b0053f17d8bbf96193d</from>
+        <condition display_value="Always">3cd0d98e1311e340cb1eb3776144b04a</condition>
+        <from display_value="Close test">34d0d98e1311e340cb1eb3776144b04a</from>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>e2fddeb1db052b0053f17d8bbf961943</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:56:58</sys_updated_on>
-        <to display_value="Ensure closed notes entered.">95026a75db052b0053f17d8bbf9619f2</to>
-    </wf_transition>
-    <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">e6fddeb1db052b0053f17d8bbf961941</condition>
-        <from display_value="Require assignment">6efddeb1db052b0053f17d8bbf961940</from>
-        <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>e6fddeb1db052b0053f17d8bbf961943</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>38d09d8e1311e340cb1eb3776144b06b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
-        <to display_value="Pending start">62fddeb1db052b0053f17d8bbf96193f</to>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
+        <to display_value="End">f8d0d98e1311e340cb1eb3776144b049</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">1b226675db052b0053f17d8bbf961972</condition>
-        <from display_value="Ensure closed notes entered.">95026a75db052b0053f17d8bbf9619f2</from>
+        <condition display_value="Always">bcd0d98e1311e340cb1eb3776144b04b</condition>
+        <from display_value="Pending start">f0d0d98e1311e340cb1eb3776144b04b</from>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:58:37</sys_created_on>
-        <sys_id>f0926e75db052b0053f17d8bbf961904</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>3cd09d8e1311e340cb1eb3776144b06b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:58:37</sys_updated_on>
-        <to display_value="Close test">2472ae75db052b0053f17d8bbf96199c</to>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
+        <to display_value="Started testing">b8d0d98e1311e340cb1eb3776144b048</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">fcd0d98e1311e340cb1eb3776144b047</condition>
+        <from display_value="Require assignment">b0d0d98e1311e340cb1eb3776144b047</from>
+        <sys_created_by>mccartc</sys_created_by>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>bcd09d8e1311e340cb1eb3776144b06a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mccartc</sys_updated_by>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
+        <to display_value="Pending start">f0d0d98e1311e340cb1eb3776144b04b</to>
     </wf_transition>
     <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
         <estimated_run_time/>
         <no_of_data_points>1</no_of_data_points>
         <percentage_threshold_ert>20</percentage_threshold_ert>
         <sys_created_by>mccartc</sys_created_by>
-        <sys_created_on>2018-10-10 09:38:31</sys_created_on>
-        <sys_id>e2fd9ab1db052b0053f17d8bbf9619e7</sys_id>
+        <sys_created_on>2018-10-23 08:55:37</sys_created_on>
+        <sys_id>f4d0d98e1311e340cb1eb3776144b045</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 09:38:31</sys_updated_on>
-        <workflow_version display_value="CML Tests">22fd9ab1db052b0053f17d8bbf9619e7</workflow_version>
+        <sys_updated_on>2018-10-23 08:55:37</sys_updated_on>
+        <workflow_version display_value="CML Tests">74d0d98e1311e340cb1eb3776144b045</workflow_version>
     </wf_estimated_runtime_config>
-    <wf_workflow_version action="update_multiple" query="workflow=468562afdbb4a30053f17d8bbf961990^sys_id!=22fd9ab1db052b0053f17d8bbf9619e7">
+    <wf_workflow_version action="update_multiple" query="workflow=468562afdbb4a30053f17d8bbf961990^sys_id!=74d0d98e1311e340cb1eb3776144b045">
         <published>false</published>
     </wf_workflow_version>
 </record_update>
