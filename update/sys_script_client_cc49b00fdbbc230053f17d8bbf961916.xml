@@ -8,7 +8,7 @@
         <field>state</field>
         <global>true</global>
         <messages/>
-        <name>Check tests are complete</name>
+        <name>[Request] Check tests are complete</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
 	if (isLoading || newValue === '') {
@@ -46,8 +46,8 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>cc49b00fdbbc230053f17d8bbf961916</sys_id>
-        <sys_mod_count>14</sys_mod_count>
-        <sys_name>Check tests are complete</sys_name>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>[Request] Check tests are complete</sys_name>
         <sys_overrides/>
         <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
         <sys_policy/>
@@ -55,7 +55,7 @@
         <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
         <sys_update_name>sys_script_client_cc49b00fdbbc230053f17d8bbf961916</sys_update_name>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-03 08:48:53</sys_updated_on>
+        <sys_updated_on>2018-11-12 14:16:32</sys_updated_on>
         <table>x_exte_cml_request_cml_request</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

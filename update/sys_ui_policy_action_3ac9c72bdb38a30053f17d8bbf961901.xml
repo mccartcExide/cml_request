@@ -19,7 +19,7 @@
         <sys_updated_by>mccartc</sys_updated_by>
         <sys_updated_on>2018-10-03 13:03:45</sys_updated_on>
         <table>x_exte_cml_request_cml_request_tests</table>
-        <ui_policy display_value="Close notes manadatory">e579472bdb38a30053f17d8bbf96195a</ui_policy>
+        <ui_policy display_value="[Tests] Close notes manadatory">e579472bdb38a30053f17d8bbf96195a</ui_policy>
         <visible>ignore</visible>
     </sys_ui_policy_action>
 </record_update>

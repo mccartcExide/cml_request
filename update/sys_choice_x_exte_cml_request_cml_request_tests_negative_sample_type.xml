@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="negative_sample_type" table="x_exte_cml_request_cml_request_tests" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>negative_sample_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Standard</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request_tests</name>
+            <sequence>0</sequence>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-11-06 14:11:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>f31f92ae13292700cb1eb3776144b0fa</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-11-07 12:09:01</sys_updated_on>
+            <value>standard</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>negative_sample_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Top, Middle, Bottom</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request_tests</name>
+            <sequence>1</sequence>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-11-06 14:11:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>914fd62e13292700cb1eb3776144b076</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-11-08 10:18:31</sys_updated_on>
+            <value>tmb</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>negative_sample_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other</label>
+            <language>en</language>
+            <name>x_exte_cml_request_cml_request_tests</name>
+            <sequence>2</sequence>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-11-06 14:11:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>5f5f16ae13292700cb1eb3776144b025</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-11-07 12:09:14</sys_updated_on>
+            <value>other</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>negative_sample_type</element>
+            <name>x_exte_cml_request_cml_request_tests</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-11-06 14:11:00</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>854f96ea13292700cb1eb3776144b0b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>negative_sample_type</sys_name>
+            <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
+            <sys_update_name>sys_choice_x_exte_cml_request_cml_request_tests_negative_sample_type</sys_update_name>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2018-11-06 14:11:00</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

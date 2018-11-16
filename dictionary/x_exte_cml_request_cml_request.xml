@@ -3,7 +3,7 @@
     <element audit="true" label="CML Request" max_length="40" name="x_exte_cml_request_cml_request" type="collection">
         <element label="Approval" max_length="40" name="approval" type="string"/>
         <element label="Approval history" max_length="4000" name="approval_history" type="journal"/>
-        <element label="Approval required" max_length="40" name="approval_required" type="boolean"/>
+        <element label="Director approval required" max_length="40" name="approval_required" read_only="true" type="boolean"/>
         <element label="Assigned to" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
         <element label="Assignment group" max_length="32" name="assignment_group" read_only="true" reference="sys_user_group" type="reference"/>
         <element choice="1" label="Business unit" mandatory="true" max_length="40" name="business_unit" type="choice">
@@ -54,21 +54,9 @@
             </choice>
         </element>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
-        <element label="Number of samples" mandatory="true" max_length="40" name="number_of_samples" type="integer"/>
+        <element label="Number of samples" max_length="40" name="number_of_samples" read_only="true" type="integer"/>
         <element label="Owner" max_length="32" name="owner" reference="sys_user" type="reference"/>
-        <element choice="1" label="Oxide Type" max_length="40" name="oxide_type" type="choice">
-            <choice>
-                <element label="Leady" value="leady"/>
-                <element label="Red" value="red"/>
-            </choice>
-        </element>
         <element label="Phone" mandatory="true" max_length="40" name="phone" type="string"/>
-        <element choice="1" label="Polarity" max_length="40" name="polarity" type="choice">
-            <choice>
-                <element label="Negative" value="neg"/>
-                <element label="Positive" value="pos"/>
-            </choice>
-        </element>
         <element choice="1" label="Priority" mandatory="true" max_length="40" name="priority" type="choice">
             <choice>
                 <element label="Low(&gt; 30 work days)" sequence="0" value="0"/>
@@ -91,35 +79,7 @@
         <element label="Reset workflow" max_length="40" name="reset_workflow" type="boolean"/>
         <element label="Restart count" max_length="40" name="restart_count" type="integer"/>
         <element label="Retention date" max_length="40" name="retention_date" type="glide_date"/>
-        <element label="Sample IDs" mandatory="true" max_length="150" name="sample_ids" type="string"/>
-        <element choice="1" label="Sample Type" mandatory="true" max_length="40" name="sample_type" type="choice">
-            <choice>
-                <element label="Container" value="container"/>
-                <element label="Cover" value="cover"/>
-                <element label="Electrolyte" value="electrolyte"/>
-                <element label="Expander" value="expander"/>
-                <element label="Formed Plate" value="formed plate"/>
-                <element label="Grids" value="grids"/>
-                <element label="Labels" value="labels"/>
-                <element label="Lead Disk" value="lead disk"/>
-                <element label="Lugs" value="lugs"/>
-                <element label="Other" value="other"/>
-                <element label="Oxide" value="oxide"/>
-                <element label="Posts" value="posts"/>
-                <element label="Seperator" value="perator"/>
-                <element label="Straps" value="straps"/>
-                <element label="Unformed Plate" value="unformed plate"/>
-                <element label="Water" value="water"/>
-                <element label="Welds" value="welds"/>
-            </choice>
-        </element>
-        <element label="Sample type description" max_length="100" name="sample_type_description" type="string"/>
-        <element choice="1" label="Seperator Type" max_length="40" name="seperator_type" type="choice">
-            <choice>
-                <element label="Glass" value="glass"/>
-                <element label="Poly" value="poly"/>
-            </choice>
-        </element>
+        <element label="Sample IDs" max_length="4000" name="sample_ids" read_only="true" type="string"/>
         <element label="Short description" mandatory="true" max_length="160" name="short_description" type="string"/>
         <element choice="1" label="State" max_length="40" name="state" read_only="true" type="choice">
             <choice>

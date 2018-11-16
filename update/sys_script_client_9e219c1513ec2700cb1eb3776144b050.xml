@@ -8,25 +8,39 @@
         <field>priority</field>
         <global>true</global>
         <messages/>
-        <name>Check test against priority</name>
+        <name>[Request]Check test against priority</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
-   if (isLoading || newValue === '') {
-      return;
-   }
-
-   //Type appropriate comment here, and begin script below
-   var ga = new GlideAjax('CMLTestResults');
+	if (isLoading || newValue === '') {
+		return;
+	}
+	g_form.clearMessages();
+	
+	
+	
+	
+	//Type appropriate comment here, and begin script below
+	var ga = new GlideAjax('CMLTestResults');
+	var nbrSamples = g_form.getValue('number_of_samples');
+	var previousApproval = g_form.getValue('approval_required');
 	ga.addParam('sysparm_name','getTestCount');
 	ga.addParam('sysparm_number',g_form.getUniqueValue());
 	ga.getXML(processResp);
 	
 	function processResp(response){
-		var answer = response.responseXML.documentElement.getAttribute("answer");
+		var nbrTests = response.responseXML.documentElement.getAttribute("answer");
 		var priority = g_form.getValue('priority');
-		if((priority < answer) && priority != 0){
-			g_form.addErrorMessage('The number of tests exceeds the permitted amount for the priority you tried to select.');
-			g_form.setValue('priority',oldValue);
+		if(((priority < nbrTests ) && priority != 0) || ((parseInt(priority) < parseInt(nbrSamples)) && parseInt(priority) != 0 ) || priority == 3 ){
+			g_form.setValue('approval_required',true);
+			g_form.addDecoration('approval_required', 'icon-lightbulb', 'Directors approval required', 'color-red');
+			g_form.addErrorMessage('This request will require your directors approval.');
+			
+		}else{
+			if(previousApproval){
+				g_form.addInfoMessage('Directors approval no longer required.');
+			}
+			g_form.removeDecoration('approval_required', 'icon-lightbulb', 'Directors approval required', 'color-red');
+			g_form.setValue('approval_required',false);
 		}
 		
 	}
@@ -37,8 +51,8 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>9e219c1513ec2700cb1eb3776144b050</sys_id>
-        <sys_mod_count>14</sys_mod_count>
-        <sys_name>Check test against priority</sys_name>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>[Request]Check test against priority</sys_name>
         <sys_overrides/>
         <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
         <sys_policy/>
@@ -46,7 +60,7 @@
         <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
         <sys_update_name>sys_script_client_9e219c1513ec2700cb1eb3776144b050</sys_update_name>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-01 14:53:04</sys_updated_on>
+        <sys_updated_on>2018-11-12 14:13:40</sys_updated_on>
         <table>x_exte_cml_request_cml_request</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

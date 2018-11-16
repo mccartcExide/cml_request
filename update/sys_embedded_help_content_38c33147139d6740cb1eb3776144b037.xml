@@ -4,7 +4,7 @@
         <active>true</active>
         <category>performance-analytics</category>
         <content><![CDATA[ <h1 class="title topictitle1">Indicator sources</h1>  <div class="body conbody">  <p class="p">Indicator sources <span class="ph"><span class="ph" id="pa_cubes_list-normal__d41631e83">define filtered sets              of records from a facts table to evaluate when collecting indicator scores.</span>            <span class="ph" id="pa_cubes_list-normal__d41631e86">An indicator source configuration specifies a              table, such as Incident, and it specifies the frequency with which to collect data              from that table. Indicator sources can also include filter conditions to limit the              included records. Multiple indicators can use the same indicator source.</span></span></p> </div>]]></content>
-        <last_sync>2018-10-26 14:02:11</last_sync>
+        <last_sync>2018-11-10 14:03:07</last_sync>
         <modifier>normal</modifier>
         <name>pa_cubes_list-normal</name>
         <page>pa_cubes_list</page>
@@ -20,7 +20,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>38c33147139d6740cb1eb3776144b037</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>pa_cubes_list-normal</sys_name>
         <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
         <sys_policy/>
@@ -28,7 +28,7 @@
         <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
         <sys_update_name>sys_embedded_help_content_38c33147139d6740cb1eb3776144b037</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-10-26 14:02:11</sys_updated_on>
+        <sys_updated_on>2018-11-10 14:03:07</sys_updated_on>
         <version>k</version>
     </sys_embedded_help_content>
 </record_update>

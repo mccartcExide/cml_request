@@ -4,7 +4,7 @@
         <active>true</active>
         <category>discovery</category>
         <content><![CDATA[    <h1 class="title topictitle1">Create a Discovery schedule</h1>        <div class="body taskbody">        <div class="section context">You can use a Discovery schedule to launch probes, sensors, and pattern operations            for a range of IP addresses, at any time of day, and on a specific interval. You can            also specify the method that is used to select a MID Server.</div>        <ol class="ol steps"><li class="li step">                <span class="ph cmd">Complete the Discovery Schedule form.</span>            </li><li class="li step">                <span class="ph cmd">Right-click in the record&#39;s header and select <span class="ph uicontrol">Save</span> from                    the context menu.</span>            </li><li class="li step">                <span class="ph cmd">To create a range of IP addresses to discover, click <span class="ph uicontrol">Quick                        Ranges</span> under <span class="ph uicontrol">Related Links</span>.</span>            </li></ol>    </div>    <div class="related-links"><div class="relinfo"><div class="reltitle">Related information<br /><div><a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:CreateDiscoverySchedule&amp;version&#61;kingston" target="_blank">Create a Discovery schedule</a></div></div></div></div>]]></content>
-        <last_sync>2018-10-31 19:50:08</last_sync>
+        <last_sync>2018-11-15 19:51:04</last_sync>
         <modifier>normal</modifier>
         <name>discovery_schedule-normal</name>
         <page>discovery_schedule</page>
@@ -20,7 +20,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6b732b7b13816f00cb1eb3776144b003</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>discovery_schedule-normal</sys_name>
         <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
         <sys_policy/>
@@ -28,7 +28,7 @@
         <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
         <sys_update_name>sys_embedded_help_content_6b732b7b13816f00cb1eb3776144b003</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-10-31 19:50:08</sys_updated_on>
+        <sys_updated_on>2018-11-15 19:51:04</sys_updated_on>
         <version>k</version>
     </sys_embedded_help_content>
 </record_update>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>approval</field>
+        <global>true</global>
+        <messages/>
+        <name>[Request] Set approval decoration</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+  
+	var approval = g_form.getValue('approval_required');
+	if( approval == 'true'){
+		g_form.addDecoration('approval_required', 'icon-lightbulb', 'Directors approval required', 'color-red');
+	
+			//g_form.addErrorMessage('This request will require your directors approval.');
+	}else{
+
+		g_form.removeDecoration('approval_required', 'icon-lightbulb', 'Directors approval required', 'color-red');
+	}
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>mccartc</sys_created_by>
+        <sys_created_on>2018-11-09 13:41:46</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>b2c4bde71361e700cb1eb3776144b0e9</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>[Request] Set approval decoration</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
+        <sys_update_name>sys_script_client_b2c4bde71361e700cb1eb3776144b0e9</sys_update_name>
+        <sys_updated_by>mccartc</sys_updated_by>
+        <sys_updated_on>2018-11-09 16:46:38</sys_updated_on>
+        <table>x_exte_cml_request_cml_request</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

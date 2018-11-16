@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>true</action_delete>
+        <action_insert>true</action_insert>
+        <action_label/>
+        <action_name/>
+        <action_query>false</action_query>
+        <action_run_at>server</action_run_at>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <application/>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_exte_cml_request_cml_request_tests</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>[Tests] Set sample numbers and IDs</name>
+        <onclick/>
+        <order>100</order>
+        <priority>100</priority>
+        <read_access_action>false</read_access_action>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	var change_detected = false;
+	var total_samples = 0;
+	var ids = '';
+	//TMB Negative value
+	if(current.positive_sample_type.changesTo('tmb') || (current.positive_sample_type == 'tmb' && current.positive_sample_number.changes())  ){
+		
+		current.positive_sample_number = current.positive_sample_number * 3;
+		change_detected = true;
+	}
+	
+	if(current.negative_sample_type.changesTo('tmb') || (current.negative_sample_type == 'tmb' && current.negative_sample_number.changes())  ){
+		
+		current.negative_sample_number = current.negative_sample_number * 3;
+		change_detected = true;
+	}
+	
+	
+	if(current.positive_sample_number.changes() || current.negative_sample_number.changes() || current.sample_number.changes()
+		|| current.positive_sample_ids.changes() || current.negative_sample_ids.changes() || current.sample_ids.changes() ){
+		
+		change_detected = true;
+	}
+	
+	
+	//Get all tests and total samples and IDs
+	
+	var req = new GlideRecord('x_exte_cml_request_cml_request');
+	req.get(current.request_number);
+	
+	
+	if(change_detected == true){
+		// Get the request record
+		
+		
+		//get all the tests relating to the request
+		var tests = new GlideRecord('x_exte_cml_request_cml_request_tests');
+		tests.addQuery('request_number',current.request_number);
+		tests.addQuery('number','!=',current.number);
+		tests.query();
+		
+		
+		
+		
+		//loop thru all tests retreving samples
+		while(tests.next()){
+			
+			total_samples = total_samples + parseInt(tests.positive_sample_number)+ parseInt(tests.negative_sample_number) +parseInt(tests.sample_number);
+			
+			ids = ids+' '+ tests.positive_sample_ids+' ' +tests.negative_sample_ids+ ' ' +tests.sample_ids;
+			
+			
+		}
+		
+		
+		total_samples = total_samples + current.positive_sample_number + current.negative_sample_number+current.sample_number;
+		ids = ids+' '+ current.positive_sample_ids+' ' +current.negative_sample_ids+ ' ' +current.sample_ids;
+		
+		
+		
+		
+	}
+	
+	var state = req.state;
+	var priority = req.priority;
+	if(state < 25){
+		if(((parseInt(priority) < parseInt(total_samples)) && parseInt(priority) != 0 ) || priority == 3 )
+			{
+			req.approval_required = true;
+			gs.addInfoMessage('Director level approval required');
+		}else{
+			req.approval_required = false;
+			gs.addInfoMessage('Director level approval NOT required');
+		}
+		
+	}
+	req.sample_ids = ids;
+	req.number_of_samples = total_samples;
+	req.update();
+	
+	
+	
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>mccartc</sys_created_by>
+        <sys_created_on>2018-11-08 10:04:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>9983738fdba9a70053f17d8bbf96193a</sys_id>
+        <sys_mod_count>42</sys_mod_count>
+        <sys_name>[Tests] Set sample numbers and IDs</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
+        <sys_update_name>sys_script_9983738fdba9a70053f17d8bbf96193a</sys_update_name>
+        <sys_updated_by>mccartc</sys_updated_by>
+        <sys_updated_on>2018-11-12 14:33:34</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+</record_update>
