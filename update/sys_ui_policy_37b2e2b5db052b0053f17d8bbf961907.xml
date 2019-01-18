@@ -22,7 +22,7 @@
 	g_form.setReadOnly('test_name',true);
 	g_form.setReadOnly('abbrev',true);
 	g_form.setReadOnly('determines',true);
-	g_form.setReadOnly('sample_type',true);
+	g_form.setReadOnly('sample',true);
 	g_form.setReadOnly('required_sample_size',true);
 	g_form.setReadOnly('comments',true);
 	g_form.setReadOnly('closed_notes',true);
@@ -30,21 +30,40 @@
 	g_form.setReadOnly('closed',true);
 	g_form.setReadOnly('comments',true);
 	g_form.setReadOnly('notes',true);
-	
+	g_form.setReadOnly('sample_comment',true);
+	g_form.setReadOnly('sample_number',true);
+	g_form.setReadOnly('sample_ids',true);
+	g_form.setReadOnly('positive_standard_number',true);
+	g_form.setReadOnly('positve_standard_ids',true);
+	g_form.setReadOnly('positive_top_middle_bottom_number',true);
+	g_form.setReadOnly('positive_top_middle_bottom_ids',true);
+	g_form.setReadOnly('positive_other_ids',true);
+	g_form.setReadOnly('positive_other_number',true);
+	g_form.setReadOnly('positive_comment',true);
+	g_form.setReadOnly('negative_other_number',true);
+	g_form.setReadOnly('negative_satndard_number',true);
+	g_form.setReadOnly('negative_top_middle_bottom_number',true);
+	g_form.setReadOnly('negative_other_ids',true);
+	g_form.setReadOnly('negative_standard_ids',true);
+	g_form.setReadOnly('negative_top_middle_bottom_ids',true);
+	g_form.setReadOnly('negative_comment',true);
+	g_form.setReadOnly('seperator_type',true);
+	g_form.setReadOnly('oxide_type',true);
+	g_form.setReadOnly('sample_type',true);
 	
 	
 	
 }]]></script_true>
         <set_values/>
-        <short_description>Test Make readonly when closed</short_description>
+        <short_description>[Tests] Test Make readonly when closed</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
         <sys_created_by>mccartc</sys_created_by>
         <sys_created_on>2018-10-10 09:59:59</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>37b2e2b5db052b0053f17d8bbf961907</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Test Make readonly when closed</sys_name>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>[Tests] Test Make readonly when closed</sys_name>
         <sys_overrides/>
         <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
         <sys_policy/>
@@ -52,7 +71,7 @@
         <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
         <sys_update_name>sys_ui_policy_37b2e2b5db052b0053f17d8bbf961907</sys_update_name>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-10 10:12:13</sys_updated_on>
+        <sys_updated_on>2018-11-22 08:28:28</sys_updated_on>
         <table>x_exte_cml_request_cml_request_tests</table>
         <ui_type>0</ui_type>
         <view/>

@@ -5,7 +5,7 @@
         <active>true</active>
         <client>false</client>
         <comments/>
-        <condition>current.state==10</condition>
+        <condition>current.state==10&amp;&amp;current.number_of_samples&gt;=1</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_context_menu>false</form_context_menu>
@@ -41,6 +41,15 @@ if(gr.next()){
 	}
 }
 
+var tests = new GlideRecord('x_exte_cml_request_cml_request_tests');
+tests.addQuery('request_number',current.sys_id);
+tests.query();
+
+while(tests.next()){
+	tests.state = '1';
+	tests.update();
+}
+
 
 /*
 var wf = new global.Workflow();
@@ -59,7 +68,7 @@ var vars = {};
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>1e703c2f13e8ab00cb1eb3776144b0e6</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>Request Approval</sys_name>
         <sys_overrides/>
         <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
@@ -68,7 +77,7 @@ var vars = {};
         <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
         <sys_update_name>sys_ui_action_1e703c2f13e8ab00cb1eb3776144b0e6</sys_update_name>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-10-23 15:26:12</sys_updated_on>
+        <sys_updated_on>2018-11-27 09:16:54</sys_updated_on>
         <table>x_exte_cml_request_cml_request</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

@@ -78,6 +78,7 @@ addLoadEvent(function(){
 					reqT.abbrev = gr.abbrev;
 					reqT.sample_type = gr.sample_type;
 					reqT.determines = gr.determines;
+					reqT.state = 0;
 					reqT.insert();
 					//added++;
 					
@@ -252,7 +253,7 @@ table.paleBlueRows tfoot td {
 	<input type='hidden' id="requestNumber" value="${reqNum}"/>
 	<div style="width:800px;" >
 	<j:if test="${priority == 0}">
-		<span style="color:red;">More than 6 samples and 6 tests allowed.</span>
+		<span style="color:red;">More than 6 samples and 6 tests allowed without director approval.</span>
 	</j:if>
 		<j:if test="${priority == 6}">
 		<span style="color:red;">Maximum 6 samples and 6 tests allowed without director approval.</span>
@@ -299,7 +300,7 @@ table.paleBlueRows tfoot td {
         <sys_created_on>2018-09-10 13:59:36</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a5893cdcdb6cef0053f17d8bbf961951</sys_id>
-        <sys_mod_count>130</sys_mod_count>
+        <sys_mod_count>133</sys_mod_count>
         <sys_name>requests_test_selection</sys_name>
         <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
         <sys_policy/>
@@ -307,6 +308,6 @@ table.paleBlueRows tfoot td {
         <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
         <sys_update_name>sys_ui_page_a5893cdcdb6cef0053f17d8bbf961951</sys_update_name>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-11-02 13:26:39</sys_updated_on>
+        <sys_updated_on>2018-11-22 15:13:40</sys_updated_on>
     </sys_ui_page>
 </record_update>

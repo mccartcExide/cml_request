@@ -40,68 +40,87 @@
 	var total_samples = 0;
 	var ids = '';
 	//TMB Negative value
-	if(current.positive_sample_type.changesTo('tmb') || (current.positive_sample_type == 'tmb' && current.positive_sample_number.changes())  ){
+	var extended_sample = false;
+	var sample = current.sample;
+	
+	if(sample.changesTo('grids') || sample.changesTo('formed_plate') || sample.changesTo('lugs') || sample.changesTo('posts') || sample.changesTo('straps') || sample.changesTo('unformed_plate') || sample.changesTo('welds') ||
+		(sample == 'grids' || sample == 'formed_plate' || sample == 'lugs' || sample == 'posts' || sample == 'straps' || sample == 'unformed_plate' || sample == 'welds')  && current.positive_top_middle_bottom_number.changes() )
+	{
+		//gs.addInfoMessage('doing pos tmb');
+		current.positive_top_middle_bottom_number = current.positive_top_middle_bottom_number * 3;
+		change_detected = true;
 		
-		current.positive_sample_number = current.positive_sample_number * 3;
+	}
+	
+	if(sample.changesTo('grids') || sample.changesTo('formed_plate') || sample.changesTo('lugs') || sample.changesTo('posts') || sample.changesTo('straps') || sample.changesTo('unformed_plate') || sample.changesTo('welds') ||
+		(sample == 'grids' || sample == 'formed_plate' || sample == 'lugs' || sample == 'posts' || sample == 'straps' || sample == 'unformed_plate' || sample == 'welds')  && current.negative_top_middle_bottom_number.changes() )
+	{
+		current.negative_top_middle_bottom_number = current.negative_top_middle_bottom_number * 3;
+		change_detected = true;
+		
+	}
+	
+	
+	
+	if(current.sample_number.changes() || current.sample_ids.changes() || current.positive_standard_number.changes() || current.positive_top_middle_bottom_number.changes() || current.positive_other_number.changes()
+		|| current.negative_standard_number.changes() || current.negative_top_middle_bottom_number.changes() || current.negative_other_number.changes()
+	|| current.positve_standard_ids.changes() || current.positive_top_middle_bottom_ids.changes() || current.positive_other_ids.changes() || current.negative_standard_ids.changes() || current.negative_top_middle_bottom_ids.changes() || current.negative_other_ids.changes()
+	){
+		
 		change_detected = true;
 	}
 	
-	if(current.negative_sample_type.changesTo('tmb') || (current.negative_sample_type == 'tmb' && current.negative_sample_number.changes())  ){
-		
-		current.negative_sample_number = current.negative_sample_number * 3;
-		change_detected = true;
-	}
 	
 	
-	if(current.positive_sample_number.changes() || current.negative_sample_number.changes() || current.sample_number.changes()
-		|| current.positive_sample_ids.changes() || current.negative_sample_ids.changes() || current.sample_ids.changes() ){
-		
-		change_detected = true;
-	}
-	
-	
-	//Get all tests and total samples and IDs
-	
-	var req = new GlideRecord('x_exte_cml_request_cml_request');
-	req.get(current.request_number);
 	
 	
 	if(change_detected == true){
-		// Get the request record
-		
-		
 		//get all the tests relating to the request
 		var tests = new GlideRecord('x_exte_cml_request_cml_request_tests');
 		tests.addQuery('request_number',current.request_number);
 		tests.addQuery('number','!=',current.number);
 		tests.query();
 		
-		
-		
-		
 		//loop thru all tests retreving samples
 		while(tests.next()){
+			total_samples += parseInt(tests.positive_standard_number)+ parseInt(tests.positive_top_middle_bottom_number)+parseInt(tests.positive_other_number);
+			total_samples += parseInt(tests.negative_standard_number)+ parseInt(tests.negative_top_middle_bottom_number)+parseInt(tests.negative_other_number);
+			total_samples += parseInt(tests.sample_number);
 			
-			total_samples = total_samples + parseInt(tests.positive_sample_number)+ parseInt(tests.negative_sample_number) +parseInt(tests.sample_number);
+			ids = ids+' '+tests.positve_standard_ids+' '+ tests.positive_top_middle_bottom_ids+' '+tests.positive_other_ids;
+			ids = ids+' '+ tests.negative_standard_ids+' '+ tests.negative_top_middle_bottom_ids+' '+ tests.negative_other_ids;
+			ids = ids+' '+ tests.sample_ids;
+					}
+		
+		try{
+			total_samples += parseInt(current.positive_standard_number)+ parseInt(current.positive_top_middle_bottom_number)+parseInt(current.positive_other_number);
+			total_samples += parseInt(current.negative_standard_number)+ parseInt(current.negative_top_middle_bottom_number)+parseInt(current.negative_other_number);
+			total_samples += parseInt(current.sample_number);
 			
-			ids = ids+' '+ tests.positive_sample_ids+' ' +tests.negative_sample_ids+ ' ' +tests.sample_ids;
-			
-			
+			ids = ids +' '+String(current.positve_standard_ids)+' '+ String(current.positive_top_middle_bottom_ids)+' '+String(current.positive_other_ids);
+			ids = ids+' '+ String(current.negative_standard_ids)+' '+ String(current.negative_top_middle_bottom_ids)+' '+ String(current.negative_other_ids);
+			ids = ids+' '+ String(current.sample_ids);
+		}catch(e){
+			gs.addErrorMessage(e);
 		}
-		
-		
-		total_samples = total_samples + current.positive_sample_number + current.negative_sample_number+current.sample_number;
-		ids = ids+' '+ current.positive_sample_ids+' ' +current.negative_sample_ids+ ' ' +current.sample_ids;
-		
 		
 		
 		
 	}
-	
+	//Get all tests and total samples and IDs
+	var req = new GlideRecord('x_exte_cml_request_cml_request');
+	req.get(current.request_number);
 	var state = req.state;
 	var priority = req.priority;
+	var number_of_samples = req.number_of_samples;
+	
+	if(change_detected == true){
+		number_of_samples = total_samples;
+	}
+	
+	
 	if(state < 25){
-		if(((parseInt(priority) < parseInt(total_samples)) && parseInt(priority) != 0 ) || priority == 3 )
+		if(((parseInt(priority) < parseInt(number_of_samples)) && parseInt(priority) != 0 ) || priority == 3 )
 			{
 			req.approval_required = true;
 			gs.addInfoMessage('Director level approval required');
@@ -111,11 +130,11 @@
 		}
 		
 	}
-	req.sample_ids = ids;
-	req.number_of_samples = total_samples;
-	req.update();
-	
-	
+	if(change_detected == true ){
+		req.sample_ids = ids;
+		req.number_of_samples = total_samples;
+		req.update();
+	}
 	
 	
 })(current, previous);]]></script>
@@ -125,7 +144,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>9983738fdba9a70053f17d8bbf96193a</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>75</sys_mod_count>
         <sys_name>[Tests] Set sample numbers and IDs</sys_name>
         <sys_overrides/>
         <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
@@ -134,7 +153,7 @@
         <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
         <sys_update_name>sys_script_9983738fdba9a70053f17d8bbf96193a</sys_update_name>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-11-12 14:33:34</sys_updated_on>
+        <sys_updated_on>2018-11-26 12:56:17</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

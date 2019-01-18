@@ -15,12 +15,25 @@
 		return;
 	}
 	
-	g_form.setValue('positive_sample_number','');
-	g_form.setValue('negative_sample_number','');
+	g_form.setValue('positive_standard_number','');
+	g_form.setValue('negative_standard_number','');
+	g_form.setValue('positive_other_number','');
+	g_form.setValue('negative_other_number','');
+	g_form.setValue('positive_top_middle_bottom_number','');
+	g_form.setValue('negative_top_middle_bottom_number','');
+
+	g_form.setValue('positve_standard_ids','');
+	g_form.setValue('negative_standard_ids','');
+	g_form.setValue('positive_other_ids','');
+	g_form.setValue('negative_other_ids','');
+	g_form.setValue('positive_top_middle_bottom_ids','');
+	g_form.setValue('negative_top_middle_bottom_ids','');
+
+	
 	g_form.setValue('sample_number','');
 	g_form.setValue('sample_ids','');
-	g_form.setValue('negative_sample_ids','');
-	g_form.setValue('positive_sample_ids','');
+	//g_form.setValue('negative_sample_ids','');
+	//g_form.setValue('positive_sample_ids','');
 	
 	
 }]]></script>
@@ -30,7 +43,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>7df6895bdbada70053f17d8bbf96191d</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>[Tests] Sample changed</sys_name>
         <sys_overrides/>
         <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
@@ -39,7 +52,7 @@
         <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
         <sys_update_name>sys_script_client_7df6895bdbada70053f17d8bbf96191d</sys_update_name>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-11-08 15:45:37</sys_updated_on>
+        <sys_updated_on>2018-11-21 12:54:36</sys_updated_on>
         <table>x_exte_cml_request_cml_request_tests</table>
         <type>onChange</type>
         <ui_type>0</ui_type>
