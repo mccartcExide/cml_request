@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="CML Samples" max_length="40" name="x_exte_cml_request_cml_samples" type="collection">
+        <element label="Negative comment" max_length="2000" name="negative_comment" type="string"/>
+        <element label="Negative other IDs" max_length="100" name="negative_other_ids" type="string"/>
+        <element label="Negative other number" max_length="40" name="negative_other_number" type="integer"/>
+        <element label="Negative standard IDs" max_length="100" name="negative_standard_ids" type="string"/>
+        <element label="Negative standard number" max_length="40" name="negative_standard_number" type="integer"/>
+        <element label="Negative top middle bottom IDs" max_length="100" name="negative_top_middle_bottom_ids" type="string"/>
+        <element label="Negative top middle bottom number" max_length="40" name="negative_top_middle_bottom_number" type="integer"/>
+        <element label="Number" max_length="40" name="number" type="integer"/>
+        <element choice="1" label="Oxide type" max_length="40" name="oxide_type" type="choice">
+            <choice>
+                <element label="Leady" value="Leady"/>
+                <element label="Red" value="Red"/>
+            </choice>
+        </element>
+        <element label="Positive comment" max_length="2000" name="positive_comment" type="string"/>
+        <element label="Positive other IDs" max_length="100" name="positive_other_ids" type="string"/>
+        <element label="Positive other number" max_length="40" name="positive_other_number" type="integer"/>
+        <element label="Positive standard IDs" max_length="100" name="positive_standard_ids" type="string"/>
+        <element label="Positive standard number" max_length="40" name="positive_standard_number" type="integer"/>
+        <element label="Positive top middle bottom IDs" max_length="100" name="positive_top_middle_bottom_ids" type="string"/>
+        <element label="Positive top middle bottom number" max_length="40" name="positive_top_middle_bottom_number" type="integer"/>
+        <element label="Sample comment" max_length="2000" name="sample_comment" type="string"/>
+        <element label="Sample IDs" max_length="100" name="sample_ids" type="string"/>
+        <element choice="1" label="Sample name" max_length="40" name="sample_name" type="choice">
+            <choice>
+                <element label="Container" value="Container"/>
+                <element label="Cover" value="Cover"/>
+                <element label="Electrolyte" value="Electrolyte"/>
+                <element label="Expander" value="Expander"/>
+                <element label="Formed Plate" value="Formed Plate"/>
+                <element label="Grids" value="Grids"/>
+                <element label="Labels" value="Labels"/>
+                <element label="Lead Disk" value="Lead Disk"/>
+                <element label="Lugs" value="Lugs"/>
+                <element label="Other" value="Other"/>
+                <element label="Oxide" value="Oxide"/>
+                <element label="Posts" value="Posts"/>
+                <element label="Seperator" value="Seperator"/>
+                <element label="Straps" value="Straps"/>
+                <element label="Unformed Plate" value="Unformed Plate"/>
+                <element label="Water" value="Water"/>
+                <element label="Welds" value="Welds"/>
+            </choice>
+        </element>
+        <element default="javascript:global.getNextObjNumberPadded();" label="Sample number" max_length="40" name="sample_number" type="string"/>
+        <element choice="1" label="Seperator type" max_length="40" name="seperator_type" type="choice">
+            <choice>
+                <element label="Glass" value="Glass"/>
+                <element label="Poly" value="Poly"/>
+            </choice>
+        </element>
+        <element label="Test" mandatory="true" max_length="32" name="test" reference="x_exte_cml_request_cml_request_tests" type="reference"/>
+        <index name="index">
+            <element name="test"/>
+        </index>
+    </element>
+</database>

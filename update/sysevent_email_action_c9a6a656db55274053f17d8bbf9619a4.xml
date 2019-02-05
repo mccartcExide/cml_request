@@ -51,7 +51,7 @@
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
-        <recipient_fields>owner,assigned_to,cc_to,watch_list</recipient_fields>
+        <recipient_fields>owner,assigned_to,watch_list,cc</recipient_fields>
         <recipient_groups/>
         <recipient_users/>
         <reply_to/>
@@ -66,7 +66,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>c9a6a656db55274053f17d8bbf9619a4</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>CML Request Rejection</sys_name>
         <sys_overrides/>
         <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
@@ -75,7 +75,7 @@
         <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
         <sys_update_name>sysevent_email_action_c9a6a656db55274053f17d8bbf9619a4</sys_update_name>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-11-12 13:51:51</sys_updated_on>
+        <sys_updated_on>2019-01-22 15:18:56</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>

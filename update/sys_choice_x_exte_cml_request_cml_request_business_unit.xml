@@ -78,7 +78,7 @@
             <element>business_unit</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Engineering GPD (RG)</label>
+            <label>Research &amp; Development Engineering GPD (RG)</label>
             <language>en</language>
             <name>x_exte_cml_request_cml_request</name>
             <sequence>4</sequence>
@@ -86,9 +86,9 @@
             <sys_created_on>2018-10-11 09:58:21</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_id>80fb2b4adb416b0053f17d8bbf961982</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>4</sys_mod_count>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2018-10-11 09:59:00</sys_updated_on>
+            <sys_updated_on>2019-01-18 14:35:17</sys_updated_on>
             <value>gpd</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -96,7 +96,7 @@
             <element>business_unit</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Research &amp; Development (R)</label>
+            <label>Research &amp; Development (RR)</label>
             <language>en</language>
             <name>x_exte_cml_request_cml_request</name>
             <sequence>5</sequence>
@@ -104,9 +104,9 @@
             <sys_created_on>2018-10-11 09:59:15</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_id>871ca3cadb416b0053f17d8bbf9619c0</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2018-10-11 09:59:23</sys_updated_on>
+            <sys_updated_on>2019-01-18 14:36:00</sys_updated_on>
             <value>r&amp;d</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">

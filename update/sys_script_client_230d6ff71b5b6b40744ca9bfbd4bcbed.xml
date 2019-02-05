@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>sys_created_on</field>
+        <global>true</global>
+        <messages/>
+        <name>[Samples] Set fields onLoad</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   var newValue = g_form.getValue('sample_name');
+	
+	if(newValue == 'Formed Plate' || newValue == 'Unformed Plate' || newValue == 'Grids' || newValue == 'Straps' || newValue == 'Posts' || newValue == 'Welds' || newValue == 'Lugs'){
+		
+		g_form.setDisplay('positive_standard_number',true);
+		g_form.setDisplay('positive_top_middle_bottom_number',true);
+		g_form.setDisplay('positive_other_number',true);
+		g_form.setDisplay('positive_comment',true);
+		g_form.setDisplay('positive_standard_ids',true);
+		g_form.setDisplay('positive_top_middle_bottom_ids',true);
+		g_form.setDisplay('positive_other_ids',true);
+		
+		g_form.setDisplay('negative_standard_number',true);
+		g_form.setDisplay('negative_top_middle_bottom_number',true);
+		g_form.setDisplay('negative_other_number',true);
+		g_form.setDisplay('negative_comment',true);
+		g_form.setDisplay('negative_standard_ids',true);
+		g_form.setDisplay('negative_top_middle_bottom_ids',true);
+		g_form.setDisplay('negative_other_ids',true);
+		
+		g_form.setDisplay('oxide_type',false);
+		g_form.setDisplay('seperator_type',false);
+		g_form.setDisplay('sample_ids',false);
+		g_form.setDisplay('sample_comment',false);
+		g_form.setDisplay('number',false);
+	
+	}else if(newValue == 'Oxide'){
+		g_form.setDisplay('positive_standard_number',false);
+		g_form.setDisplay('positive_top_middle_bottom_number',false);
+		g_form.setDisplay('positive_other_number',false);
+		g_form.setDisplay('positive_comment',false);
+		g_form.setDisplay('positive_standard_ids',false);
+		g_form.setDisplay('positive_top_middle_bottom_ids',false);
+		g_form.setDisplay('positive_other_ids',false);
+		
+		g_form.setDisplay('negative_standard_number',false);
+		g_form.setDisplay('negative_top_middle_bottom_number',false);
+		g_form.setDisplay('negative_other_number',false);
+		g_form.setDisplay('negative_comment',false);
+		g_form.setDisplay('negative_standard_ids',false);
+		g_form.setDisplay('negative_top_middle_bottom_ids',false);
+		g_form.setDisplay('negative_other_ids',false);
+		
+		g_form.setDisplay('oxide_type',true);
+		g_form.setDisplay('seperator_type',false);
+		g_form.setDisplay('sample_ids',true);
+		g_form.setDisplay('sample_comment',true);
+		g_form.setDisplay('number',true);
+	}else if(newValue == 'Seperator'){
+		g_form.setDisplay('positive_standard_number',false);
+		g_form.setDisplay('positive_top_middle_bottom_number',false);
+		g_form.setDisplay('positive_other_number',false);
+		g_form.setDisplay('positive_comment',false);
+		g_form.setDisplay('positive_standard_ids',false);
+		g_form.setDisplay('positive_top_middle_bottom_ids',false);
+		g_form.setDisplay('positive_other_ids',false);
+		
+		g_form.setDisplay('negative_standard_number',false);
+		g_form.setDisplay('negative_top_middle_bottom_number',false);
+		g_form.setDisplay('negative_other_number',false);
+		g_form.setDisplay('negative_comment',false);
+		g_form.setDisplay('negative_standard_ids',false);
+		g_form.setDisplay('negative_top_middle_bottom_ids',false);
+		g_form.setDisplay('negative_other_ids',false);
+		
+		g_form.setDisplay('oxide_type',false);
+		g_form.setDisplay('seperator_type',true);
+		g_form.setDisplay('sample_ids',true);
+		g_form.setDisplay('sample_comment',true);
+		g_form.setDisplay('number',true);
+	}else {
+		g_form.setDisplay('positive_standard_number',false);
+		g_form.setDisplay('positive_top_middle_bottom_number',false);
+		g_form.setDisplay('positive_other_number',false);
+		g_form.setDisplay('positive_comment',false);
+		g_form.setDisplay('positive_standard_ids',false);
+		g_form.setDisplay('positive_top_middle_bottom_ids',false);
+		g_form.setDisplay('positive_other_ids',false);
+		
+		g_form.setDisplay('negative_standard_number',false);
+		g_form.setDisplay('negative_top_middle_bottom_number',false);
+		g_form.setDisplay('negative_other_number',false);
+		g_form.setDisplay('negative_comment',false);
+		g_form.setDisplay('negative_standard_ids',false);
+		g_form.setDisplay('negative_top_middle_bottom_ids',false);
+		g_form.setDisplay('negative_other_ids',false);
+		
+		g_form.setDisplay('oxide_type',false);
+		g_form.setDisplay('seperator_type',false);
+		g_form.setDisplay('sample_ids',true);
+		g_form.setDisplay('sample_comment',true);
+		g_form.setDisplay('number',true);
+	}
+	
+   
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>mccartc</sys_created_by>
+        <sys_created_on>2019-02-05 16:54:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>230d6ff71b5b6b40744ca9bfbd4bcbed</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>[Samples] Set fields onLoad</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
+        <sys_update_name>sys_script_client_230d6ff71b5b6b40744ca9bfbd4bcbed</sys_update_name>
+        <sys_updated_by>mccartc</sys_updated_by>
+        <sys_updated_on>2019-02-05 16:55:05</sys_updated_on>
+        <table>x_exte_cml_request_cml_samples</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

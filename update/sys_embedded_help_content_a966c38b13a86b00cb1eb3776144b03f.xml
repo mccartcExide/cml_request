@@ -4,7 +4,7 @@
         <active>true</active>
         <category>reporting</category>
         <content><![CDATA[ <h1 class="title topictitle1">Define a chart color</h1>  <div class="body taskbody">  <div class="section context">You can add records to the <span class="ph uicontrol">Chart Colors</span> list for elements of   specified tables. Role required: report_admin</div>  <ol class="ol steps" id="sys_report_chart_color-normal__steps_e1m_yhw_1z"><li class="li step stepexpand">    <span class="ph cmd">Fill in the fields, as appropriate.</span>    <table class="simpletable choicetable choicetableborder" id="sys_report_chart_color-normal__table_lxs_51z_5y"><thead><tr class="sthead chhead"><th id="d545375e37-option">Column</th><th id="d545375e37-desc">Description</th></tr></thead><tbody><tr class="strow chrow"><td id="d545375e50" class="stentry choption"><strong>Name</strong></td><td class="stentry chdesc">Table used for the report.<div class="note note"><span class="notetitle">Note:</span> The list shows only tables and database views that are        in the same scope as the chart colors record.</div></td></tr><tr class="strow chrow"><td id="d545375e61" class="stentry choption"><strong>Color</strong></td><td class="stentry chdesc"><span class="ph" id="sys_report_chart_color-normal__ph_fhz_sqr_bz">Hexadecimal value used to specify a color that is not already        defined in the Color Definition module.</span><div class="note note"><span class="notetitle">Note:</span> If the <span class="ph uicontrol">Color name</span>        field contains a value, the <span class="ph uicontrol">Color</span> field is ignored.</div></td></tr><tr class="strow chrow"><td id="d545375e79" class="stentry choption"><strong>Color name</strong></td><td class="stentry chdesc">Color name, as defined in the <span class="ph uicontrol">Color Definition</span> module. When a       report is generated, this color is used to represent the specified Value.</td></tr><tr class="strow chrow"><td id="d545375e91" class="stentry choption"><strong>Display</strong></td><td class="stentry chdesc">A bar in the color defined by hexadecimal value indicated in the        <span class="ph uicontrol">Color</span> or <span class="ph uicontrol">Color name</span> field.</td></tr><tr class="strow chrow"><td id="d545375e107" class="stentry choption"><strong>Element</strong></td><td class="stentry chdesc">Column name specific to the selected table.</td></tr><tr class="strow chrow"><td id="d545375e116" class="stentry choption"><strong>Value</strong></td><td class="stentry chdesc">Value for which the specified color should be displayed.</td></tr><tr class="strow chrow"><td id="d545375e125" class="stentry choption"><strong>Updated</strong></td><td class="stentry chdesc">The date and time the color was last modified.</td></tr></tbody></table>    <div class="itemgroup info">   </div></li><li class="li step stepexpand">    <span class="ph cmd">Click <span class="ph uicontrol">Submit</span>.</span>   </li></ol>  <div class="section result">The value selected in the <span class="ph uicontrol">Element</span>            field for the table in the <span class="ph uicontrol">Name</span> field is displayed with the            specified color.</div> </div> <div class="related-links"><div class="relinfo"><div class="reltitle">Related information<br /><div><a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:t_DefColorsReportDataCat&amp;version&#61;kingston" target="_blank">Define colors for report data categories            </a></div><div><a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:Application-Scope&amp;version&#61;kingston" target="_blank">Application scope</a></div></div></div></div>]]></content>
-        <last_sync>2019-01-17 13:22:08</last_sync>
+        <last_sync>2019-02-01 13:23:05</last_sync>
         <modifier>normal</modifier>
         <name>sys_report_chart_color-normal</name>
         <page>sys_report_chart_color</page>
@@ -20,7 +20,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a966c38b13a86b00cb1eb3776144b03f</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>sys_report_chart_color-normal</sys_name>
         <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
         <sys_policy/>
@@ -28,7 +28,7 @@
         <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
         <sys_update_name>sys_embedded_help_content_a966c38b13a86b00cb1eb3776144b03f</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2019-01-17 13:22:08</sys_updated_on>
+        <sys_updated_on>2019-02-01 13:23:05</sys_updated_on>
         <version>k</version>
     </sys_embedded_help_content>
 </record_update>

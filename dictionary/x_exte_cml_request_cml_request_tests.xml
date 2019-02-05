@@ -39,25 +39,25 @@
         <element label="Reports" max_length="40" name="reports" type="glide_time"/>
         <element label="Request Number" max_length="32" name="request_number" reference="x_exte_cml_request_cml_request" type="reference"/>
         <element label="Required Sample Size" max_length="100" name="required_sample_size" type="string"/>
-        <element choice="1" label="Sample" mandatory="true" max_length="40" name="sample" type="choice">
+        <element choice="1" label="Sample" max_length="40" name="sample" type="glide_list">
             <choice>
-                <element label="Container" value="container"/>
-                <element label="Cover" value="cover"/>
-                <element label="Electrolyte" value="electrolyte"/>
-                <element label="Expander" value="expander"/>
-                <element label="Formed Plate" value="formed_plate"/>
-                <element label="Grids" value="grids"/>
-                <element label="Labels" value="labels"/>
-                <element label="Lead Disk" value="lead_disk"/>
-                <element label="Lugs" value="lugs"/>
-                <element label="Other" value="other"/>
-                <element label="Oxide" value="oxide"/>
-                <element label="Posts" value="posts"/>
-                <element label="Seperator" value="seperator"/>
-                <element label="Straps" value="straps"/>
-                <element label="Unformed Plate" value="unformed_plate"/>
-                <element label="Water" value="water"/>
-                <element label="Welds" value="welds"/>
+                <element label="Container" value="Container"/>
+                <element label="Cover" value="Cover"/>
+                <element label="Electrolyte" value="Electrolyte"/>
+                <element label="Expander" value="Expander"/>
+                <element label="Formed Plate" value="Formed Plate"/>
+                <element label="Grids" value="Grids"/>
+                <element label="Labels" value="Labels"/>
+                <element label="Lead Disk" value="Lead Disk"/>
+                <element label="Lugs" value="Lugs"/>
+                <element label="Other" value="Other"/>
+                <element label="Oxide" value="Oxide"/>
+                <element label="Posts" value="Posts"/>
+                <element label="Seperator" value="Seperator"/>
+                <element label="Straps" value="Starps"/>
+                <element label="Unformed Plate" value="Unformed Plate"/>
+                <element label="Water" value="Water"/>
+                <element label="Welds" value="Welds"/>
             </choice>
         </element>
         <element label="Sample analysis" max_length="40" name="sample_analysis" type="glide_time"/>
@@ -69,6 +69,15 @@
         <element choice="1" label="Seperator Type" max_length="40" name="seperator_type" type="choice">
             <choice/>
         </element>
+        <element label="SEP-Compression/Springback-Sawtooth" max_length="40" name="sep_compression_springback_sawtooth" type="boolean"/>
+        <element label="SEP-ECC" max_length="40" name="sep_ecc" type="boolean"/>
+        <element label="SEP-Electrical Resistane" max_length="40" name="sep_electrical_resistane" type="boolean"/>
+        <element label="SEP-ICP Impurities" max_length="40" name="sep_icp_impurities" type="boolean"/>
+        <element label="SEP-IC-Chlorides" max_length="40" name="sep_ic_chlorides" type="boolean"/>
+        <element label="SEP-Oil Content" max_length="40" name="sep_oil_content" type="boolean"/>
+        <element label="SEP-Puncture Resistance" max_length="40" name="sep_puncture_resistance" type="boolean"/>
+        <element label="SEP-Tensile" max_length="40" name="sep_tensile" type="boolean"/>
+        <element label="SEP-Thickness" max_length="40" name="sep_thickness" type="boolean"/>
         <element choice="1" label="State" max_length="40" name="state" read_only="true" type="choice">
             <choice>
                 <element label="Open" sequence="0" value="0"/>

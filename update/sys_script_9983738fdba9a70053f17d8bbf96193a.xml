@@ -61,10 +61,13 @@
 	}
 	
 	
+	/*|| current.positve_standard_ids.changes()
+	current.sample_ids.changes() ||current.positive_top_middle_bottom_ids.changes() || current.positive_other_ids.changes() || current.negative_standard_ids.changes() || current.negative_top_middle_bottom_ids.changes() || current.negative_other_ids.changes()
+	*/
 	
-	if(current.sample_number.changes() || current.sample_ids.changes() || current.positive_standard_number.changes() || current.positive_top_middle_bottom_number.changes() || current.positive_other_number.changes()
+	if(current.sample_number.changes() ||  current.positive_standard_number.changes() || current.positive_top_middle_bottom_number.changes() || current.positive_other_number.changes()
 		|| current.negative_standard_number.changes() || current.negative_top_middle_bottom_number.changes() || current.negative_other_number.changes()
-	|| current.positve_standard_ids.changes() || current.positive_top_middle_bottom_ids.changes() || current.positive_other_ids.changes() || current.negative_standard_ids.changes() || current.negative_top_middle_bottom_ids.changes() || current.negative_other_ids.changes()
+	 
 	){
 		
 		change_detected = true;
@@ -87,9 +90,9 @@
 			total_samples += parseInt(tests.negative_standard_number)+ parseInt(tests.negative_top_middle_bottom_number)+parseInt(tests.negative_other_number);
 			total_samples += parseInt(tests.sample_number);
 			
-			ids = ids+' '+tests.positve_standard_ids+' '+ tests.positive_top_middle_bottom_ids+' '+tests.positive_other_ids;
+		/*	ids = ids+' '+tests.positve_standard_ids+' '+ tests.positive_top_middle_bottom_ids+' '+tests.positive_other_ids;
 			ids = ids+' '+ tests.negative_standard_ids+' '+ tests.negative_top_middle_bottom_ids+' '+ tests.negative_other_ids;
-			ids = ids+' '+ tests.sample_ids;
+			ids = ids+' '+ tests.sample_ids;*/
 					}
 		
 		try{
@@ -97,9 +100,9 @@
 			total_samples += parseInt(current.negative_standard_number)+ parseInt(current.negative_top_middle_bottom_number)+parseInt(current.negative_other_number);
 			total_samples += parseInt(current.sample_number);
 			
-			ids = ids +' '+String(current.positve_standard_ids)+' '+ String(current.positive_top_middle_bottom_ids)+' '+String(current.positive_other_ids);
+		/*	ids = ids +' '+String(current.positve_standard_ids)+' '+ String(current.positive_top_middle_bottom_ids)+' '+String(current.positive_other_ids);
 			ids = ids+' '+ String(current.negative_standard_ids)+' '+ String(current.negative_top_middle_bottom_ids)+' '+ String(current.negative_other_ids);
-			ids = ids+' '+ String(current.sample_ids);
+			ids = ids+' '+ String(current.sample_ids); */
 		}catch(e){
 			gs.addErrorMessage(e);
 		}
@@ -131,7 +134,7 @@
 		
 	}
 	if(change_detected == true ){
-		req.sample_ids = ids;
+		//req.sample_ids = ids;
 		req.number_of_samples = total_samples;
 		req.update();
 	}
@@ -144,7 +147,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>9983738fdba9a70053f17d8bbf96193a</sys_id>
-        <sys_mod_count>75</sys_mod_count>
+        <sys_mod_count>76</sys_mod_count>
         <sys_name>[Tests] Set sample numbers and IDs</sys_name>
         <sys_overrides/>
         <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
@@ -153,7 +156,7 @@
         <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
         <sys_update_name>sys_script_9983738fdba9a70053f17d8bbf96193a</sys_update_name>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-11-26 12:56:17</sys_updated_on>
+        <sys_updated_on>2019-01-18 13:54:52</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

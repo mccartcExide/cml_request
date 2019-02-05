@@ -12,10 +12,11 @@
                 <element label="Transportation Recycling Centre (TR)" sequence="1" value="recycling centre"/>
                 <element label="Industrial Motive Power" sequence="2" value="motive power"/>
                 <element label="Industrial Network Power (IS)" sequence="3" value="network power"/>
-                <element label="Engineering GPD (RG)" sequence="4" value="gpd"/>
-                <element label="Research &amp; Development (R)" sequence="5" value="r&amp;d"/>
+                <element label="Research &amp; Development Engineering GPD (RG)" sequence="4" value="gpd"/>
+                <element label="Research &amp; Development (RR)" sequence="5" value="r&amp;d"/>
             </choice>
         </element>
+        <element label="CC" max_length="4000" name="cc" reference="sys_user" type="glide_list"/>
         <element label="CC to" max_length="32" name="cc_to" reference="sys_user" type="reference"/>
         <element label="CML Number" max_length="40" name="cml_number" type="string"/>
         <element label="Comments" max_length="4000" name="comments" type="journal"/>
@@ -64,7 +65,7 @@
                 <element label="High(7 to 10 work days)" sequence="2" value="3"/>
             </choice>
         </element>
-        <element label="Project number" mandatory="true" max_length="40" name="project_number" type="string"/>
+        <element label="Project #" mandatory="true" max_length="40" name="project_number" type="string"/>
         <element label="Requested by" max_length="150" name="requested_by" read_only="true" type="string"/>
         <element choice="1" label="Request type" mandatory="true" max_length="40" name="request_type" type="choice">
             <choice>
@@ -79,7 +80,6 @@
         <element label="Reset workflow" max_length="40" name="reset_workflow" type="boolean"/>
         <element label="Restart count" max_length="40" name="restart_count" type="integer"/>
         <element label="Retention date" max_length="40" name="retention_date" type="glide_date"/>
-        <element label="Sample IDs" max_length="4000" name="sample_ids" read_only="true" type="string"/>
         <element label="Short description" mandatory="true" max_length="160" name="short_description" type="string"/>
         <element choice="1" label="State" max_length="40" name="state" read_only="true" type="choice">
             <choice>

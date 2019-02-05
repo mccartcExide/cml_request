@@ -17,67 +17,80 @@
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>1</position>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2018-11-06 15:23:40</sys_created_on>
+            <sys_created_on>2019-02-05 10:22:37</sys_created_on>
             <sys_domain>global</sys_domain>
-            <sys_id>65efe2aa13692700cb1eb3776144b05d</sys_id>
+            <sys_id>87a3d27f1b176b40744ca9bfbd4bcbf6</sys_id>
             <sys_mod_count>1</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_exte_cml_request_cml_request_tests" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">ec72a433db282b4053f17d8bbf961907</sys_ui_form>
-            <sys_ui_section caption="Samples" display_value="Samples" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">25ef22aa13692700cb1eb3776144b0eb</sys_ui_section>
+            <sys_ui_section caption="SEP" display_value="SEP" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">0fa3927f1b176b40744ca9bfbd4bcb95</sys_ui_section>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2018-11-06 15:23:40</sys_updated_on>
+            <sys_updated_on>2019-02-05 10:22:37</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>2</position>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2018-11-09 15:15:20</sys_created_on>
+            <sys_created_on>2018-11-06 15:23:40</sys_created_on>
             <sys_domain>global</sys_domain>
-            <sys_id>09ca462b13a1e700cb1eb3776144b09b</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_id>65efe2aa13692700cb1eb3776144b05d</sys_id>
+            <sys_mod_count>2</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_exte_cml_request_cml_request_tests" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">ec72a433db282b4053f17d8bbf961907</sys_ui_form>
-            <sys_ui_section caption="Turnaround Time" display_value="Turnaround Time" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">f4ca462b13a1e700cb1eb3776144b097</sys_ui_section>
+            <sys_ui_section caption="Samples" display_value="Samples" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">25ef22aa13692700cb1eb3776144b0eb</sys_ui_section>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2018-11-09 15:15:20</sys_updated_on>
+            <sys_updated_on>2019-02-05 10:22:37</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>3</position>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2018-09-21 09:15:16</sys_created_on>
+            <sys_created_on>2018-11-09 15:15:20</sys_created_on>
             <sys_domain>global</sys_domain>
-            <sys_id>2872e433db282b4053f17d8bbf96194e</sys_id>
+            <sys_id>09ca462b13a1e700cb1eb3776144b09b</sys_id>
             <sys_mod_count>4</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_exte_cml_request_cml_request_tests" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">ec72a433db282b4053f17d8bbf961907</sys_ui_form>
-            <sys_ui_section caption="Notes" display_value="Notes" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">6c72a433db282b4053f17d8bbf961906</sys_ui_section>
+            <sys_ui_section caption="Turnaround Time" display_value="Turnaround Time" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">f4ca462b13a1e700cb1eb3776144b097</sys_ui_section>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2018-11-09 15:15:20</sys_updated_on>
+            <sys_updated_on>2019-02-05 10:22:37</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>4</position>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2018-10-03 12:02:27</sys_created_on>
+            <sys_created_on>2018-09-21 09:15:16</sys_created_on>
             <sys_domain>global</sys_domain>
-            <sys_id>32cb7aefdbf4a30053f17d8bbf96197b</sys_id>
-            <sys_mod_count>5</sys_mod_count>
+            <sys_id>2872e433db282b4053f17d8bbf96194e</sys_id>
+            <sys_mod_count>7</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_exte_cml_request_cml_request_tests" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">ec72a433db282b4053f17d8bbf961907</sys_ui_form>
-            <sys_ui_section caption="Close notes" display_value="Close notes" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">f2cb7aefdbf4a30053f17d8bbf961977</sys_ui_section>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">6c72a433db282b4053f17d8bbf961906</sys_ui_section>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2018-11-09 15:15:20</sys_updated_on>
+            <sys_updated_on>2019-02-05 10:22:37</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>5</position>
             <sys_created_by>mccartc</sys_created_by>
+            <sys_created_on>2018-10-03 12:02:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>32cb7aefdbf4a30053f17d8bbf96197b</sys_id>
+            <sys_mod_count>8</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_exte_cml_request_cml_request_tests" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">ec72a433db282b4053f17d8bbf961907</sys_ui_form>
+            <sys_ui_section caption="Close notes" display_value="Close notes" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">f2cb7aefdbf4a30053f17d8bbf961977</sys_ui_section>
+            <sys_updated_by>mccartc</sys_updated_by>
+            <sys_updated_on>2019-02-05 10:22:37</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>6</position>
+            <sys_created_by>mccartc</sys_created_by>
             <sys_created_on>2018-09-21 09:43:14</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_id>e2d82c37db282b4053f17d8bbf96196f</sys_id>
-            <sys_mod_count>5</sys_mod_count>
+            <sys_mod_count>8</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_exte_cml_request_cml_request_tests" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">ec72a433db282b4053f17d8bbf961907</sys_ui_form>
             <sys_ui_section caption="Attachments" display_value="Attachments" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">2ed82c37db282b4053f17d8bbf96196c</sys_ui_section>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2018-11-09 15:15:20</sys_updated_on>
+            <sys_updated_on>2019-02-05 10:22:37</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_exte_cml_request_cml_request_tests</name>

@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_documentation element="sample_ids" label="Sample IDs" language="en" table="x_exte_cml_request_cml_request">
+    <sys_documentation element="negative_comment" label="Negative comment" language="en" table="x_exte_cml_request_cml_samples">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>sample_ids</element>
+            <element>negative_comment</element>
             <help/>
             <hint/>
-            <label>Sample IDs</label>
+            <label>Negative comment</label>
             <language>en</language>
-            <name>x_exte_cml_request_cml_request</name>
-            <plural>Sample IDs</plural>
+            <name>x_exte_cml_request_cml_samples</name>
+            <plural>Negative comments</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2018-09-07 15:43:40</sys_created_on>
+            <sys_created_on>2019-02-05 11:55:47</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>b115bddbdb186f0053f17d8bbf96198d</sys_id>
+            <sys_id>fff8a6731b976b40744ca9bfbd4bcb7f</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>Sample IDs</sys_name>
+            <sys_name>Negative comment</sys_name>
             <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
-            <sys_update_name>sys_documentation_x_exte_cml_request_cml_request_sample_ids_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_exte_cml_request_cml_samples_negative_comment_en</sys_update_name>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2018-09-07 15:43:40</sys_updated_on>
+            <sys_updated_on>2019-02-05 11:55:47</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
