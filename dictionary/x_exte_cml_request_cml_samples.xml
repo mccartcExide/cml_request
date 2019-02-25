@@ -22,7 +22,7 @@
         <element label="Positive standard number" max_length="40" name="positive_standard_number" type="integer"/>
         <element label="Positive top middle bottom IDs" max_length="100" name="positive_top_middle_bottom_ids" type="string"/>
         <element label="Positive top middle bottom number" max_length="40" name="positive_top_middle_bottom_number" type="integer"/>
-        <element label="Sample comment" max_length="2000" name="sample_comment" type="string"/>
+        <element label="Sample description" max_length="2000" name="sample_comment" type="string"/>
         <element label="Sample IDs" max_length="100" name="sample_ids" type="string"/>
         <element choice="1" label="Sample name" max_length="40" name="sample_name" type="choice">
             <choice>
@@ -38,7 +38,7 @@
                 <element label="Other" value="Other"/>
                 <element label="Oxide" value="Oxide"/>
                 <element label="Posts" value="Posts"/>
-                <element label="Seperator" value="Seperator"/>
+                <element label="Separator" value="Separator"/>
                 <element label="Straps" value="Straps"/>
                 <element label="Unformed Plate" value="Unformed Plate"/>
                 <element label="Water" value="Water"/>
@@ -53,6 +53,7 @@
             </choice>
         </element>
         <element label="Test" mandatory="true" max_length="32" name="test" reference="x_exte_cml_request_cml_request_tests" type="reference"/>
+        <element label="Total samples" max_length="40" name="total_samples" read_only="true" type="integer"/>
         <index name="index">
             <element name="test"/>
         </index>

@@ -42,7 +42,7 @@
             <element>business_unit</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Industrial Motive Power</label>
+            <label>Industrial Motive Power (IE)</label>
             <language>en</language>
             <name>x_exte_cml_request_cml_request</name>
             <sequence>2</sequence>
@@ -50,9 +50,9 @@
             <sys_created_on>2018-10-11 09:56:58</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_id>efabef0adb416b0053f17d8bbf961936</sys_id>
-            <sys_mod_count>4</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2018-10-11 09:58:11</sys_updated_on>
+            <sys_updated_on>2019-02-06 14:56:22</sys_updated_on>
             <value>motive power</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">

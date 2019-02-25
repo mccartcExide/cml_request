@@ -15,7 +15,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Crystal size required</column_label>
+        <column_label>Crystal size required (5 random samples)</column_label>
         <comments/>
         <create_roles/>
         <default_value>false</default_value>
@@ -56,15 +56,15 @@
         <sys_created_on>2018-11-22 09:13:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a664bf27dbfd230053f17d8bbf9619a9</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Crystal size required</sys_name>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Crystal size required (5 random samples)</sys_name>
         <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
         <sys_update_name>sys_dictionary_x_exte_cml_request_cml_request_tests_crystal_size_required</sys_update_name>
         <sys_updated_by>mccartc</sys_updated_by>
-        <sys_updated_on>2018-11-22 13:30:30</sys_updated_on>
+        <sys_updated_on>2019-02-06 15:16:11</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

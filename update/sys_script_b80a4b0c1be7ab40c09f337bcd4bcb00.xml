@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>true</action_delete>
+        <action_insert>true</action_insert>
+        <action_label/>
+        <action_name/>
+        <action_query>false</action_query>
+        <action_run_at>server</action_run_at>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <application/>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_exte_cml_request_cml_samples</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>[Samples] Add sample totals</name>
+        <onclick/>
+        <order>100</order>
+        <priority>100</priority>
+        <read_access_action>false</read_access_action>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	// Add your code here
+	
+	var change_detected = false;
+	var total_samples = 0;
+	var sampleName = current.sample_name;
+
+	if(	(sampleName == 'Grids' || sampleName == 'Formed Plate' || sampleName == 'Lugs' || sampleName == 'Posts' || sampleName == 'Straps' || sampleName == 'Unformed Plate' || sampleName == 'Welds')  && current.positive_top_middle_bottom_number.changes() )
+	{
+		
+		current.positive_top_middle_bottom_number = current.positive_top_middle_bottom_number * 3;
+		change_detected = true;
+		
+	}
+
+	
+	
+
+		if(	(sampleName == 'Grids' || sampleName == 'Formed Plate' || sampleName == 'Lugs' || sampleName == 'Posts' || sampleName == 'Straps' || sampleName == 'Unformed_plate' || sampleName == 'Welds')  && current.negative_top_middle_bottom_number.changes() )
+	{
+		current.negative_top_middle_bottom_number = current.negative_top_middle_bottom_number * 3;
+		change_detected = true;
+		
+	}
+
+	var stest = new GlideRecord('x_exte_cml_request_cml_request_tests');
+		stest.get(current.test);
+	
+	if(sampleName == 'Separator' && stest.abbrev == 'SEP-Comp/Springback'){
+		
+		current.number = current.number * 3;
+		change_detected = true;
+	}
+	
+	
+	
+	if(current.number.changes() ||  current.positive_standard_number.changes() || current.positive_top_middle_bottom_number.changes() || current.positive_other_number.changes()
+		|| current.negative_standard_number.changes() || current.negative_top_middle_bottom_number.changes() || current.negative_other_number.changes()
+	
+	){
+		
+		change_detected = true;
+	}
+
+	
+	//var test_request_number;
+	//if(change_detected == true){
+		//changes detetcted so get all samples for test and add together
+		
+		var samples = new GlideRecord('x_exte_cml_request_cml_samples');
+		samples.addQuery('test',current.test);
+		samples.query();
+		
+		while(samples.next()){
+			total_samples += parseInt(samples.positive_standard_number)+ parseInt(samples.positive_top_middle_bottom_number)+parseInt(samples.positive_other_number);
+			total_samples += parseInt(samples.negative_standard_number)+ parseInt(samples.negative_top_middle_bottom_number)+parseInt(samples.negative_other_number);
+			total_samples += parseInt(samples.number);
+		}
+		
+		//add the current record
+		try{
+			var tot = parseInt(current.positive_standard_number)+ parseInt(current.positive_top_middle_bottom_number)+parseInt(current.positive_other_number)+parseInt(current.negative_standard_number)+ parseInt(current.negative_top_middle_bottom_number)+parseInt(current.negative_other_number)+parseInt(current.number);
+			
+			total_samples += tot ;
+			current.total_samples = tot;
+			
+		}catch(e){
+			gs.addErrorMessage(e);
+		}
+	
+		var test = new GlideRecord('x_exte_cml_request_cml_request_tests');
+		test.get(current.test);
+		
+		test.total_samples = total_samples;
+		
+		test.update();
+		
+		//Get all tests total
+		var all_tests = new GlideRecord('x_exte_cml_request_cml_request_tests');
+		all_tests.addQuery('request_number',test.request_number);
+		all_tests.query();
+		var all_total = 0;
+		var req_num;
+		while(all_tests.next()){
+			all_total += all_tests.total_samples;
+			req_num = all_tests.request_number;
+			
+		}
+		
+		var req = new GlideRecord('x_exte_cml_request_cml_request');
+		req.get(req_num);
+		
+		var state = req.state;
+		var priority = req.priority;
+		var number_of_samples = req.number_of_samples;
+		
+		if(change_detected == true){
+			number_of_samples = all_total;
+		}
+		
+		if(state < 25){
+			if(((parseInt(priority) < parseInt(number_of_samples)) && parseInt(priority) != 0 ) || priority == 3 )
+				{
+				req.approval_required = true;
+				gs.addInfoMessage('Director level approval required');
+			}else{
+				req.approval_required = false;
+				gs.addInfoMessage('Director level approval NOT required');
+			}
+
+		}
+		
+		req.number_of_samples = all_total;
+		req.update();
+		
+//	}
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>mccartc</sys_created_by>
+        <sys_created_on>2019-02-06 09:04:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>b80a4b0c1be7ab40c09f337bcd4bcb00</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>[Samples] Add sample totals</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
+        <sys_update_name>sys_script_b80a4b0c1be7ab40c09f337bcd4bcb00</sys_update_name>
+        <sys_updated_by>mccartc</sys_updated_by>
+        <sys_updated_on>2019-02-25 13:17:39</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+</record_update>

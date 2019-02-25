@@ -5,13 +5,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2019-02-05 14:10:17</sys_created_on>
-            <sys_id>02c7c33f1bd76b40744ca9bfbd4bcb16</sys_id>
+            <sys_created_on>2019-02-06 11:57:51</sys_created_on>
+            <sys_id>b70377cc1babab40c09f337bcd4bcb74</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">e582767413602700cb1eb3776144b0ae</sys_ui_section>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2019-02-05 14:10:17</sys_updated_on>
+            <sys_updated_on>2019-02-06 11:57:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -19,13 +19,13 @@
             <element>request_number</element>
             <position>1</position>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2019-02-05 14:10:17</sys_created_on>
-            <sys_id>86c7c33f1bd76b40744ca9bfbd4bcb16</sys_id>
+            <sys_created_on>2019-02-06 11:57:51</sys_created_on>
+            <sys_id>3b0377cc1babab40c09f337bcd4bcb74</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">e582767413602700cb1eb3776144b0ae</sys_ui_section>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2019-02-05 14:10:17</sys_updated_on>
+            <sys_updated_on>2019-02-06 11:57:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -33,13 +33,13 @@
             <element>.split</element>
             <position>2</position>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2019-02-05 14:10:17</sys_created_on>
-            <sys_id>0ac7c33f1bd76b40744ca9bfbd4bcb16</sys_id>
+            <sys_created_on>2019-02-06 11:57:51</sys_created_on>
+            <sys_id>bb0377cc1babab40c09f337bcd4bcb74</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">e582767413602700cb1eb3776144b0ae</sys_ui_section>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2019-02-05 14:10:17</sys_updated_on>
+            <sys_updated_on>2019-02-06 11:57:51</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -47,13 +47,13 @@
             <element>state</element>
             <position>3</position>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2019-02-05 14:10:17</sys_created_on>
-            <sys_id>8ac7c33f1bd76b40744ca9bfbd4bcb16</sys_id>
+            <sys_created_on>2019-02-06 11:57:51</sys_created_on>
+            <sys_id>3f0377cc1babab40c09f337bcd4bcb74</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">e582767413602700cb1eb3776144b0ae</sys_ui_section>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2019-02-05 14:10:17</sys_updated_on>
+            <sys_updated_on>2019-02-06 11:57:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -61,13 +61,13 @@
             <element>assigned_to</element>
             <position>4</position>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2019-02-05 14:10:17</sys_created_on>
-            <sys_id>0ec7c33f1bd76b40744ca9bfbd4bcb16</sys_id>
+            <sys_created_on>2019-02-06 11:57:51</sys_created_on>
+            <sys_id>bf0377cc1babab40c09f337bcd4bcb74</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">e582767413602700cb1eb3776144b0ae</sys_ui_section>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2019-02-05 14:10:17</sys_updated_on>
+            <sys_updated_on>2019-02-06 11:57:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -75,13 +75,13 @@
             <element>.end_split</element>
             <position>5</position>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2019-02-05 14:10:17</sys_created_on>
-            <sys_id>8ec7c33f1bd76b40744ca9bfbd4bcb16</sys_id>
+            <sys_created_on>2019-02-06 11:57:51</sys_created_on>
+            <sys_id>330377cc1babab40c09f337bcd4bcb75</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">e582767413602700cb1eb3776144b0ae</sys_ui_section>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2019-02-05 14:10:17</sys_updated_on>
+            <sys_updated_on>2019-02-06 11:57:51</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -89,13 +89,13 @@
             <element>test_name</element>
             <position>6</position>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2019-02-05 14:10:17</sys_created_on>
-            <sys_id>02c7c33f1bd76b40744ca9bfbd4bcb17</sys_id>
+            <sys_created_on>2019-02-06 11:57:51</sys_created_on>
+            <sys_id>b30377cc1babab40c09f337bcd4bcb75</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">e582767413602700cb1eb3776144b0ae</sys_ui_section>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2019-02-05 14:10:17</sys_updated_on>
+            <sys_updated_on>2019-02-06 11:57:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -103,13 +103,13 @@
             <element>abbrev</element>
             <position>7</position>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2019-02-05 14:10:17</sys_created_on>
-            <sys_id>82c7c33f1bd76b40744ca9bfbd4bcb17</sys_id>
+            <sys_created_on>2019-02-06 11:57:51</sys_created_on>
+            <sys_id>370377cc1babab40c09f337bcd4bcb75</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">e582767413602700cb1eb3776144b0ae</sys_ui_section>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2019-02-05 14:10:17</sys_updated_on>
+            <sys_updated_on>2019-02-06 11:57:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -117,13 +117,13 @@
             <element>determines</element>
             <position>8</position>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2019-02-05 14:10:17</sys_created_on>
-            <sys_id>06c7c33f1bd76b40744ca9bfbd4bcb17</sys_id>
+            <sys_created_on>2019-02-06 11:57:51</sys_created_on>
+            <sys_id>b70377cc1babab40c09f337bcd4bcb75</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">e582767413602700cb1eb3776144b0ae</sys_ui_section>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2019-02-05 14:10:17</sys_updated_on>
+            <sys_updated_on>2019-02-06 11:57:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -131,13 +131,13 @@
             <element>sample_type</element>
             <position>9</position>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2019-02-05 14:10:17</sys_created_on>
-            <sys_id>86c7c33f1bd76b40744ca9bfbd4bcb17</sys_id>
+            <sys_created_on>2019-02-06 11:57:51</sys_created_on>
+            <sys_id>3b0377cc1babab40c09f337bcd4bcb75</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">e582767413602700cb1eb3776144b0ae</sys_ui_section>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2019-02-05 14:10:17</sys_updated_on>
+            <sys_updated_on>2019-02-06 11:57:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -145,13 +145,13 @@
             <element>required_sample_size</element>
             <position>10</position>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2019-02-05 14:10:17</sys_created_on>
-            <sys_id>0ac7c33f1bd76b40744ca9bfbd4bcb17</sys_id>
+            <sys_created_on>2019-02-06 11:57:51</sys_created_on>
+            <sys_id>bb0377cc1babab40c09f337bcd4bcb75</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">e582767413602700cb1eb3776144b0ae</sys_ui_section>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2019-02-05 14:10:17</sys_updated_on>
+            <sys_updated_on>2019-02-06 11:57:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -159,13 +159,13 @@
             <element>crystal_size_required</element>
             <position>11</position>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2019-02-05 14:10:17</sys_created_on>
-            <sys_id>8ac7c33f1bd76b40744ca9bfbd4bcb17</sys_id>
+            <sys_created_on>2019-02-06 11:57:51</sys_created_on>
+            <sys_id>3f0377cc1babab40c09f337bcd4bcb75</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">e582767413602700cb1eb3776144b0ae</sys_ui_section>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2019-02-05 14:10:17</sys_updated_on>
+            <sys_updated_on>2019-02-06 11:57:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -173,13 +173,13 @@
             <element>comments</element>
             <position>12</position>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2019-02-05 14:10:17</sys_created_on>
-            <sys_id>0ec7c33f1bd76b40744ca9bfbd4bcb17</sys_id>
+            <sys_created_on>2019-02-06 11:57:51</sys_created_on>
+            <sys_id>bf0377cc1babab40c09f337bcd4bcb75</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">e582767413602700cb1eb3776144b0ae</sys_ui_section>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2019-02-05 14:10:17</sys_updated_on>
+            <sys_updated_on>2019-02-06 11:57:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -187,13 +187,13 @@
             <element>x_exte_cml_request_sep_test.xml</element>
             <position>13</position>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2019-02-05 14:10:17</sys_created_on>
-            <sys_id>8ec7c33f1bd76b40744ca9bfbd4bcb17</sys_id>
+            <sys_created_on>2019-02-06 11:57:51</sys_created_on>
+            <sys_id>330377cc1babab40c09f337bcd4bcb76</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="SEP_Form">85ec17931b07af00c09f337bcd4bcb14</sys_ui_formatter>
             <sys_ui_section caption="NULL" display_value="" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">e582767413602700cb1eb3776144b0ae</sys_ui_section>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2019-02-05 14:10:17</sys_updated_on>
+            <sys_updated_on>2019-02-06 11:57:51</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>
@@ -201,13 +201,13 @@
             <element>pd_required</element>
             <position>14</position>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2019-02-05 14:10:17</sys_created_on>
-            <sys_id>c2c7c33f1bd76b40744ca9bfbd4bcb18</sys_id>
+            <sys_created_on>2019-02-06 11:57:51</sys_created_on>
+            <sys_id>770377cc1babab40c09f337bcd4bcb76</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">e582767413602700cb1eb3776144b0ae</sys_ui_section>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2019-02-05 14:10:17</sys_updated_on>
+            <sys_updated_on>2019-02-06 11:57:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -215,43 +215,29 @@
             <element>pt_required</element>
             <position>15</position>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2019-02-05 14:10:17</sys_created_on>
-            <sys_id>46c7c33f1bd76b40744ca9bfbd4bcb18</sys_id>
+            <sys_created_on>2019-02-06 11:57:51</sys_created_on>
+            <sys_id>f70377cc1babab40c09f337bcd4bcb76</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">e582767413602700cb1eb3776144b0ae</sys_ui_section>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2019-02-05 14:10:17</sys_updated_on>
+            <sys_updated_on>2019-02-06 11:57:51</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>sample</element>
+            <element>total_samples</element>
             <position>16</position>
             <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2019-02-05 14:10:17</sys_created_on>
-            <sys_id>c6c7c33f1bd76b40744ca9bfbd4bcb18</sys_id>
+            <sys_created_on>2019-02-06 11:57:51</sys_created_on>
+            <sys_id>7b0377cc1babab40c09f337bcd4bcb76</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">e582767413602700cb1eb3776144b0ae</sys_ui_section>
             <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2019-02-05 14:10:17</sys_updated_on>
+            <sys_updated_on>2019-02-06 11:57:51</sys_updated_on>
             <sys_user/>
             <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>12M.x_exte_cml_request_cml_request_tests.x_exte_cml_request_cml_samples.test</element>
-            <position>17</position>
-            <sys_created_by>mccartc</sys_created_by>
-            <sys_created_on>2019-02-05 14:10:17</sys_created_on>
-            <sys_id>4ac7c33f1bd76b40744ca9bfbd4bcb18</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_exte_cml_request_cml_request_tests" sys_domain="global" view="Default view">e582767413602700cb1eb3776144b0ae</sys_ui_section>
-            <sys_updated_by>mccartc</sys_updated_by>
-            <sys_updated_on>2019-02-05 14:10:17</sys_updated_on>
-            <sys_user/>
-            <type>list</type>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>

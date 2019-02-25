@@ -4,7 +4,7 @@
         <active>true</active>
         <category>performance-analytics</category>
         <content><![CDATA[ <h1 class="title topictitle1">Breakdowns</h1>  <div class="body conbody">  <p class="p">Breakdowns <span class="ph">divide data in different ways. Breakdowns enable you to            organize and filter indicator scores for more detailed analysis, such as to show            separate scores for each assignment group. You can apply a breakdown on scorecards and            dashboards. </span></p>  <p class="p">Breakdowns are automated, manual, or external. Automated            breakdowns are based on existing data in breakdown sources. A field in the            facts table is mapped to a set of records on the breakdown source, or a script is used            for more complex mapping. Manual breakdowns have their scores entered manually to define            an organization. Lastly, an external breakdown specifies the JDBC data source and SQL            statement for retrieving breakdown elements.</p>  <p class="p">Automated            breakdowns are based on a breakdown source, which is a set of records from a table. The            breakdown maps these records, known as breakdown elements, with fields on tables that            indicators collect scores from. Scores collected from mapped tables can then be grouped            and filtered based on the values in the mapped fields and the breakdown          elements.</p>  <p class="p"><span class="ph">In a manual breakdown, you define the breakdown            elements and the indicator scores for each element manually instead of using records            from a breakdown source.</span>   <span class="ph">Unlike an automated breakdown, a manual breakdown does              not map to any fields on the indicator source table. Instead, users must populate the              broken-down scores manually.</span></p> </div>]]></content>
-        <last_sync>2019-01-24 14:08:11</last_sync>
+        <last_sync>2019-02-23 14:10:08</last_sync>
         <modifier>normal</modifier>
         <name>pa_breakdowns_list-normal</name>
         <page>pa_breakdowns_list</page>
@@ -20,7 +20,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1e343547139d6740cb1eb3776144b0e5</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>pa_breakdowns_list-normal</sys_name>
         <sys_package display_value="CML Request" source="x_exte_cml_request">9a6c800613982780cb1eb3776144b0ac</sys_package>
         <sys_policy/>
@@ -28,7 +28,7 @@
         <sys_scope display_value="CML Request">9a6c800613982780cb1eb3776144b0ac</sys_scope>
         <sys_update_name>sys_embedded_help_content_1e343547139d6740cb1eb3776144b0e5</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2019-01-24 14:08:11</sys_updated_on>
+        <sys_updated_on>2019-02-23 14:10:08</sys_updated_on>
         <version>k</version>
     </sys_embedded_help_content>
 </record_update>

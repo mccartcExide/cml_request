@@ -10,7 +10,7 @@
             <choice>
                 <element label="Transportation Automotive (TA)" sequence="0" value="automotive"/>
                 <element label="Transportation Recycling Centre (TR)" sequence="1" value="recycling centre"/>
-                <element label="Industrial Motive Power" sequence="2" value="motive power"/>
+                <element label="Industrial Motive Power (IE)" sequence="2" value="motive power"/>
                 <element label="Industrial Network Power (IS)" sequence="3" value="network power"/>
                 <element label="Research &amp; Development Engineering GPD (RG)" sequence="4" value="gpd"/>
                 <element label="Research &amp; Development (RR)" sequence="5" value="r&amp;d"/>
